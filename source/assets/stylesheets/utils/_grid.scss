@@ -1,0 +1,142 @@
+/* Grid
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.container, .container-fluid {
+  box-sizing:            border-box;
+  margin-right:          auto;
+  margin-left:           auto;
+  max-width:             $grid-max;
+}
+
+.row {
+  box-sizing:            border-box;
+  display:               -ms-flexbox;
+  display:               -webkit-box;
+  display:               flex;
+  -ms-flex:              0 1 auto;
+  -webkit-box-flex:      0;
+  flex:                  0 1 auto;
+  -ms-flex-direction:    row;
+  -webkit-box-orient:    horizontal;
+  -webkit-box-direction: normal;
+  flex-direction:        row;
+  -ms-flex-wrap:         wrap;
+  flex-wrap:             wrap;
+  margin-right:          -$grid-gutter/2;
+  margin-left:           -$grid-gutter/2;
+}
+
+.row.reverse {
+  -ms-flex-direction:    row-reverse;
+  -webkit-box-orient:    horizontal;
+  -webkit-box-direction: reverse;
+  flex-direction:        row-reverse;
+}
+
+.col.reverse {
+  -ms-flex-direction:    column-reverse;
+  -webkit-box-orient:    vertical;
+  -webkit-box-direction: reverse;
+  flex-direction:        column-reverse;
+}
+
+[class^="col-"] {
+  box-sizing:            border-box;
+  -ms-flex:              0 0 auto;
+  -webkit-box-flex:      0;
+  flex:                  0 0 auto;
+  padding-right:         $grid-gutter/2;
+  padding-left:          $grid-gutter/2;
+}
+
+@each $item, $break in $grid {
+  @media only screen and (min-width: map-get($break, breakpoint)) {
+
+    .container, .container-fluid { 
+      width:                        map-get($break, container); 
+      padding-right:                $grid-gutter/2;
+      padding-left:                 $grid-gutter/2;
+    }
+
+    .col-#{$item} { 
+      -webkit-flex-grow:            1;
+      -ms-flex-positive:            1;
+      -webkit-box-flex:             1;
+      flex-grow:                    1;
+      -ms-flex-preferred-size:      0;
+      flex-basis:                   0;
+      max-width:                    100%;
+    }
+    
+    .height-#{$item} { 
+      height:                       100%;
+    }
+    .start-#{$item} {
+      -ms-flex-pack:                start;
+      -webkit-box-pack:             start;
+      justify-content:              flex-start;
+      text-align:                   start;
+    }
+    .center-#{$item} {
+      -ms-flex-pack:                center;
+      -webkit-box-pack:             center;
+      justify-content:              center;
+      text-align:                   center;
+    }
+    .end-#{$item} {
+      -ms-flex-pack:                end;
+      -webkit-box-pack:             end;
+      justify-content:              flex-end;
+      text-align:                   end;
+    }
+    .top-#{$item} {
+      -ms-flex-align:               start;
+      -webkit-box-align:            start;
+      align-items:                  flex-start;
+    }
+    .middle-#{$item} {
+      -ms-flex-align:               center;
+      -webkit-box-align:            center;
+      align-items:                  center;
+    }
+    .bottom-#{$item} {
+      -ms-flex-align:               end;
+      -webkit-box-align:            end;
+      align-items:                  flex-end;
+    }
+    .around-#{$item} {
+      -ms-flex-pack:                distribute;
+      justify-content:              space-around;
+    }
+    .between-#{$item} {
+      -ms-flex-pack:                justify;
+      -webkit-box-pack:             justify;
+      justify-content:              space-between;
+    }
+    .first-#{$item} {
+      -ms-flex-order:               -1;
+      -webkit-box-ordinal-group:    0;
+      order:                        -1;
+    }
+    .last-#{$item} {
+      -ms-flex-order:               1;
+      -webkit-box-ordinal-group:    2;
+      order:                        1;
+    }
+
+    @for $col from 1 through $grid-columns {
+      .col-#{$item}-#{$col} { 
+        -ms-flex-preferred-size:    percentage($col/$grid-columns);
+        flex-basis:                 percentage($col/$grid-columns);
+        max-width:                  percentage($col/$grid-columns);
+      }
+      .offset-#{$item}-#{$col} { 
+        margin-left:                percentage($col/$grid-columns); 
+      }
+    }
+
+    .offset-#{$item}-0 { 
+      margin-left:                  0;
+    }
+  }
+} 

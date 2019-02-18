@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="96px" height="88px" viewBox="0 0 96 88" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path d="M30.008611,50 C49.4586676,50 60,40.8903835 60,26.7837358 C60,12.6770882 54.6392503,5.35599936 34.3968409,0.764116864 C14.1544315,-3.82776563 1.39014756,13.2156789 0.0968072307,26.7837358 C-1.1965331,40.3517928 10.5585544,50 30.008611,50 Z" id="path-1"></path>
+        <filter x="-49.2%" y="-55.0%" width="198.3%" height="218.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="9.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="mozza" transform="translate(18.000000, 17.000000)">
+            <ellipse id="shadow" fill="#000000" cx="30" cy="58" rx="20" ry="2"></ellipse>
+            <g id="body">
+                <g id="Oval-2-Copy-2">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <path d="M1.39799312,35.9206147 C8.03989452,39.7860372 15.7613979,42 24,42 C38.6776768,42 51.7140797,34.9728713 59.9284084,24.0994141 C59.9770265,24.9658671 60,25.8602617 60,26.7837358 C60,40.8903835 49.4586676,50 30.008611,50 C15.2977177,50 4.98875544,44.480713 1.39799312,35.9206147 Z" id="Combined-Shape" fill="#F6F6F6"></path>
+            </g>
+            <g id="face" transform="translate(16.000000, 10.000000)">
+                <circle id="Oval" fill="#343434" cx="2.5" cy="2.5" r="2.5"></circle>
+                <circle id="Oval-Copy" fill="#343434" cx="25.5" cy="2.5" r="2.5"></circle>
+                <g id="Group-29" transform="translate(4.000000, 6.000000)">
+                    <path d="M20,2 C20,7.5228475 15.5228475,12 10,12 C4.4771525,12 0,7.5228475 0,2 C0,0.8954305 0.898212381,0 1.99079514,0 L18.0092049,0 C19.1086907,0 20,0.887729645 20,2 Z" id="mouth" fill="#D91E18"></path>
+                    <path d="M15.5995658,10.2864281 C14.0018945,11.36817 12.0747331,12 10,12 C7.92526686,12 5.99810554,11.36817 4.40043425,10.2864281 C5.84339709,8.87207967 7.81985598,8 10,8 C12.180144,8 14.1566029,8.87207967 15.5995658,10.2864281 Z" id="tongue" fill="#FF6B69"></path>
+                    <path d="M18,0 C18,1.65685425 16.6633689,3 14.9905224,3 L5.00947762,3 C3.34738902,3 2,1.65348288 2,0 L18,0 Z" id="teeth" fill="#EDEDED"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

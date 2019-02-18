@@ -1,0 +1,136 @@
+<section class="hero">
+	<div class="container">
+		<div class="row center-xs">
+			<div class="col-xs-12 col-md-8">
+				<h1 class="white pb7">Your Product Team,<br> on a plate</h1>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="definition pt7">
+	<div class="container">
+		<div class="row center-md">
+			<div class="col-xs-12 col-md-8 illustration-container">
+				<div class="illustration-wrapper"><%= image_tag "home-mozza.png" %></div>
+				<p class="p-large white ph4">Mozza is a crew of senior product strategists and UX/UI designers who help promising startups craft amazing apps and improve their metrics.</p>
+			</div>
+		</div>
+	</div>
+	<%= partial 'partials/clients' %>
+</section>
+
+<!-- USE CASES -->
+<!-- J'ai pas fait de YAML parce quon en avait que 3 ca changeait pas grand chose -->
+<section class="usecases ph6">
+	<div class="usecase">
+		<div class="usecase-bg-right"></div>
+		<div class="container">
+			<div class="row middle-sm">
+					<div class="col-xs-12 col-md-4 col-lg-3">
+						<!-- <div class="usecase-img"></div> -->
+						<%= image_tag "usecases/screen-heetch.png", { :class=>'usecase-img' } %>
+					</div>
+				<div class="col-xs-12 col-md-8 col-lg-8 offset-lg-1">
+					<div class="usecase-content">
+						<h2>We help with Product strategy.</h2>
+						<% link_to '/productstrategy.html', {:class=> 'usecase-example'} do %>
+							<div class="usecase-example-logo" style="background-image: url(assets/images/usecases/mozza2_heetch.jpg)"></div>
+							<h3 class="usecase-example-client">Heetch.</h3>
+							<p class="usecase-example-desc">We helped the leading ridesharing app Heetch tackle a major product challenge. <span class="text-link">See our strategy</span></p>
+						<% end %>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="usecase">
+		<div class="usecase-bg-left"></div>
+		<div class="container">
+			<div class="row middle-sm">
+				<div class="col-xs-12 col-md-8">
+					<div class="usecase-content">
+						<h2>We design Products from scratch.</h2>
+						<% link_to '/productdesign.html', {:class=> 'usecase-example'} do %>
+							<div class="usecase-example-logo" style="background-image: url(assets/images/usecases/mozza2_holiwin.jpg)"></div>
+							<h3 class="usecase-example-client">Holiwin.</h3>
+							<p class="usecase-example-desc">Nothing worse than wasting time and money developping the wrong product. <span class="text-link">Check our solution</span></p>
+						<%end%>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-4 col-lg-3 offset-lg-1">
+					<%= image_tag "usecases/screen-holiwin-2.png", { :class=>'usecase-img' } %>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="usecase">
+		<div class="usecase-bg-right"></div>
+		<div class="container">
+			<div class="row middle-md">
+				<div class="col-xs-12 col-md-4 col-lg-3">
+					<!-- <div class="usecase-img"></div> -->
+					<%= image_tag "usecases/screen-sift.png", { :class=>'usecase-img' } %>
+				</div>
+				<div class="col-xs-12 col-md-8 col-lg-8 offset-lg-1">
+					<div class="usecase-content">
+						<h2>We audit existing UX and metrics.</h2>
+						<% link_to '/uxanalytics.html', {:class=> 'usecase-example'} do %>
+							<div class="usecase-example-logo" style="background-image: url(assets/images/usecases/mozza2_sift.jpg)"></div>
+							<h3 class="usecase-example-client">Sift.</h3>
+							<p class="usecase-example-desc">The San Francisco-based startup Sift was struggling with retention. <span class="text-link">Discover our method</span></p>
+						<%end%>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="ph7">
+	<div class="container">
+		<div class="row center-xs">
+			<div class="col-xs col-sm-9">
+				<div class="image-team center-xs middle-xs">
+					<div class="image-team-4 cook-avatar-md"><%= image_tag "mozzayolos/olivier.jpg" %></div>
+					<div class="image-team-1 cook-avatar"><%= image_tag "mozzayolos/max.png" %></div>
+					<div class="image-team-2 cook-avatar-lg"><%= image_tag "mozzayolos/adri.jpg" %></div>
+					<div class="image-team-3 cook-avatar"><%= image_tag "mozzayolos/lucas.jpg" %></div>
+					<div class="image-team-5 cook-avatar-md"><%= image_tag "mozzayolos/mathieu.jpg" %></div>
+				</div>
+				<h2 class="h3 meta-50 mb4">Your dedicated team of experts.</h2>
+				<h3 class="h2 mb6">We all come from the startup scene to offer you our best practices and expertise.</h3>
+				<div class="mb5">
+				<%= link_to 'About Us', '/cooks.html', { :class=>'btn-primary-green mr2'} %>
+				<a class="btn-outline-green" href="https://maxbrodi.typeform.com/to/sbfIng" data-mode="popup" target="_blank">Contact Us</a>
+              	<script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+              	</div>
+            </div>
+		</div>
+	</div>
+</section>
+
+<section class="testimonials ph7">
+	<div class="row bottom-md">
+		<div class="col-xs-12 text-center"><h2 class="h3 meta-50 mb6">What they say about us</h2></div>
+			<% data.testimonials.each do |testi| %>
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<div class="testimonial">
+						<div class="testimonial-quote"><%= testi.quote %></div>
+						<div class="testimonial-author">
+							<div class="testimonial-author-picture"><%= image_tag "testimonials/" + testi.pic %></div>
+							<div class="testimonial-author-infos">
+								<p class="testimonial-author-name"><%= testi.name %></p>
+								<p class="testimonial-author-position"><%= testi.position %></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			<% end %>
+		</div>
+	</div>
+</section>
+

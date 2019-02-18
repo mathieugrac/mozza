@@ -1,0 +1,36 @@
+<section class="container ph7">
+  <div class="row">
+    <div class="col-xs-12 mb6">
+      <h1 class="mb5">The Cooks</h1>
+    </div>
+    <div class="col-xs-12 col-md-12">
+      <div class="row">
+    <% data.mozzayolos.each do |yolo| %>
+      <div class="col-xs-12 col-md-6">
+        <div class="cook">
+          <div class="cook-photo"><%= image_tag "mozzayolos/" + yolo.pic %></div>
+          <div class="cook-wrapper">
+            <h2 class="cook-name"><%= yolo.name %></h2>
+            <p class="cook-experience"><%= yolo.experience %> </p>
+            <p class="cook-desc"><%= yolo.expertise %> <%= yolo.alsofounder %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+    </div>
+  </div>
+</section>
+
+<section class="bg-green ph7">
+  <div class="row text-center ph4">
+    <div class="col-xs-12">
+      <h2 class="white mb2">Our cooks are available for you: hello@mozza.io</h2>
+      <p class="white">Want to join the crew? Reach us at cooks@mozza.io</p>
+  </div>
+</section>
+
+
+
+
+
+</div>

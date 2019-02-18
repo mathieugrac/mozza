@@ -1,0 +1,38 @@
+.mc-field-group {
+	position: relative;
+	width: 100%;
+	label {
+		display: none;
+	}
+}
+
+#mc_embed_signup div.mce_inline_error {
+	position: absolute;
+	color: green !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	margin-top: space(2) !important;
+	color: color(green,medium) !important;;
+	font-family: $ff-book !important;
+	font-size: $fs-xxs !important;
+	font-weight: normal !important;
+	line-height: $lh-sm !important;
+	background-color: transparent !important;
+	// opacity: .5 !important;
+}
+
+#mc_embed_signup input.mce_inline_error {
+	border-color: color(green,medium) !important;
+}
+
+#mce-success-response,
+#mce-error-response {
+	color: green;
+	margin-bottom: space(4);
+	color: white;
+	font-family: $ff-book;
+	font-size: $fs-xs;
+	font-weight: normal;
+	line-height: $lh-md;
+	background-color: transparent;
+}

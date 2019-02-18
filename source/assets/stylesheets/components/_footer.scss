@@ -1,0 +1,50 @@
+.footer {
+	color: white;	
+}
+
+.footer-newsletter {
+	background-color: #2E2E2E;	
+	padding: rem(90) 0;
+}
+
+.footer-navigation {
+	background-color: #3E3E3E;
+	padding: rem(40) 0 rem(90);
+}
+
+.mozza-wrapper {
+	width: 80px;
+	margin: 0 auto;
+	@include breakpoint(md){
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+
+.infos-wrapper {
+	text-align: center;
+	@include breakpoint(md){
+		text-align: left;
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+
+.newsletter-wrapper {
+	display: flex;
+	margin-top: rem(20);
+	padding: 0 rem(40);
+	@include breakpoint(md){
+		margin-top: 0;
+		padding: 0;
+	}
+}
+
+.copyrights {
+	margin-top: rem(30);
+	// text-align: center;
+	@include breakpoint(md){
+		text-align: left;
+		margin-top: rem(10);
+	}
+}

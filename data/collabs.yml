@@ -1,0 +1,30 @@
+- name: Molotov.tv
+  pic: logo-molotov-bw.svg
+  description: 7M users
+- name: Blablacar
+  pic: logo-blablacar-bw.svg
+  description: 65M users
+- name: Paypal
+  pic: logo-paypal-bw.svg
+  description: 250M users
+- name: Heetch
+  pic: logo-heetch-bw.svg
+  description: $32.5M funding
+- name: Meetic
+  pic: logo-meetic-bw.svg
+  description: Acquired by Match.com
+- name: Aircall
+  pic: logo-aircall-bw.svg
+  description: $40.6M funding
+- name: Good&Co
+  pic: logo-goodco-bw.svg
+  description: Acquired by Axel Springer
+- name: MagicPlan
+  pic: logo-magicplan-bw.svg
+  description: 15M users
+- name: StarOfService
+  pic: logo-sos-bw.svg
+  description: $11.7M funding
+- name: Bayes Impact
+  pic: logo-bayes-bw.svg
+  description: Y Combinator non-profit

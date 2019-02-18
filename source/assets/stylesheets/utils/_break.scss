@@ -1,0 +1,11 @@
+
+@function break($name){
+  $breakpoint: map-get($grid, $name);
+  @return map-get($breakpoint, breakpoint);
+}
+
+@mixin breakpoint($bp){
+	@media only screen and (min-width: break($bp)) {
+		@content;
+	}
+}

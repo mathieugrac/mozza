@@ -1,0 +1,79 @@
+.usecase {
+	position: relative;
+	overflow: hidden;
+	.container { position: relative; }
+	margin-bottom: rem(100);
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+
+.usecase-example {
+	display: block;
+	color: inherit;
+	text-decoration: none;
+	position: relative;
+	margin: rem(90) 0 rem(60);
+	transition: transform ease .2s;
+	&:hover {
+		transform: translateY(-5px);
+	}
+}
+
+.usecase-example-logo {
+	display: inline-block;
+	float: left;
+	width: rem(60);
+	height: rem(60);
+	border-radius: rem(10);
+	// box-shadow: 0 2px 12px 0 (rgba(black,0.2));
+	overflow: hidden;
+	background-repeat: none;
+	background-size: cover;
+}
+
+.usecase-example-client {
+	margin-left: rem(80);
+	padding-bottom: space(1);
+}
+
+.usecase-example-desc {
+	margin-left: rem(80);
+}
+
+.usecase-img {
+	display: none;
+	// max-width: rem(280);
+	// height: rem(480);
+	// background-color: gainsboro;
+	// border-radius: rem(12);
+	@include breakpoint(md){
+		display: block;
+	}
+	// box-shadow: 0 8px 40px 0 rgba(black,.5);
+}
+
+.usecase-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(#ffffff, #F7F9FA);
+  transform: skewY(-6deg);
+  transform-origin: top left;
+}
+
+.usecase-bg-right {
+	@extend .usecase-bg;
+	transform: skewY(-6deg);
+  	transform-origin: top left;
+}
+
+.usecase-bg-left {
+	@extend .usecase-bg;
+	transform: skewY(6deg);
+	transform-origin: bottom right;
+}

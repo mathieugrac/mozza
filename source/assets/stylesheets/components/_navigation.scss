@@ -1,0 +1,88 @@
+.nav-header {
+	display: inline-block;
+	margin-top: space(2);
+	&:first-child { margin-left: 0; }
+	&:last-child { margin-right: 0; }
+	@include breakpoint(md){
+		float: right;
+		display: inline-block;
+		margin-top: 0;
+	}
+}
+
+.nav-header li,
+.nav-social li {
+	display: inline-block;
+	margin: 0 rem(15);
+	&:first-child { margin-left: 0; }
+	&:last-child { margin-right: 0; }
+}
+
+.nav-footer li {
+	display: block;
+	margin: 0 0 rem(10) 0;
+	@include breakpoint(md){
+		display: inline-block;
+		margin: 0 rem(15);
+		&:first-child { margin-left: 0; }
+		&:last-child { margin-right: 0; }
+	}
+}
+
+.nav-social {
+	// display: inline-block;
+	// float: right;
+	line-height: 0;
+}
+
+.icon-link {
+	display: block;
+	line-height: 0;
+}
+
+.icon-link img {
+	padding: rem(4) 0;
+}
+
+.nav-link {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: rem(30);
+	opacity: 1;
+	color: white;
+	text-decoration: none;
+	// margin: 0 space(2);
+	&:after {
+		content: '';
+    	height: 2px;
+    	display: inline-block;
+    	background: white;
+    	opacity: 0;
+    	position: absolute;
+    	bottom: 0;
+    	left: 0;
+    	transition: width .2s ease, opacity .1s ease;
+    	width: 0;
+	}
+	&:hover {
+		opacity: 1;
+		&:after {
+			opacity: 1;
+			width: 100%;
+		}
+	}
+}
+
+.nav-contact {
+	@extend .nav-link;
+	@include breakpoint(md){
+		@include btn();
+  		color: white;
+  		border-color: white;
+  		&:hover {
+    		background-color: white;
+    		color: color(green,medium);
+  		}
+	}
+}

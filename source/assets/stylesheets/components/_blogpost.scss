@@ -1,0 +1,64 @@
+.blog-intro {
+		padding: rem(90) 0 rem(90);
+	@include breakpoint(sm){
+		padding: rem(200) 0 rem(90);
+	}
+	border-bottom: 1px solid #ddd;
+	h1 { @extend .h2; }
+	h2 {
+		font-family: $ff-book;
+		font-size: rem(28);
+		line-height: 1.5;
+		// line-height: $lh-sm;
+		color: color(gray,medium);
+	}
+}
+
+.blog-content {
+	padding: rem(60) 0 rem(60);	
+	@include breakpoint(sm){
+		padding: rem(120) 0 rem(90);	
+	}
+}
+
+.blog-pitch {
+	@extend .p-large;
+	padding-top: rem(30);
+}
+
+.blog-text {
+	max-width: rem(620);
+	margin: 0 auto;
+	@include breakpoint(sm){
+		padding: 0 rem(50) rem(30);
+	}
+	@include breakpoint(md){
+		padding: 0 rem(90) rem(40);
+	}
+	h2 { margin-bottom: rem(30); }
+	h3 { margin-bottom: rem(30); }
+	p { margin-bottom: rem(30); }
+}
+
+.blog-image {
+	padding: rem(40) 0 rem(50);
+	@include breakpoint(sm){
+		padding: rem(40) 0 rem(90);
+	}
+	img {
+		display: block;
+		box-shadow: 0 4px 20px 0 rgba(black, .12);
+		margin-bottom: rem(20);
+	}
+}
+
+.blog-team {
+	padding: space(4) 0 space(2);
+	.cook-avatar-sm {
+		position: relative;
+		// left: -25px;
+		&:first-child {
+			// left: 0;			
+		}
+	}
+}

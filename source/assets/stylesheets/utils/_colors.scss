@@ -1,0 +1,8 @@
+/* Colors
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+// Get a value from the color map
+@function color($color, $variant){
+  $color: map-get($colors, $color);
+  @return map-get($color, $variant);
+}

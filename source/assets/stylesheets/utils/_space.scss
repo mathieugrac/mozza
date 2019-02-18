@@ -1,0 +1,25 @@
+/* Space
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@each $key, $value in $space {
+  .p#{$key}   { padding:        map-get($space, $key);  }
+  .pt#{$key}  { padding-top:    map-get($space, $key);  }
+  .pr#{$key}  { padding-right:  map-get($space, $key);  }
+  .pb#{$key}  { padding-bottom: map-get($space, $key);  }
+  .pl#{$key}  { padding-left:   map-get($space, $key);  }
+  .pw#{$key}  { padding-left:   map-get($space, $key); padding-right:  map-get($space, $key);  }
+  .ph#{$key}  { padding-top:    map-get($space, $key); padding-bottom: map-get($space, $key);  }
+
+  .m#{$key}   { margin:        map-get($space, $key);  }
+  .mt#{$key}  { margin-top:    map-get($space, $key);  }
+  .mr#{$key}  { margin-right:  map-get($space, $key);  }
+  .mb#{$key}  { margin-bottom: map-get($space, $key);  }
+  .ml#{$key}  { margin-left:   map-get($space, $key);  }
+  .mw#{$key}  { margin-left:   map-get($space, $key); margin-right:  map-get($space, $key);  }
+  .mh#{$key}  { margin-top:    map-get($space, $key); margin-bottom: map-get($space, $key);  }
+}
+
+// Get a value from the space map
+@function space($variant-name){
+  @return map-get($space, $variant-name);
+}

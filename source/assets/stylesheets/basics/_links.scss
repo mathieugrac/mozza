@@ -1,0 +1,62 @@
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.text-link {
+	position: relative;
+	display: inline-block;
+	font-family: $ff-bold;
+	font-size: $fs-xs;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: inherit;
+	transition: color ease .2s;
+	&:after {
+		position: relative;
+		display: inline-block;
+		content: '';
+		width: 10px;
+		height: 10px;
+		margin-left: 8px;
+		background: url(../images/carret-right.svg) no-repeat;
+		filter: brightness(0.25) sepia(1) hue-rotate(47deg) saturate(0);
+		transition: filter ease .2s, margin ease .2s;
+		
+	}
+	&:hover {
+		color: color(green,medium);
+		&:after{
+			margin-left: 16px;
+			filter: brightness(0.52) sepia(1) hue-rotate(47deg) saturate(5);
+		}
+	}
+}
+
+
+// $color-link:          color(gray,medium);
+// $color-link-hover:    color(red,mid-dark);
+
+// .link {
+//   color:                $color-link;
+//   border-bottom:        2px solid $color-link-hover;
+//   text-decoration:      none;
+//   &:hover {
+//     color:              $color-link-hover;
+//     text-decoration:    none;
+//     border-color:       transparent;
+//   }
+// }
+
+// a {
+//   outline: 0;
+//   text-decoration:    none;
+//   color:              initial;
+//   &:hover, &:active, &:focus {
+//     outline: 0;
+//     text-decoration:    none;
+//   }
+// }
+
+// .featured-project {
+//   display: block;
+//   margin-bottom: space(2);
+// }

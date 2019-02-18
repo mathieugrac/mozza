@@ -1,0 +1,18 @@
+<div class="row center-md pt6">
+	<div class="col-xs-12">
+		<p class="p-large mb3 white meta-50 text-center">We worked with them:</p>
+		<div class="row center-xs">
+			<% data.collabs.each do |collab| %>
+			<div class="client">
+				<div class="client-logo">
+					<%= image_tag 'collabs/' + collab.pic %>
+				</div>
+				<div class="client-infos">
+					<p class="client-name"><%= collab.name %></p>
+					<p class="client-users"><%= collab.description %></p>
+				</div>
+			</div>
+			<% end %>
+		</div>
+	</div>
+</div>

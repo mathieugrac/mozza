@@ -1,0 +1,33 @@
+@mixin btn-style($color, $background, $border) {
+
+  // $active-background: darken($background, 10%);
+  // $active-border: darken($border, 12%);
+
+  color:              $color;
+  background-color:   $background;
+  border-color:       $border;
+
+  &:hover,
+  &.hover,
+  &:focus,
+  &.focus {
+    color:            $color;
+    background-color: if($background != transparent, $background, rgba(black,.06));
+    border-color:     $border;
+  }
+
+  &.disabled,
+  &:disabled {
+    color:             $color;
+    // background-color: if($background != transparent, rgba($background,.45), rgba(black,.2));
+    // background-color:  rgba($background,.45);
+    // border-color:      rgba($background,.45);
+  }
+}
+
+@mixin btn-size($font-size, $line-height, $padding-x) {
+  padding:             0 $padding-x;
+  font-size:           $font-size;
+  line-height:         $line-height;
+  height:             $line-height;
+}

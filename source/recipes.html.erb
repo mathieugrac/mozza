@@ -1,0 +1,22 @@
+<section class="container ph7">
+  <div class="row">
+    <div class="col-xs-12 mb6">
+      <h1 class="mb3">The Recipes</h1>
+      <p class="p-large mb5">Sharing is caring. We create content to spread our best practices in terms of product design and growth strategy, especially for mobile apps.</p>
+    </div>
+    <% data.slides.each do |recipe| %>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="recipe">
+          <% link_to recipe.url, target: "_blank" do %>
+            <div class="recipe-photo"><%= image_tag "slides/" + recipe.img + ".png" %></div>
+          <% end %>
+          <div class="recipe-text">
+            <h3 class="mb2"><%= recipe.name %></h3>
+            <p class="p-small"><%= recipe.text %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</section>
+
