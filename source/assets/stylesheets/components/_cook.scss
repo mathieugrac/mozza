@@ -32,7 +32,6 @@
 .cook-experience {
 	margin-bottom: space(2);
 	line-height: $lh-sm;
-	// text-align: center;
 }
 
 .cook-desc {
@@ -47,28 +46,19 @@
 	border: rem(5) solid white;
 	overflow: hidden;
 	width: rem(110);
-	height: rem(110);
-	img {
-		display: block;
-		width: 100%;
-		height: auto;
-	}
 }
 
 .cook-avatar-sm {
 	@extend .cook-avatar;
 	width: rem(68);
-	height: rem(68);
 }
 
 .cook-avatar-md {
 	@extend .cook-avatar;
 	width: rem(85);
-	height: rem(85);
 }
 
 .cook-avatar-lg {
 	@extend .cook-avatar;
 	width: rem(150);
-	height: rem(150);
 }

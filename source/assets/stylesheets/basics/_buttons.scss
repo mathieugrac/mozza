@@ -73,8 +73,6 @@ input[type="button"] {
   border-color: white;
   background-color: white;
   &:hover {
-    // background-color: color(gray,x-light);
-    // border-color: color(gray,x-light);
     color: color(green,medium);
   }
 }
@@ -87,6 +85,13 @@ input[type="button"] {
   &:hover {
     background-color: color(green,dark);
     border-color: color(green,dark);
-    // color: color(green,medium);
   }
 }
+
+.btn-team a {
+  display: block;
+  @include breakpoint(sm) {
+    display: inline-block;
+  }
+}
+
