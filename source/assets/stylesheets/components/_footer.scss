@@ -31,9 +31,15 @@
 }
 
 .newsletter-wrapper {
-	display: flex;
-	margin-top: rem(20);
-	padding: 0 rem(40);
+	margin-top: space(4);
+	input {
+		// display: block;
+		// width: 100%;
+	}
+	@include breakpoint(sm){
+		display: flex;
+		padding: 0 rem(40);
+	}
 	@include breakpoint(md){
 		margin-top: 0;
 		padding: 0;

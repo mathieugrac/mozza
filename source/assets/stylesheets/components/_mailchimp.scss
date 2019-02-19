@@ -8,6 +8,7 @@
 
 #mc_embed_signup div.mce_inline_error {
 	position: absolute;
+	top: rem(-30);
 	color: green !important;
 	padding: 0 !important;
 	margin: 0 !important;
@@ -25,6 +26,15 @@
 	border-color: color(green,medium) !important;
 }
 
+#mce-responses {
+	margin-top: space(4);
+	text-align: center;
+	@include breakpoint(md) {
+		margin-top: 0;
+		text-align: left;
+	}
+}
+
 #mce-success-response,
 #mce-error-response {
 	color: green;
@@ -35,4 +45,19 @@
 	font-weight: normal;
 	line-height: $lh-md;
 	background-color: transparent;
+}
+
+#mce-EMAIL {
+	margin-bottom: space(2);
+	@include breakpoint(sm) {
+		margin-bottom: 0;
+	}
+}
+
+#mc-embedded-subscribe {
+	width: 100%;
+	@include breakpoint(sm) {
+		margin-left: space(2);
+		width: auto;
+	}
 }

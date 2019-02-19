@@ -11,6 +11,9 @@
   vertical-align:    middle;
   border:            1px solid transparent;
   user-select:       none;
+  -webkit-appearance: none;
+  -moz-appearance:    none;
+  appearance:         none;
   
   //Base-style
   font-family:       $ff-book;

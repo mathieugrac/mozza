@@ -1,0 +1,11 @@
+.section {
+	// padding: ??;
+	// margin: ??;
+}
+
+.section-title {
+	text-align: center;
+	@include breakpoint(md){
+		text-align: left;
+	}
+}
