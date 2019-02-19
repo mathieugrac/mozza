@@ -1,8 +1,15 @@
+.clients {
+	text-align: center;
+}
 .client {
 	position: relative;
-	width: rem(86);
-	height: rem(86);
-	margin: 0 space(2);
+	display: inline-block;
+	vertical-align: middle;
+	width: rem(90);
+	height: rem(90);
+	@include breakpoint(md) {
+		margin: space(1);
+	}
 	&:hover {
 		cursor: default;
 		.client-infos { opacity: 1; }
@@ -17,14 +24,13 @@
 	bottom: 0;
 	left: 0;
 	right: 0;
-	// background-color: black;
-	// opacity: .7;
 	transition: transform ease .2s;
 	text-align: center;
 	img {
 		display: inline-block;
 		@extend .align-middle;
 		opacity: .35;
+		width: rem(52);
 	}
 }
 
