@@ -1,0 +1,39 @@
+#mozzarella {
+	// background-color: black;
+	#perso {
+		animation: bounce .5s cubic-bezier(.5,1,.1,.5);
+		animation-direction: alternate;
+		animation-iteration-count: infinite;
+	}
+	#body {
+		animation: flat .5s cubic-bezier(.5,1,.1,.5);
+		animation-direction: alternate;
+		animation-iteration-count: infinite;
+	}
+	#shadow {
+		animation: shadow .5s, stretch .5s cubic-bezier(.5,1,.1,.5);
+		animation-direction: alternate;
+		animation-iteration-count: infinite;
+	}
+}
+
+@keyframes bounce {
+	from {	transform: translate(0, 18px) scaleY(0.85); }
+	to {	transform: translate(0, -28px) scaleY(1); }
+}
+
+@keyframes flat {
+	from {	transform: scale(1.05, 0.92) translateX(-2px); }
+	to {	transform: scale(0.95, 1.15) translateX(2px); }
+}
+
+@keyframes shadow {
+	from { 	opacity: .6; }
+	to { 	opacity: .1; }
+}
+
+@keyframes stretch {
+	from { 	transform: scaleX(1) translateX(0); }
+	to { 	transform: scaleX(0.5) translateX(25px); }
+}
+

@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="96px" height="88px" viewBox="0 0 96 88" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg id="mozzarella" width="96px" height="88px" viewBox="0 0 96 88" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
         <path d="M30.008611,50 C49.4586676,50 60,40.8903835 60,26.7837358 C60,12.6770882 54.6392503,5.35599936 34.3968409,0.764116864 C14.1544315,-3.82776563 1.39014756,13.2156789 0.0968072307,26.7837358 C-1.1965331,40.3517928 10.5585544,50 30.008611,50 Z" id="path-1"></path>
         <filter x="-49.2%" y="-55.0%" width="198.3%" height="218.0%" filterUnits="objectBoundingBox" id="filter-2">
