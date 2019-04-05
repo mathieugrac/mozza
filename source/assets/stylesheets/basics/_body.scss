@@ -18,14 +18,6 @@ body {
 
 }
 
-.hero {
-	
-}
-
-.definition {
-	background-color: color(green,dark);
-	padding: rem(80) 0;
-}
 
 .illustration-container {
   position: relative;
@@ -50,18 +42,3 @@ body {
     top: -100%;
   }
 }
-
-.hero {
-    padding-top: space(4);
-    padding-bottom: space(4);
-  @include breakpoint(sm){
-    padding-top: space(6);
-    padding-bottom: space(7);
-  }
-  @include breakpoint(md){
-    padding-top: space(6);
-    padding-bottom: space(7);
-  }
-}
-
-

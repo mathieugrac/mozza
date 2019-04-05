@@ -4,12 +4,11 @@
 
 h1, .h1 {
   font-family:      $ff-bold;
-  // font-size:        $fs-lg;
-  font-size:        rem(38);
+  font-size:        rem(32);
   line-height:      $lh-xs;
   color:            color(gray,dark);
   @include breakpoint(sm){
-    font-size:        rem(42);
+    font-size:        rem(38);
     line-height:      $lh-sm;
   }
   @include breakpoint(md){
