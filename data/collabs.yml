@@ -7,6 +7,9 @@
 - name: Paypal
   pic: logo-paypal-bw.svg
   description: 250M users
+- name: Airbnb
+  pic: logo-airbnb-bw.svg
+  description: 150M users
 - name: Heetch
   pic: logo-heetch-bw.svg
   description: $32.5M funding
@@ -22,9 +25,6 @@
 - name: MagicPlan
   pic: logo-magicplan-bw.svg
   description: 15M users
-- name: StarOfService
-  pic: logo-sos-bw.svg
-  description: $11.7M funding
 - name: Bayes Impact
   pic: logo-bayes-bw.svg
   description: Y Combinator non-profit
