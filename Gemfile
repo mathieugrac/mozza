@@ -16,3 +16,5 @@ gem "tzinfo-data", platforms: [:mswin, :mingw, :jruby]
 gem 'jquery-middleman'
 
 gem 'middleman-deploy', '~> 1.0'
+
+gem "nokogiri", ">= 1.10.4"
