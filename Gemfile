@@ -17,4 +17,6 @@ gem 'jquery-middleman'
 
 gem 'middleman-deploy', '~> 1.0'
 
-gem "nokogiri", ">= 1.10.4"
+gem "nokogiri", ">= 1.10.8"
+
+gem "rack", ">= 1.6.12"
