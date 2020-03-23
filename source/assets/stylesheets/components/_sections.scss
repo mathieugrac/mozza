@@ -20,6 +20,7 @@ section.commitments {
 }
 
 section.hero {
+	overflow: hidden;
 	padding-top: 30px;
 	padding-bottom: 60px;
 	@include breakpoint(sm) {
