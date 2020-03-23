@@ -16,13 +16,16 @@
   appearance:         none;
   
   //Base-style
-  font-family:       $ff-book;
-  font-size: 		     $fs-sm;
+  font-family:       $ff-bold;
+  font-size: 		     15px;
   line-height:       $lh-md;
   font-weight:       normal;
-  border-radius:     rem(5);
-  padding: 			     space(1) space(4);
-  border: 			     2px solid transparent;
+  text-transform:    uppercase;
+  letter-spacing:    rem(0.5);
+  word-spacing:      rem(3);
+  border-radius:     3px;
+  padding: 			     space(2) space(4);
+  border: 			     3px solid transparent;
   transition:        color ease .2s, background-color ease .2s, border-color ease .2s;
   
   &:hover,
@@ -77,6 +80,24 @@ input[type="button"] {
   background-color: white;
   &:hover {
     color: color(green,medium);
+  }
+}
+
+.btn-primary-white-2 {
+  position: relative;
+  @include btn();
+  font-family:      $ff-bold;
+  padding: 16px 32px;
+  border: 2px solid white;
+  border-radius: 3px;
+  color: color(green,dark);
+  border-color: white;
+  background-color: white;
+  box-shadow: 0 12px 24px rgba(black, 0.1);
+  transition: margin .2s ease;
+  &:hover {
+    // color: color(green,medium);
+    margin-left: 5px;
   }
 }
 

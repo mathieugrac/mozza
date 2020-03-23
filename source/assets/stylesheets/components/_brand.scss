@@ -1,13 +1,14 @@
 .logo {
 	display: inline-block;
 	font-family: $ff-bold;
-	font-size: rem(32);
+	font-size: rem(40);
 	line-height: rem(32);
 	color: white;
 	text-decoration: none;
 }
 
 .logo-wrapper {
+	margin-top: rem(6);
 	@include breakpoint(md){
 		display: inline-block;
 	}

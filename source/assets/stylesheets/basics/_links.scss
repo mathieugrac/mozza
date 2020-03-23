@@ -1,6 +1,15 @@
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+.link {
+	// font-family: $ff-bold;
+	color: color(green, medium);
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
 .text-link {
 	position: relative;
 	display: inline-block;
@@ -8,6 +17,7 @@
 	font-size: $fs-xs;
 	text-transform: uppercase;
 	text-decoration: none;
+	word-spacing: 3px;
 	color: inherit;
 	transition: color ease .2s;
 	&:after {
@@ -31,32 +41,10 @@
 	}
 }
 
-
-// $color-link:          color(gray,medium);
-// $color-link-hover:    color(red,mid-dark);
-
-// .link {
-//   color:                $color-link;
-//   border-bottom:        2px solid $color-link-hover;
-//   text-decoration:      none;
-//   &:hover {
-//     color:              $color-link-hover;
-//     text-decoration:    none;
-//     border-color:       transparent;
-//   }
-// }
-
-// a {
-//   outline: 0;
-//   text-decoration:    none;
-//   color:              initial;
-//   &:hover, &:active, &:focus {
-//     outline: 0;
-//     text-decoration:    none;
-//   }
-// }
-
-// .featured-project {
-//   display: block;
-//   margin-bottom: space(2);
-// }
+.text-link-green {
+	@extend .text-link;
+	color: color(green,medium);
+	&:after {
+		filter: brightness(0.52) sepia(1) hue-rotate(47deg) saturate(5);
+	}
+}

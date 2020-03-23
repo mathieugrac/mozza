@@ -3,13 +3,13 @@
 }
 
 .footer-newsletter {
-	background-color: #2E2E2E;	
-	padding: rem(90) 0;
+	background-color: #1C1D1E;	
+	padding: rem(90) 0 rem(20);
 }
 
 .footer-navigation {
-	background-color: #3E3E3E;
-	padding: rem(40) 0 rem(90);
+	background-color: #1C1D1E;
+	padding: rem(30) 0 rem(120);
 }
 
 .mozza-wrapper {
@@ -27,7 +27,6 @@
 		text-align: left;
 		display: inline-block;
 		vertical-align: middle;
-		margin-left: space(2);
 	}
 }
 
@@ -48,7 +47,8 @@
 }
 
 .copyrights {
-	margin-top: rem(30);
+	position: relative;
+	top: 3px;
 	// text-align: center;
 	@include breakpoint(md){
 		text-align: left;

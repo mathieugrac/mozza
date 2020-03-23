@@ -1,0 +1,142 @@
+<section class="hero">
+	<div class="container">
+		<div class="row center-xs">
+			<h1 class="catchline white mb3">Your Product Team on a plate</h1>
+			<div class="col-xs-12 col-lg-10">
+				<p class="description white">Mozza is a crew of senior product designers.</p>
+    				<p class="description white"> We help startups craft amazing apps and improve their metrics.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="illustration">
+	<div class="container">
+		<%= image_tag "mozzarellas-on-plate-3.svg", { :class=>'mozzarellas' }  %>
+	</div>
+	<svg id="svg-background" viewBox="0 0 1280 300" xmlns="http://www.w3.org/2000/svg">
+		<path transform="translate(0.000000, -364.000000)" fill="#18a256" d="M1279.84004,364 L1280,364 L1280,664 L-4.54747351e-13,664 L-4.54747351e-13,640 C213.333333,563.513534 426.666667,522.95279 640,522.95279 C853.280011,522.95279 1066.71999,469.968527 1280,364 L1279.84004,364 Z"></path>
+	</svg>
+</section>
+
+<section class="hero-clients">
+	<%= partial 'partials/clients' %>
+</section>
+
+<section class="usecases ph6">
+
+	<div class="usecase">
+		<div class="usecase-bg-right"></div>
+		<div class="container">
+			<div class="row middle-sm">
+				<div class="col-xs-12 col-md-4 col-lg-3">
+					<%= image_tag "usecases/screen-heetch.png", { :class=>'usecase-img' } %>
+				</div>
+				<div class="col-xs-12 col-md-8 col-lg-8 offset-lg-1">
+					<div class="usecase-content">
+						<h2>We help with Product strategy.</h2>
+						<% link_to '/productstrategy.html', {:class=> 'usecase-example'} do %>
+						<div class="usecase-example-logo" style="background-image: url(assets/images/usecases/mozza2_heetch.jpg)"></div>
+						<div class="usecase-example-text">
+							<h3 class="usecase-example-client mb1">Heetch.</h3>
+							<p class="usecase-example-desc">We helped the leading ridesharing app Heetch tackle a major product challenge. <span class="text-link">See our strategy</span></p>
+						</div>
+						<% end %>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="usecase">
+		<div class="usecase-bg-left"></div>
+		<div class="container">
+			<div class="row middle-sm">
+				<div class="col-xs-12 col-md-8">
+					<div class="usecase-content">
+						<h2>We design Products from scratch.</h2>
+						<% link_to '/productdesign.html', {:class=> 'usecase-example'} do %>
+						<div class="usecase-example-logo" style="background-image: url(assets/images/usecases/mozza2_holiwin.jpg)"></div>
+						<div class="usecase-example-text">
+							<h3 class="usecase-example-client mb1">Holiwin.</h3>
+							<p class="usecase-example-desc">Nothing worse than wasting time and money developing the wrong product. <span class="text-link">Check our solution</span></p>
+						</div>
+						<%end%>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-4 col-lg-3 offset-lg-1">
+					<%= image_tag "usecases/screen-holiwin-2.png", { :class=>'usecase-img' } %>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="usecase">
+		<div class="usecase-bg-right"></div>
+		<div class="container">
+			<div class="row middle-md">
+				<div class="col-xs-12 col-md-4 col-lg-3">
+					<%= image_tag "usecases/screen-sift.png", { :class=>'usecase-img' } %>
+				</div>
+				<div class="col-xs-12 col-md-8 col-lg-8 offset-lg-1">
+					<div class="usecase-content">
+						<h2>We audit existing UX and metrics.</h2>
+						<% link_to '/uxanalytics.html', {:class=> 'usecase-example'} do %>
+						<div class="usecase-example-logo" style="background-image: url(assets/images/usecases/mozza2_sift.jpg)"></div>
+						<div class="usecase-example-text">
+							<h3 class="usecase-example-client">Sift.</h3>
+							<p class="usecase-example-desc">The San Francisco-based startup Sift was struggling with retention. <span class="text-link">Discover our method</span></p>
+						</div>
+						<%end%>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="ph7">
+	<div class="container">
+		<div class="row center-xs">
+			<div class="col-xs col-sm-9">
+				<div class="image-team center-xs middle-xs">
+					<div class="image-team-4 cook-avatar-md"><%= image_tag "mozzayolos/florent.jpg" %></div>
+					<div class="image-team-1 cook-avatar"><%= image_tag "mozzayolos/max.jpg" %></div>
+					<div class="image-team-2 cook-avatar-lg"><%= image_tag "mozzayolos/adri.jpg" %></div>
+					<div class="image-team-3 cook-avatar"><%= image_tag "mozzayolos/lucas.jpg" %></div>
+					<div class="image-team-5 cook-avatar-md"><%= image_tag "mozzayolos/mathieu.jpg" %></div>
+				</div>
+				<h2 class="h3 meta-50 mb4">Your dedicated team of experts.</h2>
+				<h3 class="h2 mb6">We all come from the startup scene to offer you our best practices and expertise.</h3>
+				<div class="btn-team mb5">
+					<%= link_to 'Meet the Chefs', '/chefs.html', { :class=>'btn-primary-green m2'} %>
+					<a class="btn-outline-green m2" href="https://maxbrodi.typeform.com/to/sbfIng" data-mode="popup" target="_blank">Contact Us</a>
+					<script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="testimonials ph7">
+	<div class="row bottom-md">
+		<div class="col-xs-12 text-center"><h2 class="h3 meta-50 mb6">What they say about us</h2></div>
+		<% data.testimonials.each do |testi| %>
+		<div class="col-xs-12 col-sm-6 col-md-4">
+			<div class="testimonial">
+				<div class="testimonial-quote"><%= testi.quote %></div>
+				<div class="testimonial-author">
+					<div class="testimonial-author-picture"><%= image_tag "testimonials/" + testi.pic %></div>
+					<div class="testimonial-author-infos">
+						<p class="testimonial-author-name"><%= testi.name %></p>
+						<p class="testimonial-author-position"><%= testi.position %></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<% end %>
+	</div>
+</div>
+</section>
+

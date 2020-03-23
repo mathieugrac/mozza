@@ -1,6 +1,120 @@
-.section {
-	// padding: ??;
-	// margin: ??;
+section {
+	// padding: 20px;
+}
+
+section.bg-gray,
+section.clients,
+section.testimonials {
+	background-color: #f4f4f4;
+}
+
+section.bg-green,
+section.manifesto {
+	background-color: color(green,medium);
+	color: white !important;
+}
+
+section.offers,
+section.commitments {
+	background-color: white;
+}
+
+section.hero {
+	padding-top: 30px;
+	padding-bottom: 60px;
+	@include breakpoint(sm) {
+		padding-top: 60px;
+		padding-bottom: 90px;
+	}
+	@include breakpoint(md) {
+		padding-top: 90px;
+		padding-bottom: 120px;
+	}
+}
+
+section.clients {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+section.space,
+section.offers,
+section.commitments,
+section.testimonials {
+	padding-top: 60px;
+	padding-bottom: 90px;
+}
+
+section.space-medium,
+section.manifesto {
+	padding-top: 90px;
+	padding-bottom: 90px;
+}
+
+.usecase-block {
+	display: block;
+	color: inherit;
+	background-color: inherit;
+	text-decoration: none;
+	position: relative;
+	text-align: center;
+	color: white;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	transition: background-color .2s ease;
+	img {
+		box-shadow: 4px 0 24px rgba(black,0.1);
+	}
+	h2 { 
+		color: white;
+		margin-top: 40px; 
+	}
+	p {
+		opacity: 0.8;
+		// margin-bottom: 20px; 
+	}
+}
+
+a.usecase-1 {
+	background-color: #1AA8BA;
+	&:hover {
+		background-color: darken(#1AA8BA,5);
+	}
+}
+a.usecase-2 {
+	background-color: #C52559;
+	&:hover {
+		background-color: darken(#C52559,5);
+	}
+}
+a.usecase-3 {
+	background-color: #3DCB9A;
+	&:hover {
+		background-color: darken(#3DCB9A,5);
+	}
+}
+
+.mozzarellazz {
+	position: relative;
+	max-width: initial;
+	width: 460px;
+	height: auto;
+	margin: 20px 0 0;
+	@include breakpoint(sm) {
+		width: 560px;
+		height: auto;
+		margin: 20px auto 0;
+	}
+	@include breakpoint(md) {
+    	width: 800px;
+		height: auto;
+    	margin: 0 0 0 60px;
+	}
+}
+
+.section-subtitle {
+	font-size: 21px;
+	line-height: 32;
 }
 
 .section-title {

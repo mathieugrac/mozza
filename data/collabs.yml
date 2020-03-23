@@ -1,30 +1,47 @@
-- name: Molotov.tv
-  pic: logo-molotov-bw.svg
-  description: 7M users
-- name: Blablacar
-  pic: logo-blablacar-bw.svg
-  description: 65M users
-- name: Paypal
-  pic: logo-paypal-bw.svg
-  description: 250M users
 - name: Airbnb
-  pic: logo-airbnb-bw.svg
+  pic: logo-airbnb-color-2.svg
   description: 150M users
-- name: Heetch
-  pic: logo-heetch-bw.svg
-  description: $70.5M funding
+
+- name: Google
+  pic: logo-google-color-2.svg
+  description: 
+
+- name: Paypal
+  pic: logo-paypal-color-2.svg
+  description: 250M users
+
+- name: Blablacar
+  pic: logo-blablacar-color-2.svg
+  description: 65M users
+
+- name: Voodoo
+  pic: logo-voodoo-color-2.svg
+  description:
+
+- name: Qonto
+  pic: logo-qonto-color-2.svg
+  description: 
+
 - name: Meetic
-  pic: logo-meetic-bw.svg
+  pic: logo-meetic-color-2.svg
   description: Acquired by Match.com
+
 - name: Aircall
-  pic: logo-aircall-bw.svg
-  description: $40.6M funding
-- name: Good&Co
-  pic: logo-goodco-bw.svg
-  description: Acquired by Axel Springer
-- name: MagicPlan
-  pic: logo-magicplan-bw.svg
-  description: 15M users
-- name: Bayes Impact
-  pic: logo-bayes-bw.svg
-  description: Y Combinator non-profit
+  pic: logo-aircall-color-2.svg
+  description:
+
+- name: Payfit
+  pic: logo-payfit-color-2.svg
+  description:
+
+- name: Frichti
+  pic: logo-frichti-color-2.svg
+  description:
+
+- name: Heetch
+  pic: logo-heetch-color-2.svg
+  description:
+
+- name: Bandsintown
+  pic: logo-bandsintown-color-2.svg
+  description:

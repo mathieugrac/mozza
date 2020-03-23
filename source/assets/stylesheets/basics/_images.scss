@@ -2,9 +2,10 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 img {
-  display:        block;
-  max-width:      100%;
-  height:         auto;
+  display:        	block;
+  max-width:      	100%;
+  height:         	auto;
+  margin: 			0 auto;
 }
 
 .img-wrapper {
@@ -23,6 +24,20 @@ img {
 	display: flex;
 	text-align: center;
 	margin-bottom: space(5);
+}
+
+.image-create {
+	width: 90px;
+	height: auto;
+	display: inline-block;
+	margin: 12px;
+}
+
+.image-startups {
+	width: 160px;
+	height: auto;
+	display: inline-block;
+	margin: 12px;
 }
 
 .image-team-1 {

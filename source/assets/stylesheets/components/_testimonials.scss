@@ -1,6 +1,61 @@
+.testimonial-2 {
+	position: relative;
+	background-color: white;
+	border-radius: 0;
+	padding:25px;
+	box-shadow: 0 8px 40px 0 rgba(black,.1);
+	margin-bottom: space(4);
+	border-radius: 3px;
+	@include breakpoint(sm){  
+		padding: 40px;
+	}
+
+	.testimonial-quote {
+		font-size: 21px;
+		line-height: 33px;
+		padding: 0;
+		margin-bottom: 20px;
+		margin-right: 70px;
+	}
+
+	.testimonial-pic {
+		position: absolute;
+		top: 40px;
+		right: 36px;
+		width: rem(60);
+		height: rem(60);
+		overflow: auto;
+		border-radius: 50%;
+		img { display: block; }
+		@include breakpoint(sm) {  
+			top: 30px;
+			right: 26px;
+		}
+	}
+
+	.testimonial-author {
+		position: relative;
+		font-family: $ff-bold;
+		font-size: 12px;
+		line-height: 20px;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+
+		.testimonial-author-position {
+			font-family: $ff-book;
+			font-size: 12px;
+			line-height: 20px;
+			margin-left: 4px;
+			opacity: .5;
+		}
+	}
+}
+
+// FIRST VERSION
+
 .testimonials {
 	background-color: color(gray,x-light);
-	padding: space(7) space(5);
+	// padding: space(7) space(5);
 }
 
 .testimonial {

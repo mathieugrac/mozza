@@ -1,142 +1,170 @@
-<section class="hero">
+<section class="hero bg-green">
 	<div class="container">
-		<div class="row center-xs">
-			<h1 class="catchline white mb3">Your Product Team on a plate</h1>
-			<div class="col-xs-12 col-lg-10">
-				<p class="description white">Mozza is a crew of senior product designers.</p>
-    				<p class="description white"> We help startups craft amazing apps and improve their metrics.</p>
+		<div class="row middle-sm">
+			<div class="col-xs-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0">
+				<h1 class="catchline white mb4">Your Product Team <br/> on a plate.</h1>
+				<p class="description white mb4">Mozza is a crew of senior product designers.  We help entrepreneurs and growing startups craft amazing user experiences.</p>
+				<a class="btn-primary-white-2 typeform-share " href="https://hello017925.typeform.com/to/YnE7b6" data-mode="drawer_right" target="_blank">Let's talk!</a>
+				<script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+			</div>
+			<div class="col-xs-12 col-md-6">
+				<%= image_tag "mozzarellas-on-plate-3.svg", { :class=>'mozzarellazz' }  %>
 			</div>
 		</div>
 	</div>
 </section>
 
-<section class="illustration">
+<!-- CLIENTS -->
+<section class="clients">
 	<div class="container">
-		<%= image_tag "mozzarellas-on-plate-3.svg", { :class=>'mozzarellas' }  %>
-	</div>
-	<svg id="svg-background" viewBox="0 0 1280 300" xmlns="http://www.w3.org/2000/svg">
-		<path transform="translate(0.000000, -364.000000)" fill="#18a256" d="M1279.84004,364 L1280,364 L1280,664 L-4.54747351e-13,664 L-4.54747351e-13,640 C213.333333,563.513534 426.666667,522.95279 640,522.95279 C853.280011,522.95279 1066.71999,469.968527 1280,364 L1279.84004,364 Z"></path>
-	</svg>
-</section>
-
-<section class="hero-clients">
-	<%= partial 'partials/clients' %>
-</section>
-
-<section class="usecases ph6">
-
-	<div class="usecase">
-		<div class="usecase-bg-right"></div>
-		<div class="container">
-			<div class="row middle-sm">
-				<div class="col-xs-12 col-md-4 col-lg-3">
-					<%= image_tag "usecases/screen-heetch.png", { :class=>'usecase-img' } %>
-				</div>
-				<div class="col-xs-12 col-md-8 col-lg-8 offset-lg-1">
-					<div class="usecase-content">
-						<h2>We help with Product strategy.</h2>
-						<% link_to '/productstrategy.html', {:class=> 'usecase-example'} do %>
-						<div class="usecase-example-logo" style="background-image: url(assets/images/usecases/mozza2_heetch.jpg)"></div>
-						<div class="usecase-example-text">
-							<h3 class="usecase-example-client mb1">Heetch.</h3>
-							<p class="usecase-example-desc">We helped the leading ridesharing app Heetch tackle a major product challenge. <span class="text-link">See our strategy</span></p>
-						</div>
-						<% end %>
-					</div>
-				</div>
+		<div class="row">
+			<% data.collabs.each do |collab| %>
+			<div class="col-xs-6 col-sm-4 col-md-2 ph4">
+					<%= image_tag 'clients/' + collab.pic %>
 			</div>
-		</div>
-	</div>
-
-	<div class="usecase">
-		<div class="usecase-bg-left"></div>
-		<div class="container">
-			<div class="row middle-sm">
-				<div class="col-xs-12 col-md-8">
-					<div class="usecase-content">
-						<h2>We design Products from scratch.</h2>
-						<% link_to '/productdesign.html', {:class=> 'usecase-example'} do %>
-						<div class="usecase-example-logo" style="background-image: url(assets/images/usecases/mozza2_holiwin.jpg)"></div>
-						<div class="usecase-example-text">
-							<h3 class="usecase-example-client mb1">Holiwin.</h3>
-							<p class="usecase-example-desc">Nothing worse than wasting time and money developing the wrong product. <span class="text-link">Check our solution</span></p>
-						</div>
-						<%end%>
-					</div>
-				</div>
-				<div class="col-xs-12 col-md-4 col-lg-3 offset-lg-1">
-					<%= image_tag "usecases/screen-holiwin-2.png", { :class=>'usecase-img' } %>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="usecase">
-		<div class="usecase-bg-right"></div>
-		<div class="container">
-			<div class="row middle-md">
-				<div class="col-xs-12 col-md-4 col-lg-3">
-					<%= image_tag "usecases/screen-sift.png", { :class=>'usecase-img' } %>
-				</div>
-				<div class="col-xs-12 col-md-8 col-lg-8 offset-lg-1">
-					<div class="usecase-content">
-						<h2>We audit existing UX and metrics.</h2>
-						<% link_to '/uxanalytics.html', {:class=> 'usecase-example'} do %>
-						<div class="usecase-example-logo" style="background-image: url(assets/images/usecases/mozza2_sift.jpg)"></div>
-						<div class="usecase-example-text">
-							<h3 class="usecase-example-client">Sift.</h3>
-							<p class="usecase-example-desc">The San Francisco-based startup Sift was struggling with retention. <span class="text-link">Discover our method</span></p>
-						</div>
-						<%end%>
-					</div>
-				</div>
-			</div>
+			<% end %>
 		</div>
 	</div>
 </section>
 
-
-<section class="ph7">
+<!-- OFFERS -->
+<section class="offers">
 	<div class="container">
-		<div class="row center-xs">
-			<div class="col-xs col-sm-9">
-				<div class="image-team center-xs middle-xs">
-					<div class="image-team-4 cook-avatar-md"><%= image_tag "mozzayolos/florent.jpg" %></div>
-					<div class="image-team-1 cook-avatar"><%= image_tag "mozzayolos/max.jpg" %></div>
-					<div class="image-team-2 cook-avatar-lg"><%= image_tag "mozzayolos/adri.jpg" %></div>
-					<div class="image-team-3 cook-avatar"><%= image_tag "mozzayolos/lucas.jpg" %></div>
-					<div class="image-team-5 cook-avatar-md"><%= image_tag "mozzayolos/mathieu.jpg" %></div>
+		<div class="row">
+			<div class="col-xs-12 text-center">
+				<h3 class="meta-50 mb5">How can we help you?</h3>
+			</div>
+			<div class="col-xs-12 col-md-6">
+				<% link_to '/create-with-mozza.html', {:class=> 'offer-item'} do %>
+					<%= image_tag "mozza-create.svg", {:class=> 'mozza-illustrations mb3'}%>
+					<h2 class="offer-item-title">Create.</h2>
+					<p class="offer-item-desc p-large">From idea to launch, we challenge your product strategy and help you design a simple yet engaging MVP for your first users.</p>
+					<p class="offer-item-cta text-link">Learn More</p>
+				<% end %>
+			</div>
+			<div class="col-xs-12 col-md-6">
+				<% link_to '/scale-with-mozza.html', {:class=> 'offer-item'} do %>
+					<%= image_tag "mozza-scale.svg", {:class=> 'mozza-illustrations mb3'} %>
+					<h2 class="offer-item-title">Scale.</h2>
+					<p class="offer-item-desc p-large">We support growing startups on ad-hoc design projects and bring a fresh eyes to complex product challenges.</p>
+					<p class="offer-item-cta text-link">Learn More</p>
+				<% end %>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- USECASES -->
+<section class="row" style="margin:0">
+	
+	<% link_to '/productdesign.html', {:class=> 'usecase-block usecase-1 col-xs-12 col-md-4'} do %>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-10 offset-sm-1">
+					<%= image_tag "thumb-holiwin.png", { :class=>'' }  %>
+					<h2 class="mb2">Holiwin</h2>
+					<p>How we designed a groundbreaking travel reservation app from scratch.</p>	
 				</div>
-				<h2 class="h3 meta-50 mb4">Your dedicated team of experts.</h2>
-				<h3 class="h2 mb6">We all come from the startup scene to offer you our best practices and expertise.</h3>
-				<div class="btn-team mb5">
-					<%= link_to 'Meet the Chefs', '/chefs.html', { :class=>'btn-primary-green m2'} %>
-					<a class="btn-outline-green m2" href="https://maxbrodi.typeform.com/to/sbfIng" data-mode="popup" target="_blank">Contact Us</a>
-					<script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+			</div>
+		</div>
+	<% end %>
+	<% link_to '/productstrategy.html', {:class=> 'usecase-block usecase-2 col-xs-12 col-md-4'} do %>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-10 offset-sm-1">
+					<%= image_tag "thumb-heetch.png", { :class=>'' }  %>
+					<h2 class="mb2">Heetch</h2>
+					<p>How we helped the leading ridesharing app tackle a strategic product challenge.</p>	
+				</div>
+			</div>
+		</div>
+	<% end %>
+	<% link_to '/uxanalytics.html', {:class=> 'usecase-block usecase-3 col-xs-12 col-md-4'} do %>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-10 offset-sm-1">
+					<%= image_tag "thumb-sift.png", { :class=>'' }  %>
+					<h2 class="mb2">Sift</h2>
+					<p>How we the San Francisco-based startup boost their activation and retention rates.</p>	
+				</div>
+			</div>
+		</div>
+	<% end %>
+</section>
+
+<!-- COMMITMENTS -->
+<section class="commitments">
+	<div class="container text-center">
+		<div class="row">
+			<div class="col-xs-12">
+				<h3 class="meta-50 mb5">Our commitments</h3>
+			</div>
+			<div class="col-xs-12 col-sm-4">
+				<div class="commitment-item">
+					<h2 class="commitment-item-title">Top-notch <br> profiles.</h2>
+					<p><a href="/chefs.html" class="link">Our members</a> all are experienced product designers who took part in some of the most successful startup stories. </p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-4">
+				<div class="commitment-item">
+					<h2 class="commitment-item-title">A distributed team.</h2>
+					<p>Which you belong to. We assemble a dedicated team that knows your industry to work hands in hands with your company.</p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-4">
+				<div class="commitment-item">
+					<h2 class="commitment-item-title">Time <br> well spent.</h2>
+					<p class="commitment-item-desc">We care about your money and our productivity. Our remote culture makes it possible to start in a snap and focus on what matters.</p>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
 
-<section class="testimonials ph7">
-	<div class="row bottom-md">
-		<div class="col-xs-12 text-center"><h2 class="h3 meta-50 mb6">What they say about us</h2></div>
-		<% data.testimonials.each do |testi| %>
-		<div class="col-xs-12 col-sm-6 col-md-4">
-			<div class="testimonial">
-				<div class="testimonial-quote"><%= testi.quote %></div>
-				<div class="testimonial-author">
-					<div class="testimonial-author-picture"><%= image_tag "testimonials/" + testi.pic %></div>
-					<div class="testimonial-author-infos">
-						<p class="testimonial-author-name"><%= testi.name %></p>
-						<p class="testimonial-author-position"><%= testi.position %></p>
+<!-- MANIFESTO -->
+<section class="manifesto">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-md-10 offset-md-1 col-lg-10">
+				<div class="manifesto-block">
+					<%= image_tag "leaves.svg", {:class=> 'manifesto-leaves'}%>
+					<h3 class="text-center meta-50">Our secret sauce</h3>
+					<div class="manifesto-wrapper">
+					<p>There are no hourly rates. Coming from the startup scene taught us to value output over input.</p>
+					<p>There are no yes-men. We never hesitate to challenge our clients’ opinions and only work on projects we believe in.</p>
+					<p>There’s no guesswork. Our work is based on metrics and user research. “Growth by design” is our motto and sums up our philosophy: startups need user experiences that drive growth.</p>
+					<p>There’s no office. Our remote organization makes it possible for our clients to hire within a week some of the best product designers in the world to work together as a team on their project, at a fair cost.</p>
+					<p>We are not a traditional agency, we do more with less.</p>
 					</div>
 				</div>
 			</div>
 		</div>
-		<% end %>
 	</div>
-</div>
 </section>
 
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 text-center">
+				<h3 class="meta-50 mb7">What they say about us</h3>
+			</div>
+			<div class="col-xs-12 ">
+				<div class="row middle-xs">
+			<% data.testimonials.each do |testi| %>
+			<div class="col-xs-12 col-md-6">
+				<div class="testimonial-2">
+					<div class="testimonial-quote"><%= testi.quote %></div>
+					<div class="testimonial-author">
+						<%= testi.name %>
+						<span class="testimonial-author-position"><%= testi.position %></span>
+					</div>
+					<div class="testimonial-pic"><%= image_tag "testimonials/" + testi.pic %></div>
+				</div>
+			</div>
+			<% end %>
+			</div>
+			</div>
+		</div>
+	</div>
+</section>

@@ -37,15 +37,15 @@ $ff-bold:  "GT America Bold", Arial, sans;
 // font-sizing
 $fs-xl: rem(54);
 $fs-lg:  rem(32);
-$fs-md:  rem(22);
+$fs-md:  rem(26);
 $fs-sm:  rem(18);
-$fs-xs: rem(15);
+$fs-xs: rem(16);
 $fs-xxs: rem(11);
 
 // line-heights
 $lh-md:  1.65;
 $lh-sm:  1.3;
-$lh-xs: 1;
+$lh-xs: 1.1;
 
 
 /* Spacing
@@ -60,7 +60,7 @@ $space: (
   4:                $space-unit * 6,
   5:                $space-unit * 8,
   6:                $space-unit * 10,
-  7:                $space-unit * 20
+  7:                $space-unit * 16
 );
 
 
@@ -85,7 +85,7 @@ $colors: (
 
 $grid-columns:      12;
 $grid-gutter:       rem(30);
-$grid-max:          rem(1000);
+$grid-max:          rem(1200);
 
 $grid: (
   xs: (

@@ -13,7 +13,7 @@
 .nav-header li,
 .nav-social li {
 	display: inline-block;
-	margin: 0 rem(15);
+	margin: 0 rem(10);
 	&:first-child { margin-left: 0; }
 	&:last-child { margin-right: 0; }
 }
@@ -23,15 +23,15 @@
 	margin: 0 0 rem(10) 0;
 	@include breakpoint(md){
 		display: inline-block;
-		margin: 0 rem(15);
+		margin: 0 rem(10);
 		&:first-child { margin-left: 0; }
 		&:last-child { margin-right: 0; }
 	}
 }
 
 .nav-social {
-	// display: inline-block;
-	// float: right;
+	position: relative;
+	top: 9px;
 	line-height: 0;
 }
 
@@ -47,20 +47,20 @@
 .nav-link {
 	position: relative;
 	display: inline-block;
+	font-family: $ff-bold;
 	vertical-align: middle;
 	line-height: rem(30);
 	opacity: 1;
 	color: white;
 	text-decoration: none;
-	// margin: 0 space(2);
 	&:after {
 		content: '';
-    	height: 2px;
+    	height: 3px;
     	display: inline-block;
     	background: white;
     	opacity: 0;
     	position: absolute;
-    	bottom: 0;
+    	bottom: -4px;
     	left: 0;
     	transition: width .2s ease, opacity .1s ease;
     	width: 0;

@@ -1,0 +1,34 @@
+.offer-item {
+	display: block;
+	color: inherit;
+	text-decoration: none;
+	position: relative;
+	padding: 20px;
+	@include breakpoint(sm){  
+		padding: 40px;
+	}
+	background-color: white;
+	border-radius: 3px;
+	transition: background-color .2s ease;
+	&:hover {
+		background-color: #f4f4f4;
+	}
+}
+
+.offer-item-title {
+	margin-bottom: 15px;
+	color:  color(gray,dark);
+}
+
+.offer-item-desc {
+	margin-bottom: 30px;
+}
+
+.offer-item-cta {
+}
+
+.mozza-illustrations {
+	width: 100%;
+	max-width: 280px;
+	margin: 0 0 20px;
+}

@@ -1,3 +1,75 @@
+.usecase-item {
+	display: block;
+	color: inherit;
+	text-decoration: none;
+	border: none;
+	border-bottom-width: 10px;
+	color: white;
+	padding: 60px 0;
+	@include breakpoint(sm) {
+		border: 20px solid white;
+		padding: 120px 0;
+	}
+	.usecase-title {
+		font-size: 38px;
+		margin-bottom: 40px;	
+	}
+	img {
+		margin-bottom: 30px;
+		@include breakpoint(sm) {
+			margin-bottom: 0;
+		}
+	}
+	.usecase-brand {
+		font-family: $ff-bold;
+		font-size: 19px;
+		margin-bottom: 10px;
+		span {
+			font-family: $ff-book;
+			font-size: $fs-xs;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			opacity: 0.5;
+			margin-left: 5px;
+		}
+	}
+	.usecase-testimonial {
+		border-top: 1px solid rgba(white,0.4);
+		padding-top: 30px;
+	}
+	.usecase-testimonial-person {
+		opacity: 0.6;
+	}
+}
+
+.usecase-item.mymark { 		background-color: #311116; color: white }
+.usecase-item.pixy { 		background-color: #283AD5; color: white }
+.usecase-item.holiwin { 	
+	background-color: #00A8BB; 
+	color: white;
+	&:hover {
+		background-color: darken(#00A8BB,5); 
+	}
+}
+.usecase-item.heetch { 		
+	background-color: #190333;
+	color: white;
+	&:hover {
+		background-color: darken(#190333,5); 
+	}
+}
+.usecase-item.frichti { 	
+	background-color: #FCF093; 
+	color: color(gray,dark)!important; 
+	.usecase-testimonial {
+		border-top: 1px solid rgba(black,0.2);
+	}
+}
+.usecase-item.airbnb { 		background-color: #FC5C63; color: white }
+
+// OLD
+
+
 .usecase {
 	position: relative;
 	overflow: hidden;

@@ -1,0 +1,49 @@
+.skill-item {
+	position: relative;
+	display: block;
+	color: inherit;
+	text-decoration: none;
+	position: relative;
+	padding: 12px;
+	padding-left: 50px;
+	padding-right: 20px;
+	margin-bottom: 25px;
+	background-color: white;
+	transition: background-color .2s ease;
+	border-radius: 3px;
+	&:hover {
+		background-color: #f4f4f4;
+		.skill-item-icon {
+			padding-left: 10px;
+		}
+
+	}
+}
+
+.skill-item-icon {
+	font-family: $ff-bold;
+	color: color(gray,dark);
+}
+
+.skill-item-title {
+	font-family: $ff-bold;
+	font-size: rem(19);
+	line-height: 1.2;
+	color: color(gray,dark);
+	padding: 5px 0;
+}
+
+.skill-item-desc {
+	font-size: rem(16);
+	opacity: 0.8;
+	line-height: 1.4;
+}
+
+.skill-item-icon {
+	position: absolute;
+	top: 10px;
+	left: 0;
+	padding-left: 0;
+	width: 30px;
+	transition: padding .2s ease;
+}
