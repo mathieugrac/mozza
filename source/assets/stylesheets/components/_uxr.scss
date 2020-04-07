@@ -76,6 +76,33 @@ body.uxr {
 	}
 }
 
+.uxr-member {
+	.name {
+		font-size: rem(26);
+		margin-top: rem(20);
+		margin-bottom: rem(5);
+		// text-decoration: underline;
+	}
+	.position {
+		font-family: $ff-bold;
+		font-size: rem(14);
+		margin-bottom: rem(20);
+		text-transform: uppercase;
+		// opacity: .8;
+	}
+	.desc {
+		font-size: rem(18);
+		line-height: 1.4;
+		color: white;
+	}
+}
+
+.uxr-member.ulysse {
+	@include breakpoint(md) {
+		// padding-bottom: rem(60);
+	}
+}
+
 .uxr-about-content {
 	text-align: center;
 	@include breakpoint(md) {
@@ -84,11 +111,11 @@ body.uxr {
 }
 
 .uxr-avatar {
-	max-width: 100px;
+	max-width: 150px;
 	width: 100%;
 	height: auto;
-	padding-bottom: rem(10);
-	// margin: 0;
+	border-radius: 100%;
+	box-shadow: 0 15px 40px 0 rgba(0, 0, 0, 0.2);
 }
 
 .uxr-illustration {
@@ -104,18 +131,15 @@ body.uxr {
 	color: white;
 	text-align: center;
 	p{ color: white!important; opacity: 0.8; }
-	.wrapper {
-		// max-width: rem(800);
-		// margin: 0 auto;
-	}
 }
 
 .uxr-team {
-	background-color: #f3f3f3;
+	background-color: #1FCE6D;
+	color: white;
 }
 
 .uxr-about {
-	background-color: #ddd;
+	background-color: #eee;
 	color: white;
 	text-align: center;
 	@include breakpoint(md) {
