@@ -1,0 +1,124 @@
+body.uxr {
+	color: #1c1d1e;
+	h1 {
+		text-align: center;
+		font-size:  rem(40);
+		@include breakpoint(md) {
+			font-size: rem(54);
+		}
+	}
+	h2{
+		font-size: rem(36);
+	}
+	p {
+		color: #424648;
+	}
+	.p-large {
+  		font-size:        rem(20);
+  		@include breakpoint(md) {
+  			font-size:        rem(22);
+  		}
+	}
+}
+
+.underline {
+	text-decoration: underline;
+	font-family: $ff-bold;
+}
+
+.section-spacing {
+	padding-top: 	rem(40);
+	padding-bottom: rem(40);
+	@include breakpoint(sm) {
+		padding-top: 	rem(40);
+		padding-bottom: rem(40);
+	}
+	@include breakpoint(md) {
+		padding-top: 	rem(80);
+		padding-bottom: rem(80);
+	}
+	@include breakpoint(lg) {
+		padding-top: 	rem(80);
+		padding-bottom: rem(80);
+	}
+}
+
+.section-title {
+	position: relative;
+	text-align: center;
+	padding-bottom: rem(40);
+	@include breakpoint(sm) {
+		padding-bottom: rem(40);
+	}
+	@include breakpoint(md) {
+		top: -30px;
+	}
+	@include breakpoint(lg) {
+	}
+}
+
+.subtitle {
+	font-family: $ff-bold;
+	font-size:        rem(20);
+	opacity: .6;
+}
+
+.uxr-block {
+	padding-bottom: rem(30);
+	@include breakpoint(sm) {
+		padding-bottom: rem(30);
+		padding-left: rem(10);
+		padding-right: rem(10);
+	}
+	@include breakpoint(md) {
+	}
+	@include breakpoint(lg) {
+	}
+}
+
+.uxr-about-content {
+	text-align: center;
+	@include breakpoint(md) {
+		text-align: left;
+	}
+}
+
+.uxr-avatar {
+	max-width: 100px;
+	width: 100%;
+	height: auto;
+	padding-bottom: rem(10);
+	// margin: 0;
+}
+
+.uxr-illustration {
+	max-width: 240px;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	padding-bottom: rem(20);
+}
+
+.uxr-hero {
+	background-color: #095C55;
+	color: white;
+	text-align: center;
+	p{ color: white!important; opacity: 0.8; }
+	.wrapper {
+		// max-width: rem(800);
+		// margin: 0 auto;
+	}
+}
+
+.uxr-team {
+	background-color: #f3f3f3;
+}
+
+.uxr-about {
+	background-color: #ddd;
+	color: white;
+	text-align: center;
+	@include breakpoint(md) {
+		text-align: left;
+	}
+}

@@ -112,6 +112,11 @@ input[type="button"] {
   }
 }
 
+.btn-large {
+  font-size: rem(18);
+  padding:   space(3) space(5);
+}
+
 .btn-team a {
   display: block;
   @include breakpoint(sm) {
