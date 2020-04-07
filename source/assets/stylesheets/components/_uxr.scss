@@ -77,18 +77,18 @@ body.uxr {
 }
 
 .uxr-member {
+	margin-bottom: rem(40);
 	.name {
 		font-size: rem(26);
 		margin-top: rem(20);
-		margin-bottom: rem(5);
 		// text-decoration: underline;
 	}
 	.position {
 		font-family: $ff-bold;
 		font-size: rem(14);
-		margin-bottom: rem(20);
+		margin: rem(5) 0;
 		text-transform: uppercase;
-		// opacity: .8;
+		opacity: .9;
 	}
 	.desc {
 		font-size: rem(18);
