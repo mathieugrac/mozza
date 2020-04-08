@@ -1,7 +1,6 @@
 body.uxr {
 	color: #1c1d1e;
 	h1 {
-		text-align: center;
 		font-size:  rem(40);
 		@include breakpoint(md) {
 			font-size: rem(54);
@@ -14,10 +13,22 @@ body.uxr {
 		color: #424648;
 	}
 	.p-large {
-  		font-size:        rem(20);
+  		font-size:        rem(19);
   		@include breakpoint(md) {
-  			font-size:        rem(22);
+  			font-size:      rem(21);
+  			line-height: 	rem(34);
   		}
+	}
+	.btn-primary-green {
+		// background-color: #99DD00;
+		// background-color: #79C600;
+		background-color: #8DCA2D;
+		border-color: #8DCA2D;
+		&:hover {
+			background-color: darken(#8DCA2D,4);
+			border-color: darken(#8DCA2D,4);
+		}
+		
 	}
 }
 
@@ -88,12 +99,15 @@ body.uxr {
 		font-size: rem(14);
 		margin: rem(5) 0;
 		text-transform: uppercase;
-		opacity: .9;
+		opacity: .8;
+		// color: #388898;
 	}
 	.desc {
 		font-size: rem(18);
 		line-height: 1.4;
 		color: white;
+		opacity: .4;
+		padding-top: rem(10);
 	}
 }
 
@@ -126,15 +140,36 @@ body.uxr {
 	padding-bottom: rem(20);
 }
 
+.uxr-illu-hero {
+	position: relative;
+	// top: -40px;
+	@include breakpoint(md) {
+		position: absolute;
+		top:0;
+		right: 0;
+		width: 50%;
+	}
+}
+
 .uxr-hero {
-	background-color: #095C55;
+	background-color: #388898;
 	color: white;
 	text-align: center;
+	padding-bottom: rem(80);
 	p{ color: white!important; opacity: 0.8; }
+	@include breakpoint(md) {
+		text-align: left;
+		padding: rem(160) 0 rem(120);
+	}
 }
 
 .uxr-team {
-	background-color: #1FCE6D;
+	// background-color: #1FCE6D;
+	background-color: #343642;
+	background-image: url(../images/uxr-sky.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	// background-size: cover;
 	color: white;
 }
 
