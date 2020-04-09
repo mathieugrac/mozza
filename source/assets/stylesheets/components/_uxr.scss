@@ -30,6 +30,114 @@ body.uxr {
 		}
 		
 	}
+	.btn-primary-white {
+		color: darken(#8DCA2D,4);
+		&:hover {
+			color: darken(#8DCA2D,12);
+		}
+	}
+}
+
+.uxr-article {
+	display: block;
+	color: inherit;
+	text-decoration: none;
+	// border: 1px solid rgb(222, 222, 222);
+	// box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 3px;
+	// padding: 10px 10px 25px;
+	border-radius: 5px;
+	&:hover {
+		.uxr-article-title { text-decoration: underline; }
+	}
+	img {
+		border-radius: 4px;
+		margin-bottom: rem(20);
+	}
+	.uxr-article-title {
+		margin-bottom: rem(15);
+	}
+	.uxr-article-desc {
+		opacity: 0.5;
+		line-height: 1.2;
+		span {
+			display: inline-block;
+			padding: 0 rem(10);
+			border-left: 1px solid rgba(black,0.3);
+			&:first-child {
+				border-left: none;
+			}
+		}		
+	}
+}
+
+
+.moon {
+	position: fixed;
+	top: -80px;
+	right: 40px;
+	z-index: 2;
+	opacity: 0;
+	transition: opacity .2s ease, top .2s ease;
+	.moon-link {
+		display: block;
+		img {
+			width: 120px;
+			transition: transform .2s ease;
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+	}
+	.moon-text {
+		display: inline-block;
+		text-align: center;
+		span { font-family: $ff-bold; font-size: rem(17);}
+		font-size: rem(14);
+		line-height: 1.4;
+		color: #388898;
+		background-color: rgba(white,1);
+		padding: rem(12) rem(16);
+		border-radius: rem(3);
+	}
+}
+
+.active {
+	opacity: 1;
+	top: 40px;
+}
+
+.brand {
+	position: relative;
+	display: inline-block;
+	margin-bottom: rem(90);
+	@include breakpoint(md) {
+		margin-left: 50px;
+	}
+	@include breakpoint(lg) {
+		margin-left: 0;
+	}
+	.brand-name {
+		display: block;
+		font-family: $ff-bold;
+		font-size: rem(22);
+		// margin-left: rem(64);
+	}
+	.brand-tagline {
+		display: block;
+		font-family: $ff-bold;
+		font-size: rem(13);
+		text-transform: uppercase;
+		opacity: .7;
+		// margin-left: rem(64);
+	}
+	.brand-logo {
+		@include breakpoint(md) {
+			position: absolute;
+			width: 60px;
+			height: 60px;
+			left: -65px;
+		}
+	}
 }
 
 .underline {
@@ -133,7 +241,7 @@ body.uxr {
 }
 
 .uxr-illustration {
-	max-width: 240px;
+	max-width: 220px;
 	width: 100%;
 	height: auto;
 	margin: 0 auto;
@@ -159,7 +267,7 @@ body.uxr {
 	p{ color: white!important; opacity: 0.8; }
 	@include breakpoint(md) {
 		text-align: left;
-		padding: rem(160) 0 rem(120);
+		padding: rem(60) 0 rem(120);
 	}
 }
 

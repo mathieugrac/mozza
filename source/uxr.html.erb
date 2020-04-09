@@ -14,16 +14,27 @@
 </header> -->
 
 <main>
+<div class="moon">
+  <a class="moon-link" href=""><%= image_tag "uxr-moon.svg", { :class=>'uxr-moon' }  %></a>
+  <div class="moon-text"><span>Interested?</span><br> Click on the moon!</div>
+</div>
 <!-- HERO -->
 <section class="uxr-hero">
   <%= image_tag "uxr-illu-hero.svg", { :class=>'uxr-illu-hero' }  %>
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-lg-6">
-        <h1 class="mh4">100% Remote <br> User Research</h1>
-          <p class="p-large">Mozza is a remote adventure since Day 1 and uniquely positioned to help startups who need to test their product.<br> <span class="underline">In just 2 days</span> we will teach your team on how to conduct Usability Tests, identify opportunities & issues based on qualitative data.</p>
+        <div class="brand">
+          <%= image_tag "uxr-logo.svg", { :class=>'brand-logo' }  %>
+          <span class="brand-name">Lockdown Research</span>
+          <span class="brand-tagline">by mozza.io</span>
+        </div>
+        <h1 class="mh4">100% Remote <br> User Research.</h1>
+          <p class="p-large">
+          Lockdown presents new opportunities to learn from your users. Our team of senior user researchers will teach you how to run effective usability tests to keep improving your product in these unusual times.</p>
         <div class="mt5">
-          <a class="btn-primary-green btn-large" href="">I'm interested!</a>
+          <a class="btn-primary-green btn-large" href="">Let's Talk!</a>
+          <a class="btn-primary-white btn-large ml2" href="">Get a free session</a>
         </div>
       </div>
     </div>
@@ -35,29 +46,29 @@
     <div class="row text-center">
       <div class="col-xs-12">
         <div class="section-title">
-            <p class="subtitle" >Research Quarantine</p>
-            <h2>The 2 days program</h2>
+            <p class="subtitle" >Lockdown Research</p>
+            <h2>1-day training and ongoing coaching</h2>
         </div>
       </div>
       <div class="col-xs-12 col-md-4">
         <div class="uxr-block">
           <%= image_tag "uxr-illu-1.png", { :class=>'uxr-illustration' }  %>
           <h3 class="mb3">1. Crash Course</h3>
-          <p>Through a video call, we present user research methods and best practices + Q&A with the team.</p>
+          <p>Through a video call, we introduce you to user research methods, tools and best practices + Q&A with the team.</p>
         </div>
       </div>
       <div class="col-xs-12 col-md-4">
         <div class="uxr-block">
           <%= image_tag "uxr-illu-2.png", { :class=>'uxr-illustration' }  %>
-          <h3 class="mb3">2. Shadowed Usability</h3>
-          <p>We conduct tests with 2/3 users while a member of your team shadows the call. Then debrief and roadmap integration.</p>
+          <h3 class="mb3">2. UXR Demo</h3>
+          <p>In practice: according to your needs, we conduct together usability tests or a quantitative study with your users.</p>
         </div>
       </div>
       <div class="col-xs-12 col-md-4">
         <div class="uxr-block">
           <%= image_tag "uxr-illu-3.png", { :class=>'uxr-illustration' }  %>
           <h3 class="mb3">3. Expert Coaching</h3>
-          <p>Our advisors answer your questions and help you put together a research strategy during quarantine.</p>
+          <p>Our advisors answer your questions and help you put together a research strategy during lockdown.</p>
         </div>
       </div>
     </div>
@@ -71,7 +82,7 @@
         <h2 class="section-title">The team</h2>
       </div>
     </div>
-    <div class="row center-xs bottom-xs">
+    <div class="row center-xs bottom-xs mt4">
       <div class="col-xs-12 col-md-3">
         <div class="uxr-member">
           <%= image_tag "uxr-marine.png", { :class=>'uxr-avatar' }  %>
@@ -106,20 +117,23 @@
       <div class="col-xs-12">
         <h2 class="section-title">Check our resources</h2>
       </div>
-      <div class="col-xs-12 col-md-6">
+      <div class="col-xs-12 col-md-5 offset-md-1">
         <div class="uxr-block text-center">
-          <div class="iframely-embed">
-            <div class="iframely-responsive" style="height: 140px; padding-bottom: 0;">
-              <a href="https://medium.com/mozza-io/le-guide-de-la-user-research-en-confinement-260e46b73998" data-iframely-url="//cdn.iframe.ly/B2JGI5x?iframe=card-small"></a>
-            </div>
-          </div>
-          <script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+          <a  class="uxr-article" href="https://medium.com/mozza-io/le-guide-de-la-user-research-en-confinement-260e46b73998" target="blank">
+            <%= image_tag "uxr-case-1.jpg", { :class=>'' }  %>
+            <h3 class="uxr-article-title">Le guide de la User Research <br> en confinement</h3>
+            <p class="uxr-article-desc p-small"><span>Medium</span><span>Ulysse Sabbag</span><span>120 min</span></p>
+          </a>
         </div>
       </div>
-      <div class="col-xs-12 col-md-6">
+      <div class="col-xs-12 col-md-5">
         <div class="uxr-block text-center">
-        <div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://medium.com/mozza-io/le-guide-de-la-user-research-en-confinement-260e46b73998" data-iframely-url="//cdn.iframe.ly/B2JGI5x?iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
-      </div>
+          <a  class="uxr-article" href="https://medium.com/mozza-io/le-guide-de-la-user-research-en-confinement-260e46b73998" target="blank">
+            <%= image_tag "uxr-case-1.jpg", { :class=>'' }  %>
+            <h3 class="uxr-article-title">Le guide de la User Research <br> en confinement</h3>
+            <p class="uxr-article-desc p-small"><span>Medium</span><span>Ulysse Sabbag</span><span>8 min</span></p>
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -130,16 +144,22 @@
     <div class="row middle-md">
       <div class="col-xs-12 col-md-12">
         <div class="row text-center mh3">
-          <div class="col-xs-6 col-md-2 mb3"><%= image_tag "clients/logo-airbnb-color-2.svg", { :class=>'' }  %></div>
-          <div class="col-xs-6 col-md-2 mb3"><%= image_tag "clients/logo-blablacar-color-2.svg", { :class=>'' }  %></div>
-          <div class="col-xs-6 col-md-2 mb3"><%= image_tag "clients/logo-frichti-color-2.svg", { :class=>'' }  %></div>
-          <div class="col-xs-6 col-md-2 mb3"><%= image_tag "clients/logo-bandsintown-color-2.svg", { :class=>'' }  %></div>
-          <div class="col-xs-6 col-md-2 mb3"><%= image_tag "clients/logo-paypal-color-2.svg", { :class=>'' }  %></div>
-          <div class="col-xs-6 col-md-2 mb3"><%= image_tag "clients/logo-payfit-color-2.svg", { :class=>'' }  %></div>
+          <div class="col-xs-6 col-md-2 mb4"><%= image_tag "clients/logo-airbnb-color-2.svg", { :class=>'' }  %></div>
+          <div class="col-xs-6 col-md-2 mb4"><%= image_tag "clients/logo-google-color-2.svg", { :class=>'' }  %></div>
+          <div class="col-xs-6 col-md-2 mb4"><%= image_tag "clients/logo-paypal-color-2.svg", { :class=>'' }  %></div>
+          <div class="col-xs-6 col-md-2 mb4"><%= image_tag "clients/logo-blablacar-color-2.svg", { :class=>'' }  %></div>
+          <div class="col-xs-6 col-md-2 mb4"><%= image_tag "clients/logo-voodoo-color-2.svg", { :class=>'' }  %></div>
+          <div class="col-xs-6 col-md-2 mb4"><%= image_tag "clients/logo-qonto-color-2.svg", { :class=>'' }  %></div>
+          <div class="col-xs-6 col-md-2 mb4"><%= image_tag "clients/logo-meetic-color-2.svg", { :class=>'' }  %></div>
+          <div class="col-xs-6 col-md-2 mb4"><%= image_tag "clients/logo-aircall-color-2.svg", { :class=>'' }  %></div>
+          <div class="col-xs-6 col-md-2 mb4"><%= image_tag "clients/logo-payfit-color-2.svg", { :class=>'' }  %></div>
+          <div class="col-xs-6 col-md-2 mb4"><%= image_tag "clients/logo-frichti-color-2.svg", { :class=>'' }  %></div>
+          <div class="col-xs-6 col-md-2 mb4"><%= image_tag "clients/logo-heetch-color-2.svg", { :class=>'' }  %></div>
+          <div class="col-xs-6 col-md-2 mb4"><%= image_tag "clients/logo-bandsintown-color-2.svg", { :class=>'' }  %></div>
         </div>
       </div>
       <div class="col-xs-12 col-md-8 offset-md-2 mh4 text-center">
-        <p class="p-large">Mozza is a crew of senior product designers. We help entrepreneurs and growing startups craft amazing user experiences. <a href="" class="text-link">Learn More</a></p>
+        <p class="p-large">Mozza is a fully remote crew of senior product designers. We help entrepreneurs and growing startups craft amazing user experiences. <a href="http://mozza.io" class="text-link">Learn More</a></p>
       </div>
     </div>
   </div>
