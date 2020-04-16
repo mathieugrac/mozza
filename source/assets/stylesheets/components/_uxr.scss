@@ -103,7 +103,7 @@ body.lockdownresearch {
 	.moon-text {
 		color: white;
 		padding: 20px;
-		font-size: rem(17);
+		font-size: rem(16);
 		line-height: 1.4;
 		span { font-family: $ff-bold; }
 		@include breakpoint(md) {
@@ -124,7 +124,7 @@ body.lockdownresearch {
 .brand {
 	position: relative;
 	display: inline-block;
-	margin-bottom: rem(90);
+	margin-bottom: rem(40);
 	@include breakpoint(md) {
 		margin-left: 50px;
 	}
