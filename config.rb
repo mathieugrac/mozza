@@ -17,7 +17,7 @@
 # page "/path/to/file.html", :layout => false
 #
 # With alternative layout
-page "/uxr.html", :layout => "layout-uxr"
+page "/lockdownresearch.html", :layout => "layout-uxr"
 #
 # A path which all have the same layout
 # with_layout :admin do

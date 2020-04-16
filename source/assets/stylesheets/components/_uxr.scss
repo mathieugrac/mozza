@@ -1,4 +1,4 @@
-body.uxr {
+body.lockdownresearch {
 	color: #1c1d1e;
 	h1 {
 		font-size:  rem(40);
@@ -20,8 +20,6 @@ body.uxr {
   		}
 	}
 	.btn-primary-green {
-		// background-color: #99DD00;
-		// background-color: #79C600;
 		background-color: #8DCA2D;
 		border-color: #8DCA2D;
 		&:hover {
@@ -42,9 +40,6 @@ body.uxr {
 	display: block;
 	color: inherit;
 	text-decoration: none;
-	// border: 1px solid rgb(222, 222, 222);
-	// box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 3px;
-	// padding: 10px 10px 25px;
 	border-radius: 5px;
 	&:hover {
 		.uxr-article-title { text-decoration: underline; }
@@ -72,38 +67,58 @@ body.uxr {
 
 
 .moon {
-	position: fixed;
-	top: -80px;
-	right: 40px;
 	z-index: 2;
+	position: fixed;
+	width: 100%;
 	opacity: 0;
-	transition: opacity .2s ease, top .2s ease;
+	background-color: #388898;
+	transition: opacity .2s ease, top .2s ease, bottom .2s ease;
+	bottom: -60px;
+	left:0;
+	@include breakpoint(md) {
+		top:-60px;
+		left:0;
+		bottom: auto;
+	}
 	.moon-link {
 		display: block;
+		position: absolute;
+		bottom: -5px;
+		right: rem(10);
 		img {
-			width: 120px;
+			display: inline-block;
+			margin: 0;
+			width: 100px;
 			transition: transform .2s ease;
 			&:hover {
 				transform: scale(1.1);
 			}
 		}
+		@include breakpoint(md) {
+			top:rem(10);
+			right: rem(20);
+			bottom: auto;
+		}
 	}
 	.moon-text {
-		display: inline-block;
-		text-align: center;
-		span { font-family: $ff-bold; font-size: rem(17);}
-		font-size: rem(14);
+		color: white;
+		padding: 20px;
+		font-size: rem(17);
 		line-height: 1.4;
-		color: #388898;
-		background-color: rgba(white,1);
-		padding: rem(12) rem(16);
-		border-radius: rem(3);
+		span { font-family: $ff-bold; }
+		@include breakpoint(md) {
+			padding: rem(15) rem(20);
+		}
 	}
 }
 
 .active {
 	opacity: 1;
-	top: 40px;
+	bottom: 0;
+	@include breakpoint(md) {
+		top: 0;
+		bottom: auto;
+	}
 }
 
 .brand {
@@ -127,8 +142,15 @@ body.uxr {
 		font-family: $ff-bold;
 		font-size: rem(13);
 		text-transform: uppercase;
+		word-spacing: 2px;
 		opacity: .7;
-		// margin-left: rem(64);
+		a {
+			color: inherit;
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
 	}
 	.brand-logo {
 		@include breakpoint(md) {
@@ -196,11 +218,11 @@ body.uxr {
 }
 
 .uxr-member {
+	position: relative;
 	margin-bottom: rem(40);
 	.name {
 		font-size: rem(26);
 		margin-top: rem(20);
-		// text-decoration: underline;
 	}
 	.position {
 		font-family: $ff-bold;
@@ -208,7 +230,6 @@ body.uxr {
 		margin: rem(5) 0;
 		text-transform: uppercase;
 		opacity: .8;
-		// color: #388898;
 	}
 	.desc {
 		font-size: rem(18);
@@ -216,12 +237,6 @@ body.uxr {
 		color: white;
 		opacity: .4;
 		padding-top: rem(10);
-	}
-}
-
-.uxr-member.ulysse {
-	@include breakpoint(md) {
-		// padding-bottom: rem(60);
 	}
 }
 
@@ -237,7 +252,20 @@ body.uxr {
 	width: 100%;
 	height: auto;
 	border-radius: 100%;
-	box-shadow: 0 15px 40px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 15px 40px 0 rgba(0, 0, 0, 0.1);
+}
+.uxr-member-image {
+	position: relative;
+}
+.uxr-satelite {
+	width: rem(30);
+	height: rem(30);
+	margin: 0;
+	position: absolute;
+	border-radius: 100%;
+	border: 6px solid #343642;
+	left: 60%;
+    bottom: -6px;
 }
 
 .uxr-illustration {
