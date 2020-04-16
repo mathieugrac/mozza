@@ -4,10 +4,16 @@
 .link {
 	// font-family: $ff-bold;
 	color: color(green, medium);
-	text-decoration: none;
+	text-decoration: underline;
 	&:hover {
-		text-decoration: underline;
+		text-decoration: none;
+		opacity: .8;
 	}
+}
+
+.link-white {
+	@extend .link;
+	color: white;
 }
 
 .text-link {
