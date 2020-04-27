@@ -12,15 +12,16 @@
 	transition: background-color .2s ease;
 	border-radius: 3px;
 	&:hover {
-		background-color: #f4f4f4;
+		// background-color: #f4f4f4;
 		.skill-item-icon {
-			padding-left: 10px;
+			// padding-left: 10px;
 		}
 
 	}
 }
 
 .skill-item-icon {
+	padding-top: rem(4);
 	font-family: $ff-bold;
 	color: color(gray,dark);
 }

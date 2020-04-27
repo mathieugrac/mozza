@@ -1,15 +1,4 @@
 .hero {
-	// background-color: color(green,medium);
- //    padding-top: space(4);
- //    padding-bottom: space(4);
- //  @include breakpoint(sm){
- //    padding-top: space(4);
- //    padding-bottom: space(2);
- //  }
- //  @include breakpoint(md){
- //    padding-top: space(5);
- //    padding-bottom: space(4);
- //  }
 }
 
 .hero .description {
@@ -17,7 +6,8 @@
   		font-size: $fs-sm;
   	}
   	@include breakpoint(md){
-  		font-size: rem(22);
+  		font-size: rem(21);
+  		line-height:  1.5;
   	}
 }
 

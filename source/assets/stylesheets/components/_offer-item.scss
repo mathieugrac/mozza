@@ -5,7 +5,10 @@
 	position: relative;
 	padding: 20px;
 	@include breakpoint(sm){  
-		padding: 40px;
+		padding: 30px;
+	}
+	@include breakpoint(md){  
+		padding: 60px;
 	}
 	background-color: white;
 	border-radius: 3px;
@@ -21,6 +24,7 @@
 }
 
 .offer-item-desc {
+	font-size:        rem(20);
 	margin-bottom: 30px;
 }
 
