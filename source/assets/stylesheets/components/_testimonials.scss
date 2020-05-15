@@ -20,16 +20,16 @@
 
 	.testimonial-pic {
 		position: absolute;
-		top: 40px;
-		right: 36px;
-		width: rem(60);
-		height: rem(60);
+		top: 0;
+		left: 0;
+		width: rem(40);
+		height: rem(40);
 		overflow: auto;
 		border-radius: 50%;
 		img { display: block; }
 		@include breakpoint(sm) {  
-			top: 30px;
-			right: 26px;
+			top: 0;
+			left: 0;
 		}
 	}
 
@@ -40,6 +40,8 @@
 		line-height: 20px;
 		text-transform: uppercase;
 		letter-spacing: 1px;
+		padding-left: 60px;
+		padding-top: 10px;
 
 		.testimonial-author-position {
 			font-family: $ff-book;

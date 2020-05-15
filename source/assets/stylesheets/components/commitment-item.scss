@@ -9,6 +9,11 @@
 	&:hover {
 		// background-color: #f4f4f4;
 	}
+	img {
+		max-width: rem(80);
+		height: auto;
+		margin-bottom: rem(50);
+	}
 }
 
 .commitment-item-title {
