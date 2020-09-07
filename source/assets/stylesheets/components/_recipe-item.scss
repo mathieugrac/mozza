@@ -1,0 +1,22 @@
+.recipe {
+	margin-bottom: space(6);
+	position: relative;
+	padding-right: space(3);
+	img { display: block; }
+	a {
+		display: block;
+		position: relative;
+		transition: transform .2s ease;
+		&:hover {
+			transform: translateY(-5px);	
+		}
+		
+	}
+}
+
+.recipe-photo {
+	overflow: hidden;
+	border-radius: 3px;
+	margin-bottom: space(4);
+	box-shadow: 0 8px 40px 0 rgba(black,.1);
+}

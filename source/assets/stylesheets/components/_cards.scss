@@ -1,0 +1,158 @@
+.card {
+	z-index: 1;
+	position: relative;
+	display: block;
+	color: inherit;
+	border-radius: 3px;
+	text-decoration: none;
+	margin: (space(4)/2) 0;
+	padding: space(4);
+	@include breakpoint(sm){  padding: space(5); }
+	@include breakpoint(md){  padding: space(5); }
+	&:after {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: inherit;
+		border-radius: 3px;
+		box-shadow: 0 3px 30px rgba(0,0,0,0.12);
+		opacity: 1;
+		transition: opacity .2s, transform .2s, box-shadow .2s;
+	}
+}
+
+.card-hover {
+	&:after { opacity: 0; }
+	@include breakpoint(sm) {
+		&:hover {
+			&:after{
+				opacity: 1;
+				transform: scale(1.009);
+				z-index: -1;
+			}
+		}
+	}
+}
+
+a[class^="card"] {
+	@extend .card;
+	@extend .card-hover;
+}
+
+.card-large {
+	@extend .card;
+	@include breakpoint(sm){  padding: space(6); }
+	@include breakpoint(md){  padding: space(9); }
+}
+
+.card-medium {
+	@extend .card;
+	@include breakpoint(sm){  padding: space(5); }
+	@include breakpoint(md){  padding: space(6); }
+}
+
+.card-small {
+	@extend .card;
+	@include breakpoint(sm){  padding: space(4); }
+	@include breakpoint(md){  padding: space(5); }
+}
+
+
+
+.card-offer {
+	@extend .card;
+	@extend .card-hover;
+}
+
+.card-manifesto {
+	@extend .card-large;
+	background-color: white;
+	color: color(gray,black);
+	margin-bottom: 0;
+	.wrapper {
+		max-width: 100%;
+		margin: 0 auto;
+		@include breakpoint(sm){  max-width: 100%; }
+		@include breakpoint(md){  max-width: 80%; }
+	}
+}
+
+.card-commitment {
+	@extend .card;
+	padding: space(3);
+	@include breakpoint(sm){  padding: space(3); }
+	@include breakpoint(md){  padding: space(5); }
+	&:after {
+		box-shadow: none;
+	}
+}
+
+.card-competence {
+	@extend .card;
+	@extend .card-hover;
+	padding: 0;
+	margin-bottom: space(5);
+	@include breakpoint(sm){  
+		padding: space(4); 
+		margin-bottom: space(3);
+	}
+	.icon {
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include breakpoint(sm) {
+			position: relative;
+		}
+	}
+	h4 {
+		margin-bottom: 0;
+		margin-left: rem(60);
+		@include breakpoint(sm) {
+			/*margin-bottom: space(1);*/
+			margin-left: 0;
+		}
+	}
+	p {
+		margin-bottom: 0;
+		margin-left: rem(60);
+		@include breakpoint(sm) {
+			margin-left: 0;
+			margin-bottom: space(1);
+		}
+	}
+}
+
+.card-member {
+	@extend .card;
+	color: color(gray,black);
+	background-color: white;
+	.h6 { margin-bottom: 0; }
+	margin-bottom: rem(12);
+	margin-top: rem(12);
+	@include breakpoint(md){  min-height: rem(350); }
+}
+
+.card-contact-us,
+.card-join-us {
+	position: relative;
+	color: white;
+	border-radius: 3px;
+	text-decoration: none;
+	padding: space(4);
+	@include breakpoint(sm){  padding: space(5); }
+	@include breakpoint(md){  padding: space(6); }
+	box-shadow: 0 3px 30px rgba(0,0,0,0.12);
+	transition: opacity .2s, transform .2s, box-shadow .2s;
+	text-align: center;
+	@include breakpoint(md) {
+		text-align: left;
+	}
+	background-image: url('/assets/images/illustrations/bg-leaves.svg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}

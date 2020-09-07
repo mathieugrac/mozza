@@ -1,0 +1,233 @@
+.project-section {
+	@extend .section-first;
+	background-size: cover;
+	background-repeat: none;
+}
+.project-hero {
+	position: relative;
+	/*background-color: rgba(black,0.02);*/
+	min-width: rem(800);
+	height: rem(520);
+    transform: translate(-50%, 0);
+    margin-left: 50%;
+    margin-bottom: rem(24);
+    @include breakpoint(md) {
+    	transform: none;
+    	margin-left: 0;
+    	margin-bottom: 0;
+    	height: rem(640);
+    }
+}
+
+.hero-img {
+	position: absolute;
+	img { 
+		position: relative;
+		width: auto;
+		height: auto;
+	}
+}
+
+/*FRICHTI*/
+
+.hero-frichti-parsley {
+	top: 25%;
+	left: -10%;
+	opacity: 60%;
+}
+.hero-frichti-oignons {
+	bottom: 5%;
+	left: 75%;
+	opacity: 70%;
+}
+.hero-frichti-garlic {
+	top: 15%;
+	left: 4%;
+}
+.hero-frichti-mushrooms {
+	top: 6%;
+	left: 60%;
+	opacity: 80%;
+}
+.hero-frichti-card-1 {
+	top: 10%;
+	left: 20%;
+	z-index: 4;
+}
+.hero-frichti-avocado {
+	top: 54%;
+	left: 22%;
+	z-index: 5;
+}
+.hero-frichti-card-2 {
+	top: 25%;
+	left: 55%;
+	z-index: 5;
+}
+.hero-frichti-lime {
+	top: 30%;
+	left: 45%;
+	z-index: 4;
+}
+
+/*BANDSINTOWN*/
+
+
+.hero-bit-radiohead {
+	z-index: 4;
+	img { transform: translate(-50%,-50%); }
+	top: 61.5%;
+	left: 25%;
+	@include breakpoint(md) {
+		top: 60%;
+		left: 19%;
+	}
+}
+
+.hero-bit-drake {
+	z-index: 7;
+	img { transform: translate(-50%,-50%); }
+	top: 35%;
+	left: 60%;
+	@include breakpoint(md) {
+		top: 35%;
+		left: 65%;
+	}
+}
+
+.hero-bit-ariana {
+	z-index: 4;
+	img { transform: translate(-50%,-50%); }
+	top: 42%;
+	left: 84%;
+	@include breakpoint(md) {
+		top: 45%;
+		left: 78%;
+	}
+}
+.hero-bit-campaign {
+	z-index: 3;
+	img { transform: translate(-50%,-50%); }
+	top: 50%;
+	left: 50%;
+	@include breakpoint(md) {
+		top: 45%;
+		left: 45%;
+	}
+}
+.hero-bit-audience {
+	z-index: 8;
+	img { transform: translate(-50%,-50%); }
+	top: 80%;
+	left: 80%;
+	@include breakpoint(md) {
+		top: 70%;
+		left: 66%;
+	}
+}
+
+.bandsintown-audit {
+	@include breakpoint(md) {
+		width: 200%;
+	}
+	@include breakpoint(lg) {
+		width: 130%;
+	}
+}
+
+.bandsintown-rapper {
+	position: absolute;
+	right: -40px;
+	bottom: 0;
+	width: 50%;
+	@include breakpoint(sm) {
+	}
+	@include breakpoint(md) {
+		right: -60px;
+		width: 75%;
+	}
+	@include breakpoint(lg) {
+		width: 60%;
+		bottom: -80px;
+	}
+}
+
+.bandsintown-step {
+	.step {
+		opacity: 1;
+		margin: space(3) 0;
+		@include breakpoint(lg) {
+			opacity: .6;
+			margin-bottom: rem(60);
+			margin-top: space(7);
+		}
+	}
+}
+
+.bandsintown-step-3 {
+	z-index: 10;
+	.step {
+		@include breakpoint(lg) {
+			box-shadow: 0 3px 20px rgba(black, .3);
+			transform: scale(1.25);
+			opacity: 1;
+		}
+	}
+	@include breakpoint(sm) {
+	}
+}
+
+.bandsintown-arrow {
+	display: none;
+	@include breakpoint(lg) {
+		display: block;
+		opacity: 1;
+		width: rem(70);
+		top: 220px;
+		right: 40px;
+		height: auto;
+		position: absolute;
+	}
+	@include breakpoint(lg) {
+	}
+}
+
+.bandsintown-europe {
+	display: none;
+	position: absolute;
+    width: auto;
+    left: 0;
+    top: 50%;
+    @include breakpoint(sm) {
+    	display: block;
+    	max-height: 320px;	
+    	transform: translate(-50%,-50%);
+    }
+    @include breakpoint(md) {
+    	max-height: 380px;
+    	transform: translate(-30%,-50%);
+    }
+    @include breakpoint(lg) {
+    	transform: translate(-15%,-50%);
+    }
+}
+
+.bandsintown-us {
+	display: none;
+	position: absolute;
+    width: auto;
+    right: 0;
+    top: 50%;
+    @include breakpoint(sm) {
+    	display: block;
+    	max-height: 320px;
+    	transform: translate(50%,-50%);
+    }
+    @include breakpoint(md) {
+    	max-height: 380px;
+    	transform: translate(30%,-50%);
+    }
+    @include breakpoint(lg) {
+    	transform: translate(15%,-50%);
+    }
+}

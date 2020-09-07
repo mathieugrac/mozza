@@ -1,9 +1,9 @@
 .text-left {
-  text-align: left;
+  text-align: left !important;
 }
 
 .text-right {
-  text-align: right;
+  text-align: right !important;
 }
 
 .text-center {
@@ -14,8 +14,4 @@
 
 .text-justify {
   text-align: justify;
-}
-
-.text-middle {
-	vertical-align: middle;
 }

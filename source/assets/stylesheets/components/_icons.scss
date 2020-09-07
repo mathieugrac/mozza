@@ -1,0 +1,54 @@
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 0;
+  transition: transform ease .2s, opacity ease .2s, color ease .2s;
+}
+
+.icon > svg {
+  width: rem(32);
+  height: rem(32);
+}
+
+.icon-xs > svg {
+  width: rem(16);
+  height: rem(16);
+}
+
+.icon-sm > svg {
+  width: rem(24);
+  height: rem(24);
+}
+
+.icon-md > svg {
+  width: rem(40);
+  height: rem(40);
+}
+
+.icon-lg > svg {
+  width: rem(60);
+  height: rem(60);
+}
+
+.icon-xl > svg {
+  width: rem(72);
+  height: rem(72);
+}
+
+.icon-white {
+  svg path {
+    fill: #fff;
+  }
+}
+
+.icon-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: rem(20);
+  border-radius: 50%;
+  background-color: #ccc;
+  > svg path {
+    fill: white;
+  }
+}

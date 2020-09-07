@@ -1,0 +1,32 @@
+.card-testimonial {
+	@extend .card;
+	@extend .card-medium;
+	background-color: white;
+	.testimonial-quote {
+		@extend .p-lg;
+		@include breakpoint(md) {
+			margin-bottom: space(5);
+		}
+	}
+	.testimonial-name {
+		@include breakpoint(sm) {
+			line-height: 1;
+			p { display: inline;}
+		}
+	}
+}
+
+.testimonial-1, .testimonial-2 {
+	@include breakpoint(md) { min-height: rem(230); }
+	@include breakpoint(lg) { min-height: rem(200); }
+}
+
+.testimonial-3, .testimonial-4 {
+	@include breakpoint(md) { min-height: rem(310); }
+	@include breakpoint(lg) { min-height: rem(200); }
+}
+
+.testimonial-5, .testimonial-6 {
+	@include breakpoint(md) { min-height: rem(280); }
+	@include breakpoint(lg) { min-height: rem(224); }
+}

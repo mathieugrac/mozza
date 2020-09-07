@@ -1,0 +1,117 @@
+/* Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@mixin btn() {
+  cursor:            pointer;
+  box-sizing:        border-box; 
+  display:           inline-block;
+  text-align:        center;
+  text-decoration:   none;
+  white-space:       nowrap;
+  vertical-align:    middle;
+  border:            1px solid transparent;
+  user-select:       none;
+  -webkit-appearance: none;
+  -moz-appearance:    none;
+  appearance:         none;
+  
+  //Base-style
+  font-family:       $ff-bd;
+  font-size: 		     $fs-df;
+  line-height:       $lh-df;
+  font-weight:       normal;
+  // @extend 			 .uppercase;
+  word-spacing:      rem(2);
+  border-radius:     rem(4);
+  padding: 			     space(2) space(6);
+  border: 			     3px solid transparent;
+  transition:        color ease .2s, background-color ease .2s, border-color ease .2s;
+  
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    text-decoration: none;
+    outline:         0;
+  }
+
+  &:disabled,
+  &.disabled {
+    cursor:          none;
+    opacity:         .65;
+    box-shadow:      0;
+  }
+
+}
+
+.btn, button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+	@include btn();
+}
+
+.btn-primary {
+  @include btn();
+  color: white;
+  border-color: color(green,medium);
+  background-color: color(green,medium);
+  &:hover {
+    background-color: lighten(color(green,medium), 4);
+    border-color: lighten(color(green,medium), 4);
+  }
+}
+
+.btn-primary-white {
+  @include btn();
+  color: color(gray,dark);
+  border-color: white;
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  &:hover {
+    background-color: darken(white, 3);
+    border-color: darken(white, 3);
+    color: color(gray,black);
+    box-shadow: none;
+  }
+}
+
+.btn-primary-black {
+  @include btn();
+  color: #fff;
+  border-color: color(gray,black);
+  background-color: color(gray,black);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  &:hover {
+    background-color: darken(color(gray,black), 3);
+    border-color: darken(color(gray,black), 3);
+    color: #f0f0f0;
+    box-shadow: none;
+  }
+}
+
+.btn-large {
+	font-size: 	 $fs-df;
+	line-height: $lh-lg;
+	padding: 	 space(3) space(5);
+}
+
+.btn-small {
+	font-size: 	   $fs-sm;
+	line-height:   rem(24);
+	padding: 	     space(2) space(4);
+}
+
+.btn-disabled {
+  cursor: default !important;
+  box-shadow: none;
+  color: rgba(white,.5);
+  border-color: rgba(white,.5);
+  background-color: transparent;
+   &:hover {
+    color: rgba(white,.5);
+    border-color: rgba(white,.5);
+    background-color: transparent;
+    box-shadow: none;
+  }
+}

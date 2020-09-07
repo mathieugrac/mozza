@@ -1,0 +1,13 @@
+html, body {
+	overflow-x: hidden !important;
+}
+
+body {
+  font-family: $ff-df;
+  font-size: $fs-df;
+  line-height: $lh-df;
+  color : color(gray,black);
+  background-color: white;
+  -webkit-overflow-scrolling:  touch;
+  -webkit-font-smoothing:      antialiased;
+}

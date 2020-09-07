@@ -1,32 +1,99 @@
 .footer {
-	color: white;	
-}
+	/*padding: space(6) 0;
+	@include breakpoint(md) {
+		padding: space(8) 0;
+	}*/
+	.container { position: relative; }
+	.wrapper { 
+		margin: space(1) 0 space(1) 0; 
+		@include breakpoint(md) {
+			margin: space(1) 0 space(1) space(8); 
+		}
+	}
 
-.footer-newsletter {
-	background-color: #1C1D1E;	
-	padding: rem(90) 0 rem(20);
-}
-
-.footer-navigation {
-	background-color: #1C1D1E;
-	padding: rem(30) 0 rem(120);
-}
-
-.mozza-wrapper {
-	width: 80px;
-	margin: 0 auto;
-	@include breakpoint(md){
-		display: inline-block;
-		vertical-align: middle;
+	#mozzarella {
+		position: absolute;
+		top: 0;
+		right: 0;
+		@include breakpoint(md) {
+			right: none;
+			left: 0;
+		}
 	}
 }
 
-.infos-wrapper {
+.footer-bottom {
+	@include breakpoint(sm) {
+		padding-top: space(6);
+	}
+	@include breakpoint(md) {
+		padding-top: space(7);
+	}
+	@include breakpoint(lg) {
+		padding-top: space(8);
+	}
+}
+
+.footer-nav li {
+	display: block;
+	vertical-align: middle;
+	margin: 0;
 	text-align: center;
-	@include breakpoint(md){
+	@include breakpoint(sm){
 		text-align: left;
+	}
+	@include breakpoint(md){
 		display: inline-block;
-		vertical-align: middle;
+		&:first-child { margin-left: 0; }
+		&:last-child { margin-right: 0; }
+	}
+	&:last-child {
+		position: relative;
+		top: 1px;
+		margin-top: space(3);
+		@include breakpoint(md){
+			margin-top: 0;
+		}
+	}
+	.nav-link {
+		@include breakpoint(lg){
+			&:first-child{
+				padding-left: 0;
+			};
+		}
+	}
+}
+
+.footer-social {
+	position: relative;
+  	display: flex;
+  	flex-direction: row;
+  	flex-wrap: wrap;
+  	justify-content: space-evenly;
+  	align-items: flex-start;
+  	align-content: flex-start;
+  	padding: space(5) 0;
+  	@include breakpoint(sm){
+  		display: block;
+  		padding: 0;
+  		top: -6px;
+  	}
+  	@include breakpoint(md){
+  		top: 0;
+  	}
+}
+
+.footer-social li {
+	display: inline-block;
+	margin: 0 rem(10);
+	&:first-child { margin-left: 0; }
+	&:last-child { margin-right: 0; }
+	@include breakpoint(sm) {
+		/*display: block;*/
+	}
+	.nav-link {
+		padding-right: 0;
+		padding-left: 0;
 	}
 }
 
@@ -38,20 +105,11 @@
 	}
 	@include breakpoint(sm){
 		display: flex;
-		padding: 0 rem(40);
+		/*padding: 0 rem(40);*/
+		padding: 0;
 	}
 	@include breakpoint(md){
 		margin-top: 0;
 		padding: 0;
-	}
-}
-
-.copyrights {
-	position: relative;
-	top: 3px;
-	// text-align: center;
-	@include breakpoint(md){
-		text-align: left;
-		margin-top: rem(10);
 	}
 }

@@ -1,0 +1,267 @@
+.navbar {
+	position: relative;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: transparent;
+	padding: rem(20) 0;
+	.navbar-wrap { position: relative; }
+	.navbar-cta {
+		display: none;
+		@extend .btn-small;
+		@include breakpoint(md) {
+			display: block;
+			position: absolute;
+			top:0;
+			right:0;
+		}
+	}
+}
+
+.navbar--white {
+	color: white;
+	.navbar-brand, 
+	.navbar-toggle, 
+	.navbar-nav { 
+		color: white; 
+	}
+	.navbar-cta {
+		@extend .btn-primary-white;
+	}
+}
+
+.navbar--black {
+	color: color(gray,black);
+	.navbar-brand, 
+	.navbar-toggle, 
+	.navbar-nav { 
+		color: color(gray,black); 
+	}
+	.navbar-cta {
+		@extend .btn-primary-black;
+	}
+}
+
+.navbar-fixed { position: fixed; }
+.navbar-absolute { position: absolute; }
+.navbar-transparent {
+	background-color: transparent;
+	color: white;	
+}
+
+.navbar-brand {
+	display: inline-block;
+	@include breakpoint(md) {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+
+.navbar-toggle {
+  position: absolute;
+  top:0;
+  right:0;
+  outline: 0;
+  display: inline-block;
+  cursor: pointer;
+  padding: rem(6);
+  border-radius: 50%;
+  background-color: transparent;
+  &:hover {
+  	background-color: rgba(color(gray,black),.05);
+  }
+  border: 1px solid transparent;
+  line-height: 0;
+  .toggle-close { display: none; }
+  @include breakpoint(md) {
+  	display: none;
+  }
+  .icon svg path {
+  	fill: white;
+  }
+}
+
+.navbar-nav {
+  	display: none;
+  	margin: rem(60) 0 rem(30);
+  	@include breakpoint(md) {
+  		margin: 0;
+  		display: flex;
+  		flex-direction: horizontal;
+  		justify-content: center;
+  		align-items: center;
+  	}
+}
+
+.nav-link {
+	position: relative;
+	display: block;
+	vertical-align: middle;
+	text-decoration: none;
+	font-size: rem(21);
+	line-height: rem(32);
+	padding: space(3) 0;
+	@include breakpoint(md) {
+		display: inline-block;
+		font-size: rem(18);
+		padding: 0;
+		padding: rem(7) rem(18);
+	}
+	&:hover, &:focus, &:active {
+		opacity: .8;
+		&:before {
+			opacity: 1;
+			width: 100%;
+		}
+	}
+}
+
+/*.menu-special {
+
+	padding: 0!important;
+	overflow: hidden;
+	@include breakpoint(md) {
+		left: -60px;
+	}
+
+	.illu-menu {
+		display: none;
+	}
+	@include breakpoint(md) {
+		.illu-menu {
+			display: block;
+			padding: space(1) 0 space(2);
+			height: rem(80);
+			width: auto;
+		}
+		width: 580px;
+		height: auto;
+		.dropdown-item {
+			display: inline-flex;
+			white-space: normal;
+			width: 50%;
+			height: 100%;
+			.wrapper {
+				padding: rem(24);
+			}
+		}
+		.nav-link{
+			font-size: rem(21);
+		}
+
+	}
+}*/
+
+.dropdown-menu {
+	border-radius: 3px;	
+	border: none;
+	background-color: transparent;
+	padding: 0;
+	margin: 0;
+	@include breakpoint(md) {
+		background-color: white;
+		padding: 10px 0;
+		box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+		width: rem(260);
+	}
+}
+
+.dropdown-item {
+    width: auto;
+    padding: 0;
+    white-space: normal;
+    transition: background-color ease .2s;
+    &:hover, &:focus, &:active {
+    	@include breakpoint(md) {
+    		background-color: #f0f0f0;
+    	}
+    	.nav-link { color: black; }
+    	.p-xs { color: black; }
+    }
+    @include breakpoint(md) {
+    	/*white-space: nowrap;*/
+    }
+	.wrapper {
+		@include breakpoint(md) {
+			padding: 10px 20px;
+    		margin: 0;
+		}
+	}
+	.nav-link {
+		&:hover {
+			color: white;
+			opacity: .6;
+			@include breakpoint(md) {
+				color: black;
+				opacity: 1;
+			}
+		}
+		@include breakpoint(md) {
+			padding: 0;
+			line-height: rem(20);
+			margin-bottom: space(1);
+		}
+	}
+	.p-xs {
+		opacity: 0.7;
+		padding-bottom: rem(4);
+	}
+}
+
+// ON BODY TO OPEN MENU
+
+.navbar-is-open {
+	overflow-y: hidden;
+
+	.navbar {
+		position: fixed;
+		z-index: 10;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		background-color: color(green,medium);
+		color: white;
+		.navbar-brand, .navbar-toggle, .navbar-nav { color: white; }
+		.dropdown-menu { color: white; }
+		.dropdown-item { color: white; }
+		.navbar-cta {
+			@extend .btn-primary-white;
+			display: block;
+		}
+	}
+
+	.navbar-toggle {
+		.toggle-close { display: inline-block; }
+		.toggle-menu { display: none; }
+	}
+
+	.navbar-nav, .navbar-cta {
+		display: block;
+	}
+
+	.dropdown-item {
+		.p-xs { display: none; }
+	}
+
+	.nav-item.dropdown {
+		
+		.dropdown-toggle {
+			pointer-events: none;
+			text-decoration: none;
+			@extend .h5;
+			display: none;
+			&:after {
+				display: none;
+			}
+		}
+
+		.dropdown-menu {
+			display: block;
+			position: relative;
+    		float: none;
+		}
+	}
+}

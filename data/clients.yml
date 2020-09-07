@@ -1,0 +1,322 @@
+airbnb:
+  name:             Airbnb
+  desc:             150M users
+  logo:
+    long_color:     airbnb-long-color.svg
+    long_black:     airbnb-long-black.svg
+    long_white:     airbnb-long-white.svg
+    short_color:    airbnb-short-color.svg
+    short_black:    airbnb-short-black.svg
+    short_white:    airbnb-short-white.svg
+  testimonial:
+    first_name:     Felix
+    last_name:      Malfait
+    position:       Product at Airbnb
+    pic:            felix-malfait.jpg
+    quote:          In less than 24h we were working with a designer that delivered a world-class service.
+  
+google:
+  name:             Google
+  desc: 
+  logo:
+    long_color:     google-long-color.svg
+    long_black:     google-long-black.svg
+    long_white:     google-long-white.svg
+    short_color:    google-short-color.svg
+    short_black:    google-short-black.svg
+    short_white:    google-short-white.svg
+  testimonial:
+    first_name:     Quentin
+    last_name:      Vacher
+    position:       CEO of Frichti
+    pic:            quentin-vacher.jpg
+    quote:          The Mozza team knew how to understand our issues very quickly and propose ambitious, consumer centric, disruptive and pragmatic solutions.
+
+paypal:
+  name:             Paypal
+  desc:             250M users
+  logo:
+    long_color:     paypal-long-color.svg
+    long_black:     paypal-long-black.svg
+    long_white:     paypal-long-white.svg
+    short_color:    paypal-short-color.svg
+    short_black:    paypal-short-black.svg
+    short_white:    paypal-short-white.svg
+  testimonial:
+    first_name:     Quentin
+    last_name:      Vacher
+    position:       CEO of Frichti
+    pic:            quentin-vacher.jpg
+    quote:          The Mozza team knew how to understand our issues very quickly and propose ambitious, consumer centric, disruptive and pragmatic solutions.
+
+frichti:
+  name:             Frichti
+  desc:             …
+  logo:
+    long_color:     frichti-long-color.svg
+    long_black:     frichti-long-black.svg
+    long_white:     frichti-long-white.svg
+    short_color:    frichti-short-color.svg
+    short_black:    frichti-short-black.svg
+    short_white:    frichti-short-white.svg
+  testimonial:
+    first_name:     Quentin
+    last_name:      Vacher
+    position:       CEO of Frichti
+    pic:            quentin-vacher.jpg
+    quote:          The Mozza team knew how to understand our issues very quickly and propose ambitious, consumer centric, disruptive and pragmatic solutions.
+
+heetch:
+  name:             Heetch
+  desc:             …
+  logo:
+    long_color:     heetch-long-color.svg
+    long_black:     heetch-long-black.svg
+    long_white:     heetch-long-white.svg
+    short_color:    heetch-short-color.svg
+    short_black:    heetch-short-black.svg
+    short_white:    heetch-short-white.svg
+  testimonial:
+    first_name:     …
+    last_name:      …
+    position:       …
+    pic:            …
+    quote:          …
+
+bandsintown:
+  name:             Bandsintown
+  desc: 
+  logo:
+    long_color:     bandsintown-long-color.svg
+    long_black:     bandsintown-long-black.svg
+    long_white:     bandsintown-long-white.svg
+    short_color:    bandsintown-short-color.svg
+    short_black:    bandsintown-short-black.svg
+    short_white:    bandsintown-short-white.svg
+  testimonial:
+    first_name:     Guillaume
+    last_name:      de la Serre
+    position:       CPO of Bandsintown
+    pic:            guillaume.jpg
+    quote:          We hired Mozza on several projects at Bandsintown and were impressed by their ability to provide elegant design solutions to complex user problems. Their fresh eyes have proven to be very valuable too.
+
+mymark:
+  name:             MyMark
+  desc:             … 
+  logo:
+    long_color:     mymark-long-color.svg
+    long_black:     mymark-long-black.svg
+    long_white:     mymark-long-white.svg
+    short_color:    mymark-short-color.svg
+    short_black:    mymark-short-black.svg
+    short_white:    mymark-short-white.svg
+  testimonial:
+    first_name:     Yannick
+    last_name:      Namia
+    position:       Cofounder of MyMark.us
+    pic:            yannick.jpg
+    quote:          "Mozza understands what it means to be a startup, at every level: flexibility, price, involvement. They did this extra-mile to make the app better."
+
+blablacar:
+  name:             BlaBlaCar
+  desc:             …
+  logo:
+    long_color:     blablacar-long-color.svg
+    long_black:     blablacar-long-black.svg
+    long_white:     blablacar-long-white.svg
+    short_color:    blablacar-short-color.svg
+    short_black:    blablacar-short-black.svg
+    short_white:    blablacar-short-white.svg
+  testimonial:
+    first_name:     …
+    last_name:      …
+    position:       …
+    pic:            …
+    quote:          …
+
+voodoo:
+  name:             Voodoo
+  desc:             …
+  logo:
+    long_color:     voodoo-long-color.svg
+    long_black:     voodoo-long-black.svg
+    long_white:     voodoo-long-white.svg
+    short_color:    voodoo-short-color.svg
+    short_black:    voodoo-short-black.svg
+    short_white:    voodoo-short-white.svg
+  testimonial:
+    first_name:     …
+    last_name:      …
+    position:       …
+    pic:            …
+    quote:          …
+
+qonto:
+  name:             Qonto
+  desc:             …
+  logo:
+    long_color:     qonto-long-color.svg
+    long_black:     qonto-long-black.svg
+    long_white:     qonto-long-white.svg
+    short_color:    qonto-short-color.svg
+    short_black:    qonto-short-black.svg
+    short_white:    qonto-short-white.svg
+  testimonial:
+    first_name:     …
+    last_name:      …
+    position:       …
+    pic:            …
+    quote:          …
+
+meetic:
+  name:             Meetic
+  desc:             …
+  logo:
+    long_color:     meetic-long-color.svg
+    long_black:     meetic-long-black.svg
+    long_white:     meetic-long-white.svg
+    short_color:    meetic-short-color.svg
+    short_black:    meetic-short-black.svg
+    short_white:    meetic-short-white.svg
+  testimonial:
+    first_name:     …
+    last_name:      …
+    position:       …
+    pic:            …
+    quote:          …
+
+aircall:
+  name:             Aircall
+  desc:             …
+  logo:
+    long_color:     aircall-long-color.svg
+    long_black:     aircall-long-black.svg
+    long_white:     aircall-long-white.svg
+    short_color:    aircall-short-color.svg
+    short_black:    aircall-short-black.svg
+    short_white:    aircall-short-white.svg
+  testimonial:
+    first_name:     …
+    last_name:      …
+    position:       …
+    pic:            …
+    quote:          …
+
+payfit:
+  name:             Payfit
+  desc:             …
+  logo:
+    long_color:     payfit-long-color.svg
+    long_black:     payfit-long-black.svg
+    long_white:     payfit-long-white.svg
+    short_color:    payfit-short-color.svg
+    short_black:    payfit-short-black.svg
+    short_white:    payfit-short-white.svg
+  testimonial:
+    first_name:     …
+    last_name:      …
+    position:       …
+    pic:            …
+    quote:          …
+
+uber:
+  name:             Uber
+  desc:             …
+  logo:
+    long_color:     uber-long-color.svg
+    long_black:     uber-long-black.svg
+    long_white:     uber-long-white.svg
+    short_color:    uber-short-color.svg
+    short_black:    uber-short-black.svg
+    short_white:    uber-short-white.svg
+  testimonial:
+    first_name:     Jonathan
+    last_name:      Pepin
+    position:       Growth at Uber
+    pic:            jonathan.jpg
+    quote:          Mozza gathers some of the best Product Growth experts in Europe.
+
+zenly:
+  name:             Zenly
+  desc:             …
+  logo:
+    long_color:     zenly-long-color.svg
+    long_black:     zenly-long-black.svg
+    long_white:     zenly-long-white.svg
+    short_color:    zenly-short-color.svg
+    short_black:    zenly-short-black.svg
+    short_white:    zenly-short-white.svg
+  testimonial:
+    first_name:     Antoine
+    last_name:      Martin
+    position:       CEO of Zenly
+    pic:            antoine.jpg
+    quote:          Pretty impressed by Maxime’s ability to form a relevant product strategy out of some intuitions we had!
+
+deezer:
+  name:             Deezer
+  desc:             …
+  logo:
+    long_color:     deezer-long-color.svg
+    long_black:     deezer-long-black.svg
+    long_white:     deezer-long-white.svg
+    short_color:    deezer-short-color.svg
+    short_black:    deezer-short-black.svg
+    short_white:    deezer-short-white.svg
+  testimonial:
+    first_name:     Alexandre
+    last_name:      Jubien
+    position:       Head of mobile at Deezer
+    pic:            alexandre.jpg
+    quote:          Regarding growth strategies of mobile apps, I think Adrien is among the best experts in Europe.
+
+ditto:
+  name:             Ditto Bank
+  desc:             …
+  logo:
+    long_color:     airbnb-long-color.svg
+    long_black:     airbnb-long-black.svg
+    long_white:     airbnb-long-white.svg
+    short_color:    airbnb-short-color.svg
+    short_black:    airbnb-short-black.svg
+    short_white:    airbnb-short-white.svg
+  testimonial:
+    first_name:     …
+    last_name:      …
+    position:       …
+    pic:            …
+    quote:          …
+
+privateaser:
+  name:             Privateaser
+  desc:             …
+  logo:
+    long_color:     airbnb-long-color.svg
+    long_black:     airbnb-long-black.svg
+    long_white:     airbnb-long-white.svg
+    short_color:    airbnb-short-color.svg
+    short_black:    airbnb-short-black.svg
+    short_white:    airbnb-short-white.svg
+  testimonial:
+    first_name:     …
+    last_name:      …
+    position:       …
+    pic:            …
+    quote:          …
+
+tbc:
+  name:             The Brand Collector
+  desc:             …
+  logo:
+    long_color:     airbnb-long-color.svg
+    long_black:     airbnb-long-black.svg
+    long_white:     airbnb-long-white.svg
+    short_color:    airbnb-short-color.svg
+    short_black:    airbnb-short-black.svg
+    short_white:    airbnb-short-white.svg
+  testimonial:
+    first_name:     …
+    last_name:      …
+    position:       …
+    pic:            …
+    quote:          …

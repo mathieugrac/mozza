@@ -1,0 +1,113 @@
+.project-item {
+
+	overflow: hidden;
+	position: relative;
+	color: white;
+	z-index: 1;
+	display: block;
+	border-radius: 3px;
+	text-decoration: none;
+	height: auto;
+	margin-bottom: space(4);
+
+	@include breakpoint(md) { height: rem(520); }
+	@include breakpoint(lg) { height: rem(580); }
+
+	.h2 { margin-bottom: space(3); }
+
+	.project-client {
+		
+		margin: space(3) 0;
+		@include breakpoint(md) {
+			margin: 0 !important;
+		}
+
+		.project-client-logo {
+			position: relative;
+			margin-right: space(1);
+			@include breakpoint(md) {
+				left: -5px;
+				svg {
+  					width: rem(60);
+  					height: rem(60);
+				}
+			}
+		}
+		.project-client-name {
+			@extend .p-lg;
+			display: inline;
+			margin: 0;
+			vertical-align: middle;
+			@include breakpoint(md) {
+				display: block;
+				margin-top: space(6);
+				margin-bottom: space(2) !important;
+			}
+		}
+
+	}
+
+	.btn-primary-white {
+		@include breakpoint(md) {
+			display: inline-block;
+		}
+	}
+
+	.project-content {
+		position: relative;
+		z-index: 2;
+		.wrapper {
+			padding: rem(24) rem(24) 0 rem(24);
+			box-sizing: border-box;
+			height: 100%;
+			@include breakpoint(sm) {
+				padding: rem(32) rem(32) 0 rem(32);
+			}
+			@include breakpoint(md) {
+				padding: rem(60) 0 rem(60) rem(60);
+			}
+		}
+	
+		@include breakpoint(md) {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			max-width: rem(430);
+		}
+	}
+
+	.project-illustration {
+		position: relative;
+		display: block;
+		z-index: 1;
+		width: 100%;
+		height: rem(280);
+		background-repeat: no-repeat;
+		background-position: right top;
+		background-size: cover;
+		@include breakpoint(sm) {
+			height: rem(320);
+		}
+		@include breakpoint(md) {
+			width: 60%;
+			height: 100%;
+			margin-left: 40%;
+			background-position: left bottom;
+		}
+	}
+
+	.comming-soon {
+    	position: absolute;
+    	top: 0px;
+    	right: 24px;
+    	transform: rotate(12deg);
+    	@include breakpoint(md) {
+    		position: relative;
+    		top: auto;
+    		right: auto;
+    		transform: none;
+    	}
+	}
+}

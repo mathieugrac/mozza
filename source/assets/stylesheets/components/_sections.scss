@@ -1,126 +1,93 @@
-section {
-	// padding: 20px;
+[class^="section"] {
+	position: relative;
+	padding: space(6) 0;
 }
 
-section.bg-gray,
-section.clients,
-section.testimonials {
-	background-color: #f4f4f4;
+.section-small, .section-sm {
+	@include breakpoint(md) {
+		padding: space(6) 0;
+	}
 }
 
-section.bg-green,
-section.manifesto {
-	background-color: color(green,medium);
-	color: white !important;
+.section {
+	padding: space(6) 0;
+	@include breakpoint(md) {
+		padding: space(8) 0;
+	}
 }
 
-section.offers,
-section.commitments {
-	background-color: white;
+.section-large, .section-lg {
+	padding: space(7) 0;
+	@include breakpoint(md) {
+		padding: space(9) 0;
+	}
 }
 
-section.hero {
-	overflow: hidden;
-	padding-top: 30px;
-	padding-bottom: 60px;
+[class^="section"] .title-section {
+	text-align: center;
+	font-size: rem(22);
+	opacity: .4;
+	margin-bottom: space(6);
+	@include breakpoint(md) {
+		top: rem(-10);
+		margin-bottom: space(7);
+	}
+}
+
+.section-first {
+	@extend .section;
+	padding-top: space(8);
+	/*padding-top: rem(85)+space(8);*/
+	h1 {
+		margin-top: space(6);
+		@include breakpoint(md) {
+			margin-top: space(8);
+		}
+	}
+}
+
+.section-large-first {
+	@extend .section-large;
+	padding-top: rem(85)+space(6);
+	@include breakpoint(md) {
+		padding-top: rem(85)+space(9);
+	}
+}
+
+.section-project {
+	padding: 0 space(4);
+}
+
+[class^="section"] [class^="section"] {
+	&:first-child { padding-top: 0 !important; };
+	&:last-child { padding-bottom: 0 !important; };
+}
+
+
+/*.col-wrap {
+	padding: 0;
 	@include breakpoint(sm) {
-		padding-top: 60px;
-		padding-bottom: 90px;
+		padding: 0 space(3);
 	}
 	@include breakpoint(md) {
-		padding-top: 90px;
-		padding-bottom: 120px;
+		padding: 0 space(6);
 	}
-}
+	@include breakpoint(lg) {
+		padding: 0 space(6);
+	}
+}*/
 
-section.clients {
-	padding-top: 40px;
-	padding-bottom: 40px;
-}
-
-section.space,
-section.offers,
-section.commitments,
-section.testimonials {
-	padding-top: 60px;
-	padding-bottom: 90px;
-}
-
-section.space-medium,
-section.manifesto {
-	padding-top: 90px;
-	padding-bottom: 90px;
-}
-
-.usecase-block {
-	display: block;
-	color: inherit;
-	background-color: inherit;
-	text-decoration: none;
-	position: relative;
-	text-align: center;
-	color: white;
-	padding-top: 60px;
-	padding-bottom: 60px;
-	transition: background-color .2s ease;
-	img {
-		box-shadow: 4px 0 24px rgba(black,0.1);
-	}
-	h2 { 
-		color: white;
-		margin-top: 40px; 
-	}
-	p {
-		opacity: 0.8;
-		// margin-bottom: 20px; 
-	}
-}
-
-a.usecase-1 {
-	background-color: #1AA8BA;
-	&:hover {
-		background-color: darken(#1AA8BA,5);
-	}
-}
-a.usecase-2 {
-	background-color: #C52559;
-	&:hover {
-		background-color: darken(#C52559,5);
-	}
-}
-a.usecase-3 {
-	background-color: #3DCB9A;
-	&:hover {
-		background-color: darken(#3DCB9A,5);
-	}
-}
-
-.mozzarellazz {
-	position: relative;
-	max-width: initial;
-	width: 460px;
-	height: auto;
-	margin: 20px 0 0;
+.bg-mozzayolos {
+	background-image: url('/assets/images/illustrations/bg-mozzayolos.png');
+	background-repeat: no-repeat;
+	background-position: center 100px;
+	background-size: 450px auto;
 	@include breakpoint(sm) {
-		width: 560px;
-		height: auto;
-		margin: 20px auto 0;
+		background-size: 800px auto;
+		background-position: center 140px;
 	}
-	@include breakpoint(md) {
-    	width: 800px;
-		height: auto;
-    	margin: 0 0 0 60px;
-	}
-}
-
-.section-subtitle {
-	font-size: 21px;
-	line-height: 32;
-}
-
-.section-title {
-	text-align: center;
-	@include breakpoint(md){
-		text-align: left;
+	@include breakpoint(lg) {
+		background-size: auto;
+		background-position: center top;
 	}
 }

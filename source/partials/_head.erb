@@ -1,0 +1,30 @@
+ <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="<%= 'https://' + data.global.url %>">
+    <meta property="og:title" content="<%= data.global.share_title %>">
+    <meta property="og:description" content="<%= data.global.share_desc %>">
+    <meta property="og:image" content="<%= data.global.share_img %>" />
+
+    <link rel="apple-touch-icon" href="<%= data.global.img_apple_icon %>" sizes="180x180">
+    <link rel="icon" type="image/png" href="<%= data.global.img_favicon_16 %>" sizes="16x16">
+    <link rel="icon" type="image/png" href="<%= data.global.img_favicon_32 %>" sizes="32x32">
+
+    <title><%= current_page.data.title || data.global.title %></title>
+    
+    <%= stylesheet_link_tag "all" %>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/colcade@0/colcade.js"></script>
+    <%= javascript_include_tag "all" %>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=<%= data.global.google_id %>"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '<%= data.global.google_id %>');
+    </script>
+</head>

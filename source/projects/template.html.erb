@@ -1,0 +1,93 @@
+---
+title:
+directory_index: false
+layout: project
+---
+
+<% color = 'style = "color:'+project.font_color+';background-color:'+project.bg_color+'; background-image: url(../assets/images/projects/'+project.bg_image+');"' %>
+
+<%= partial "partials/navbar", :locals => { :color_menu => project.color_menu } %>
+
+<main class="">
+
+<section class="project-section" <%= color %> >
+	<div class="project-hero row center-xs" id="hero">
+		<%= partial "partials/heroes/#{project.client}" %>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-lg-6">
+				<h1 class="mt0"><%= eval("data.clients.#{project.client}.name") %></h1>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-lg-6">
+				<p class="p-xxl opacity-100 mt3 mb5"><%= project.intro %></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col-sm-6 col-md-3 mh2 pr5">
+				<span class="h6 opacity-80">Industry</span>
+				<p class="opacity-100"><%= project.industry %></p>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-sm-6 col-md-3 mh2 pr5">
+				<span class="h6 opacity-80">Duration</span>
+				<p class="opacity-100"><%= project.duration %></p>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-sm-6 col-md-3 col-lg-4 mh2 pr5">
+				<span class="h6 opacity-80">Expertise</span>
+				<p class="opacity-100"><%= project.expertise %></p>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-sm-6 col-md-3 col-lg-2 mh2 pr5">
+				<span class="h6 opacity-80">Device</span>
+				<p class="opacity-100"><%= project.device %></p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="bg-dark">
+	<%= partial "partials/projects/#{project.client}" %>
+</section>
+
+<section class="section-large bg-dark">
+	<div class="container-fluid" data-aos="fade-up">
+		<div class="row center-xs">
+			<div class="col-xs-12 col-md-10 col-lg-8">
+				<div class="avatar avatar-xl avatar-rounded inline-block">
+					<% picture = eval("data.clients.#{project.client}.testimonial.pic") %>
+					<%= image_tag "clients/#{picture}", { :loading => "lazy" } %>
+				</div>
+				<h2 class="h1-sm"><%= eval("data.clients.#{project.client}.testimonial.quote") %></h2>
+				<div class="inline-block-sm">
+					<p class="h3 opacity-60 mb2">
+						<%= eval("data.clients.#{project.client}.testimonial.first_name") %> 
+						<%= eval("data.clients.#{project.client}.testimonial.last_name") %>
+					</p>
+					<p class="h6 opacity-50"><%= eval("data.clients.#{project.client}.testimonial.position") %></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- CONTACT US -->
+<section class="bg-dark">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="card-contact-us bg-green">
+						<div class="row center-sm start-md middle-md between-md">
+							<div class="col-xs-12 col-sm-10 col-md-6 col-lg-5 last-md">
+								<%= image_tag 'illustrations/happy-mozzas.svg', { :class=>'illu-happy-mozzas' } %>
+							</div>
+							<div class="col-xs-12 col-sm-10 col-md-6 col-lg-5 offset-lg-1">
+								<h2 class="h1-sm mb4">Let's talk about your project</h2>
+				<a class="btn-primary-white mb4" href="https://calendly.com/davidchriqui/call-de-presentation" target="_blank">Schedule a call</a>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+</main>

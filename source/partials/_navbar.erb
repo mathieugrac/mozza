@@ -1,0 +1,48 @@
+<nav class="navbar navbar--<%= color_menu %> navbar-absolute">
+	<div class="container">	
+		<div class="navbar-wrap">
+			<% link_to '/index.html', {:class=> 'brand navbar-brand'} do %>mozza<% end %>
+			<button class="navbar-toggle">
+				<span class="toggle-menu icon"><%= svg 'icons/icon-menu.svg' %></span>
+				<span class="toggle-close icon"><%= svg 'icons/icon-close.svg' %></span>
+			</button>
+	
+			<ul class="navbar-nav">
+				<li class="nav-item dropdown hovered">
+					<a class="nav-link dropdown-toggle" href="#" role="button" 
+					   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Offers</a>
+					<div class="dropdown-menu">
+						<% link_to '/create.html', {:class=> 'dropdown-item'} do %>
+							<div class="wrapper">
+								<div class="nav-link">Create</div>
+								<div class="p-xs">Get an engaging MVP for your first users</div>
+							</div>
+						<% end %>
+						<% link_to '/scale.html', {:class=> 'dropdown-item'} do %>
+							<div class="wrapper">
+								<div class="nav-link">Scale</div>
+								<div class="p-xs">Ad-hoc design projects for growing startups</div>
+							</div>
+						<% end %>
+						<%# link_to '/research.html', {:class=> 'dropdown-item'} do %>
+							<!-- <div class="wrapper">
+								<div class="nav-link">Research</div>
+								<div class="p-xs">Understand your users with our UXR program</div>
+							</div> -->
+						<%# end %>
+					</div>
+				</li>
+				<li class="nav-item">
+					<% link_to '/projects.html', {:class=> 'nav-link'} do %>Projects<% end %>			
+				</li>
+				<li class="nav-item">
+					<% link_to '/team.html', {:class=> 'nav-link'} do %>About<% end %>
+				</li>
+				<li class="nav-item">
+					<% link_to '/recipes.html', {:class=> 'nav-link'} do %>Recipes<% end %>
+				</li>
+			</ul>
+			<a class="navbar-cta btn-small typeform-share" href="https://hello017925.typeform.com/to/YnE7b6" data-mode="drawer_right" target="blank">Let's talk!</a>
+		</div>
+	</div>
+</nav>

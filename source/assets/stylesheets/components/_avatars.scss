@@ -1,0 +1,35 @@
+.avatar {
+  display: inline-block;
+  overflow: hidden;
+  width: space(6);
+  height: space(6);
+}
+
+.avatar-sm {
+  width: rem(28);
+  height: rem(28);
+}
+
+.avatar-md {
+  width: space(7);
+  height: space(7);
+}
+
+.avatar-lg {
+  width: space(8);
+  height: space(8);
+}
+
+.avatar-xl {
+  width: space(9);
+  height: space(9);
+}
+
+.avatar-rounded {
+  border-radius: 50%;
+}
+
+.avatar-fluid {
+  width: 100%;
+  height: auto;
+}

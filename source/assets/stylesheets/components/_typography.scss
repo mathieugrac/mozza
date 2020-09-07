@@ -1,0 +1,203 @@
+.title {
+	font-size: $fs-lg;
+	line-height: rem(40);
+	color: color(gray,dark);
+}
+
+.description-wrapper {
+	padding: 0;
+	@include breakpoint(md) {
+		padding: 0 rem(30);
+	}
+}
+
+.uppercase {
+	letter-spacing: rem(1);
+	text-transform: uppercase;
+}
+
+.uppercase-bold {
+	font-family: $ff-bd;
+	@extend .uppercase;
+}
+
+.brand {
+	font-family: $ff-bd;
+	font-size: rem(36);
+	line-height: rem(38);
+	color: inherit;
+	text-decoration: none;
+}
+
+.bold {
+	font-family: $ff-bd;
+}
+
+/*.testi {
+	position: relative;
+	&:before {
+		content: '"';
+		@include breakpoint(md) {
+			position: absolute;
+			top: 0;
+			left: -42px;
+		}
+	}
+}*/
+
+h1, .h1 {
+	font-family: $ff-bd;
+	font-size: rem(46);
+	line-height: $lh-xs;
+	color: inherit;
+	@include breakpoint(md) {
+		font-size: $fs-xxl;
+		line-height: rem(66);
+	}
+	margin-bottom: space(4);
+	letter-spacing: -.005em;
+}
+
+.h1-sm {
+	@extend .h1;
+	font-size: rem(34);
+	line-height: rem(46);
+	margin: space(5)  0 space(6) 0;
+	@include breakpoint(md) {
+		font-size: rem(44);
+		line-height: rem(58);
+		margin: space(6)  0 space(8) 0;
+	}
+}
+
+.h1-br {
+	display: none;
+	@include breakpoint(lg) {
+		display: block;
+	}
+}
+
+.h1-home {
+	line-height: rem(60);
+}
+
+h2, .h2 {
+	font-family: $ff-bd;
+	font-size: rem(30);
+	line-height: $lh-xs;
+	color: inherit;
+	@include breakpoint(sm) {
+		font-size: $fs-xl;
+		line-height: $lh-xs;
+	}
+	margin-bottom: space(4);
+}
+
+h3, .h3 {
+	font-family: $ff-bd;
+	font-size: $fs-lg;
+	line-height: 1.4;
+	margin-bottom: space(3);
+	color: inherit;
+}
+
+h4, .h4 {
+	font-family: $ff-bd;
+	font-size: $fs-md;
+	line-height: $lh-df;
+	margin-bottom: space(2);
+	color: inherit;
+}
+
+h5, .h5 {
+	font-family: $ff-bd;
+	font-size: $fs-xs;
+	line-height: $lh-df;
+	margin-bottom: space(2);
+	color: inherit;
+	@extend .uppercase;
+}
+
+h6, .h6 {
+	font-family: $ff-df;
+	font-size: $fs-xs;
+	line-height: $lh-df;
+	margin-bottom: space(2);
+	color: inherit;
+	@extend .uppercase;
+	/*opacity: .75;*/
+}
+
+.h5-extented {
+	@extend .h5;
+	letter-spacing: 3px;
+	// margin-bottom: 0;
+	&:before {
+		// content: "—";
+		// margin-right: space(1);
+	}
+}
+
+.p-xxl {
+	/*font-family: $ff-bd;*/
+	font-size: rem(24);
+	line-height: $lh-sm;
+	@include breakpoint(sm) {
+		font-size: rem(28);
+		line-height: $lh-sm;
+	}
+	letter-spacing: -.01em;
+	color: inherit;
+}
+
+.p-xl {
+	font-family: $ff-df;
+	font-size: $fs-lg;
+	line-height: $lh-sm;
+	@include breakpoint(sm) {
+		font-size: rem(24);
+		line-height: $lh-sm;
+		margin-bottom: rem(34);
+	}
+	letter-spacing: -.01em;
+	color: inherit;
+}
+
+.p-lg {
+	font-family: $ff-df;
+	font-size: rem(20);
+	line-height: rem(31);
+	margin-bottom: rem(31);
+	color: inherit;
+}
+
+p, .p-df, .p {
+	font-family: $ff-df;
+	font-size: $fs-df;
+	line-height: rem(28);
+	margin-bottom: rem(28);
+	color: inherit;
+	opacity: .75;
+	@include breakpoint(md) {
+		&:last-child { margin-bottom: 0; }
+	}
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.p-sm {
+	font-family: $ff-df;
+	font-size: $fs-sm;
+	line-height: $lh-df;
+	color: inherit;
+	/*opacity: .5;*/
+}
+
+.p-xs {
+	font-family: $ff-df;
+	font-size: rem(15);
+	line-height: rem(22);
+	color: inherit;
+	opacity: .5;
+}	

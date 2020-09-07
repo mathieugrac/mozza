@@ -1,0 +1,32 @@
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.image-project {
+	cursor: pointer;
+	transition: box-shadow .2s ease;
+	&:hover {
+		box-shadow: $box-shadow;
+	}
+}
+
+.image-cover {
+	margin-bottom: rem(25);
+}
+
+.image-logo-create {
+	display: inline-block;
+	width: rem(90);
+	height: auto;
+	margin: space(2);
+}
+
+.image-startups {
+	display: inline-block;
+	/*max-width: rem(160);*/
+	width: 100%;
+	height: auto;
+	padding: space(3) 0;
+}

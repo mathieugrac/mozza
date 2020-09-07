@@ -1,0 +1,134 @@
+/* Forms
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+label {
+  display: block;
+  vertical-align: top;
+  max-width: 100%;
+  &.required::after {
+    content: "*";
+  }
+}
+
+textarea {
+  resize: vertical;
+  // min-height: rem(40);
+}
+
+form, .form {  }
+.form-inline {  }
+.form-group {  }
+
+
+// ---- from pressbook -----
+
+input,
+select,
+textarea {
+  font-family: $ff-df;
+  font-size: $fs-df;
+  line-height: 1;
+}
+
+.form-control,
+input[type="text"],
+input[type="url"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+textarea
+ {
+  // base
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  background-clip: padding-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  // style
+  padding: space(3) space(3);
+  background-color: transparent;
+  border: 3px solid white;
+  border-radius: 4px;
+  color: white;
+  transition: background-color .2s ease;
+  &:hover {
+  }
+  &:focus {
+    outline: 0;
+    color: color(gray,dark);
+    background-color: white;
+    box-shadow: inset 0 0 0 2px rgba(color(gray,medium),1);
+  }
+  // Unstyle the caret on `<select>`s in IE10+.
+  &::-ms-expand {
+    background-color: transparent;
+    border: 0;
+  }
+  // Placeholder
+  &::placeholder {
+    color: rgba(white,.4);
+    // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526.
+    opacity: 1;
+  }
+  // Disabled and read-only inputs
+  //
+  // HTML5 says that controls under a fieldset > legend:first-child won't be
+  // disabled if the fieldset is disabled. Due to implementation difficulty, we
+  // don't honor that edge case; we style them as disabled anyway.
+  &:disabled,
+  &[readonly] {
+    cursor: not-allowed;
+    background-color: white;
+    // iOS fix for unreadable disabled content; see https://github.com/twbs/bootstrap/issues/11655.
+    opacity: 1;
+  }
+}
+
+// input[type="checkbox"] {
+//     cursor: pointer;
+//     display: inline-block;
+//     vertical-align: middle;
+//     width: rem(20);
+//     height: rem(20);
+//     outline: none;
+//     overflow: hidden;
+//     background: white;
+//     -webkit-box-shadow: inset 0px 0px 0px 4px #FFF, 0px 2px 0px rgba(0,0,0,0.05);
+//     box-shadow: inset 0px 0px 0px 4px #FFF, 0px 2px 0px rgba(0,0,0,0.05);
+//     border: 1px solid $gray-light;
+//     margin: 0 space(1) 0 0;
+//     -webkit-appearance: none;
+//     border-radius: $radius-small;
+//     // border: solid 1px #bac3c3;
+// }
+
+// input[type=checkbox]:checked {
+//   background: $gray-dark;
+//   // margin-right: 30px;
+// }
+
+
+// select.form-control {
+//   box-shadow: 0 0 0 1px $gray-light, 0 3px 0 0 rgba(0,0,0,0.05);
+//   background-image:
+//     linear-gradient(45deg, transparent 50%, $gray-light 50%),
+//     linear-gradient(135deg, $gray-light 50%, transparent 50%);
+//     // linear-gradient(to right, $gray-light, $gray-light);
+//   background-position:
+//     calc(100% - 20px) calc(1em + 6px),
+//     calc(100% - 15px) calc(1em + 6px);
+//     // calc(100% - 40px) 6px;
+//   background-size:
+//     5px 5px,
+//     5px 5px;
+//     // 1px 32px;
+//   background-repeat: no-repeat;
+// }
+
+// select.form-control:focus {
+//   outline: 0;
+// }

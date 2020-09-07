@@ -1,0 +1,62 @@
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+a.hyperlink, .nav-link {
+	display: inline-block;
+	font-family: $ff-bd;
+	color: inherit;
+	text-decoration: underline;
+	transition: opacity .2s ease;
+	&:hover {
+    	text-decoration: none;
+    	opacity: .8;
+  	}
+}
+
+.link {
+	position: relative;
+	display: inline-block;
+	font-family: $ff-bd;
+	font-size: rem(14);
+	line-height: $lh-df;
+	@extend .uppercase;
+	word-spacing: rem(3);
+	color: inherit;
+	background-color: transparent;
+	transition: color .2s ease;
+	text-decoration: none;
+	transition: opacity ease .2s;
+	&:after {
+		position: absolute;
+    	display: inline-block;
+    	content: '';
+    	width: rem(12);
+    	height: rem(12);
+    	margin-left: 8px;
+    	top: rem(6);
+    	right: -20px;
+    	background: url(../images/icons/icon-carret-right-2.svg) no-repeat;
+    	background-size: cover;
+    	filter: brightness(0.25) sepia(1) hue-rotate(47deg) saturate(0);
+    	transition: filter ease .2s, right ease .2s, opacity ease .2s;
+		vertical-align: middle;
+	}
+	&:hover {
+		opacity: 0.8;
+		&:after {
+			right: -26px;
+			opacity: 0.8;
+			// filter: brightness(0.52) sepia(1) hue-rotate(47deg) saturate(5);
+		}
+	}
+}
+
+.link-green {
+	@extend .link;
+	color: color(green,medium);
+	&:after {
+		// filter: brightness(0.52) sepia(1) hue-rotate(47deg) saturate(5);
+	}
+}

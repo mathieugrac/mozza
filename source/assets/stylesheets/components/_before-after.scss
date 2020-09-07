@@ -1,0 +1,109 @@
+$before-size: 7%;
+
+.overlay {
+	content: "";
+	position: absolute;
+	display: block;
+	background-color: black;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: opacity .5s ease;
+}
+
+.before-after {
+	position: relative;
+	cursor: pointer;
+	margin: space(4) 0 space(6) 0;
+	.wrapper {
+		overflow: hidden;
+		border-radius: 12px;
+		box-shadow: 0 0 2px rgba(black, .25);
+	}
+	&:hover, &:focus {
+		outline: none;
+	}
+}
+
+.before-after .before {
+	position: absolute;
+	opacity: 1;
+	overflow-x: hidden;
+	top: 0;
+	left: 0;
+	width: $before-size;
+	height: 100%;
+	transition: width .5s ease;
+	img {
+		height: 100%;
+		width: auto;
+	}
+	&:before {
+		@extend .overlay;
+		opacity: 0.4;
+	}
+}
+
+.before-after .after {
+	position: relative;
+	&:before {
+		@extend .overlay;
+		opacity: 0;
+	}
+}
+
+.divider {
+	z-index: 10;
+	position: absolute;
+	background-color: rgba(white,1);
+	display: block;
+	top: -20px;
+	bottom: -40px;
+	left: $before-size;
+	width: 2px;
+	transition: left .5s ease;
+	&:before, &:after {
+		position: absolute;
+		padding: 10px 18px;
+		margin: 0;
+		bottom: -20px;
+		@extend .h6;
+		text-align: right;
+		transition: right .5s ease, left .5s ease, opacity .5s ease;
+	}
+	&:before {
+		content: "before";
+		opacity: .3;
+		right: $before-size;
+	}
+	&:after {
+		content: "after";
+		opacity: 1;
+		left: 100%-$before-size;
+		text-align: left;
+	}
+}
+
+.reveal {
+	&:before {
+		right: 100%-$before-size;
+		opacity: .3;
+	}
+	.before { 
+		width: 100%-$before-size;
+		&:before {
+			opacity: 0;
+		}
+	}
+	.after { 
+		&:before {
+			opacity: 0.4;
+		}
+	}
+	.divider { 
+		left: 100%-$before-size;
+		&:before { opacity: 1; }
+		&:after { opacity: 0.3;}
+	}
+}

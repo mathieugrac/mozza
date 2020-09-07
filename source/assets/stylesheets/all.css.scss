@@ -1,9 +1,9 @@
-@import "vendors/*";
+// @charset "utf-8";
 
+@import "reset";
 @import "utils/rem";
-@import "utils/colors";
 @import "variables";
-
+@import "mixins/*";
 @import "utils/*";
-@import "basics/*";
 @import "components/*";
+@import "vendor/*";

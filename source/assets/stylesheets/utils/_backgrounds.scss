@@ -1,0 +1,30 @@
+.bg-white {
+	background-color: white;
+	color: inherit;
+}
+
+.bg-green {
+	background-color: #1FCE6D;
+	color: white;
+	p { opacity: 1; }
+}
+
+.bg-green-dark {
+	background-color: #095C55;
+	color: white;
+	p { opacity: .9; }
+}
+
+.bg-gray {
+	background-color: #f4f4f4;
+	color: inherit;
+}
+
+.bg-dark {
+	background-color: #1C1D1E;
+	color: white;
+}
+
+.bg-cover {
+  background: no-repeat center center / cover;
+}

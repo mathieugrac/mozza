@@ -1,0 +1,55 @@
+- first_name:     Adrien 
+  last_name:      Montcoudiol
+  picture:        adri.jpg
+  job_title:      Founder
+  experience:     ex Head of Growth at Molotov.tv. Startup mentor at Google Launchpad, The Refiners, The Family.
+  other:          
+
+- first_name:     David 
+  last_name:      Chriqui
+  picture:        david.jpg
+  job_title:      Growth Director
+  experience:     ex Growth Manager at Heetch.
+  other:          Also founder of MySportyCompany, a B2B app for on-site fitness classes.
+
+- first_name:     Mathieu
+  last_name:      Grac
+  picture:        mathieu.jpg
+  job_title:      Product & UX Designer
+  experience:     ex Lead Designer at Molotov.tv and UX/UI Designer at Blablacar.
+  other:          
+
+- first_name:     Lucas
+  last_name:      Didier
+  picture:        lucas.jpg
+  job_title:      Product Manager
+  experience:     ex Product Manager at Payfit & Blablacar, Product Teacher at HEC Paris.
+  other:          Also founder of Ballistic, a football statistic company.
+
+- first_name:     Émile
+  last_name:      Ledure
+  picture:        emile.jpg
+  job_title:      Product Manager
+  experience:     ex Product Manager at Blablacar & Zenchef.
+  other:          Also Product Teacher at Audencia and ISCOM.
+
+- first_name:     Jean-Baptiste
+  last_name:      Eudeline
+  picture:        jb.jpg
+  job_title:      UX/UI Designer
+  experience:     ex UX/UI Designer at Qonto, Contentsquare and Divido.
+  other: 
+
+- first_name:     Ulysse
+  last_name:      Sabbag
+  picture:        ulysse.jpg
+  job_title:      User Researcher
+  experience:     ex Founder of Kuma Studio. Speaker at Station F, Schoolab.
+  other:                   
+
+- first_name:     Grégoire
+  last_name:      Devoucoux
+  picture:        gregoire.jpg
+  job_title:      User Researcher
+  experience:     ex Founder of Ferpection.
+  other:

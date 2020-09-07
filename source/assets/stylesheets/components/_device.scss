@@ -1,0 +1,56 @@
+.device-mobile {
+	overflow: hidden;
+	box-sizing: border-box;
+    border: 14px solid white;
+    border-radius: 32px;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    box-shadow: $box-shadow;
+    transition: transform .2s ease;
+    @include breakpoint(lg) {
+    	/*border: 20px solid white;*/
+    	/*border-radius: 40px;*/
+    }
+
+}
+
+.device-link {
+	display: inline-block;
+	position: relative;
+	text-align: center;
+	/*margin: 20px*/;
+	&:hover img {
+		transform: translateY(-5px);	
+	}
+}
+
+.device-link-icon {
+	display: inline-flex;
+  	align-items: center;
+  	justify-content: center;
+  	padding: rem(6);
+  	border-radius: 50%;
+  	background-color: white;
+}
+
+.device-link-p {
+	display: inline-block;
+	font-size: 15px;
+	line-height: 20px;
+	opacity: .8;	
+	padding: 0 10px;
+	transition: opacity ease .2s;
+	&:hover {
+		opacity: 1;
+		.icon {
+			position: relative;
+			transform: translateX(4px);
+		}
+	}
+}

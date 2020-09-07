@@ -1,0 +1,30 @@
+---
+title: Projects
+layout: main
+color_menu : white
+---
+
+<section class="section-first bg-dark">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs col-md-7">
+				<h1>Projects</h1>
+				<!-- <p class="p-xl">…</p> -->
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section-small bg-dark">
+	<div class="container">
+		<div class="row">
+			<% data.projects.each do |project| %>
+				<div class="col-xs-12">
+					<%= partial "partials/project", :locals => { :project => project } %>
+				</div>
+			<% end %>
+		</div>
+	</div>
+</section>
+
+<%= partial "partials/contact-us" %>

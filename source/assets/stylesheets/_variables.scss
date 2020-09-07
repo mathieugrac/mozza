@@ -1,10 +1,5 @@
-/* Variables
+/* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-/* Fonts
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-// @include font-face( "Font Name", "../fonts/font-file-name", normal);
-// @import url(https://fonts.googleapis.com/css?family=Font+Name:variant,variant);
 
 @font-face {
   font-family: 'GT America Regular';
@@ -14,6 +9,30 @@
        url('../fonts/GTAmerica-Regular.ttf') format('truetype'),
        url('../fonts/GTAmerica-Regular.svg#GTAmerica-Regular') format('svg'),
        url('../fonts/GTAmerica-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GT America Thin';
+  src: url('../fonts/GTAmerica-Thin.eot');
+  src: url('../fonts/GTAmerica-Thin.woff2') format('woff2'),
+       url('../fonts/GTAmerica-Thin.woff') format('woff'),
+       url('../fonts/GTAmerica-Thin.ttf') format('truetype'),
+       url('../fonts/GTAmerica-Thin.svg#GTAmerica-Thin') format('svg'),
+       url('../fonts/GTAmerica-Thin.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GT America Medium';
+  src: url('../fonts/GTAmerica-Medium.eot');
+  src: url('../fonts/GTAmerica-Medium.woff2') format('woff2'),
+       url('../fonts/GTAmerica-Medium.woff') format('woff'),
+       url('../fonts/GTAmerica-Medium.ttf') format('truetype'),
+       url('../fonts/GTAmerica-Medium.svg#GTAmerica-Medium') format('svg'),
+       url('../fonts/GTAmerica-Medium.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -31,36 +50,41 @@
 }
 
 // font-families
-$ff-book:  "GT America Book", Arial, sans;
-$ff-bold:  "GT America Bold", Arial, sans;
+$ff-df:  "GT America Regular", Arial, sans;
+$ff-md:  "GT America Medium", Arial, sans;
+$ff-bd:  "GT America Bold", Arial, sans;
 
 // font-sizing
-$fs-xl: rem(54);
-$fs-lg:  rem(32);
-$fs-md:  rem(26);
-$fs-sm:  rem(18);
-$fs-xs: rem(16);
-$fs-xxs: rem(11);
+$fs-xxl:      rem(54); //64px ??
+$fs-xl:       rem(34); //36/34px ??
+$fs-lg:       rem(26);
+$fs-md:       rem(22);
+$fs-df:       rem(18); //17px ??
+$fs-sm:       rem(16);
+$fs-xs:       rem(13);
 
-// line-heights
-$lh-md:  1.65;
-$lh-sm:  1.3;
-$lh-xs: 1.1;
+//line-height
+$lh-xs:   1.25;
+$lh-sm:   1.4;
+$lh-md:   1.6;
+$lh-df:   1.7;
+$lh-lg:   1.8;
 
 
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-$space-unit: rem(5);
-
+$space-unit:        rem(4);
 $space: (
-  1:                $space-unit * 1,
-  2:                $space-unit * 2,
-  3:                $space-unit * 4,
-  4:                $space-unit * 6,
-  5:                $space-unit * 8,
-  6:                $space-unit * 10,
-  7:                $space-unit * 16
+  1:                $space-unit * 1,  //4px
+  2:                $space-unit * 2,  //8px
+  3:                $space-unit * 4,  //16px
+  4:                $space-unit * 6,  //24px
+  5:                $space-unit * 8,  //32px
+  6:                $space-unit * 10, //40px
+  7:                $space-unit * 16, //64px
+  8:                $space-unit * 20, //80px
+  9:                $space-unit * 30  //120px
 );
 
 
@@ -69,77 +93,44 @@ $space: (
 
 $colors: (
   gray: (
-    dark:           #1c1d1e,
-    medium:         #424648,
-    light:          #E1E1E1,
-    x-light:        #F7F8FA
+    black:          #111,
+    dark:           #555,
+    medium:         #777,
+    light:          #ccc
   ),
-  green: (
+    green: (
+    black:          #095C55,
     dark:           darken(#1FCE6D,10),
     medium:         #1FCE6D
   )
 );
 
+
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-$grid-columns:      12;
-$grid-gutter:       rem(30);
-$grid-max:          rem(1200);
 
 $grid: (
   xs: (
     breakpoint:     0px,
-    container:      95%
+    container:      96%
     ),
   sm: (
     breakpoint:     rem(480),
-    container:      95%
+    container:      92%
     ),
   md: (
     breakpoint:     rem(768),
-    container:      95%
+    container:      92%
     ),
   lg: (
     breakpoint:     rem(990),
-    container:      95%
+    container:      94%
     )
 );
 
-
-/* Basic styles
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.bg-green { background-color: color(green,medium) }
-.bg-light { background-color: color(gray,x-light) }
-.bg-dark {  background-color: color(gray,dark)    }
+$grid-columns:      12;
+$grid-gutter:       rem(24);
+$grid-max:          rem(1160);
 
 
-/* Radius
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-$radius-small:      3px;
-$radius-base:       5px;
-$radius-medium:     12px;
-$radius-large:      36px;
-
-
-/* Borders
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-$border-base: 1px solid color(gray,light);
-
-
-/* Box shadows
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-$box-shadow-base: 0 23px 42px rgba(black,.15);
-
-
-/* Clearfix
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.clearfix {
-  overflow: auto;
-  zoom: 1;
-}
+$box-shadow: 0 5px 20px rgba(black,0.15);

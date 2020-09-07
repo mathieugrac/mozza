@@ -1,0 +1,32 @@
+.grid {
+	// @extend .clearfix;
+}
+
+.grid-col {
+  float: left;
+  width: 100%;
+}
+
+.grid-item {
+  padding: $grid-gutter/2;
+}
+
+.grid-col--2, .grid-col--3 { display: none }
+
+@include breakpoint(sm) {
+  .grid-col { width: 50%; }
+  .grid-col--2 { display: block; } /* show column 2 */
+}
+
+@include breakpoint(md) {
+  .grid-col { width: 33.33333%; }
+  .grid-col--3 { display: block; } /* show column 3 */
+}
+
+@include breakpoint(sm) {
+  .grid-coucou { width: 50%; }
+}
+
+@include breakpoint(md) {
+  .grid-coucou { width: 50%; }
+}

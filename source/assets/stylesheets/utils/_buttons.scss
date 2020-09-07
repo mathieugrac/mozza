@@ -11,9 +11,9 @@
   &.hover,
   &:focus,
   &.focus {
-    color:            $color;
-    background-color: if($background != transparent, $background, rgba(black,.06));
-    border-color:     $border;
+    color:            darken($color,20);
+    background-color: if($background != transparent, darken($background,20), rgba(black,.2));
+    border-color:     if($border != transparent, darken($border,20), rgba(black,.2));
   }
 
   &.disabled,

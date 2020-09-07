@@ -1,0 +1,9 @@
+<!doctype html>
+<html>
+  <%= partial "partials/head" %>
+  <body oncontextmenu="return false;">
+    <%= partial "partials/navbar", :locals => { :color_menu => current_page.data.color_menu } %>
+    <main class=""><%= yield %></main>
+    <%= partial "partials/footer" %>
+  </body>
+</html>

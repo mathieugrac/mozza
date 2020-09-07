@@ -1,0 +1,49 @@
+<% if project.coming_soon == "no" %>
+
+	<% link_to "/projects/#{project.url}.html", :class => "project-item", :style => "background-color: #{project.bg_color}; color: #{project.font_color}" do %>
+	
+	<div class="project-content">
+		<div class="wrapper">
+			<% data.clients.each do |k,v| %>
+				<% if k == project.client %>
+					<div class="project-client">
+						<span class="project-client-logo icon"><%= svg "logos/#{v.logo.short_white}" %></span>
+						<span class="project-client-name"><%= v.name %></span>
+					</div>
+					<div class="h2"><%= project.title %></div>
+					<div class="h6 opacity-80"><%= project.expertise %></div>
+				<% end %>
+			<% end %>		
+			<span class="mt6 btn-primary-white btn-small">Discover</span>
+		</div>
+	</div>
+	<% image = '/assets/images/projects/' + project.thumbnail  %>
+	<%= tag :div, {:style => "background-image:url(#{image});", :class => "project-illustration" } %></div>
+
+	<% end %>
+
+<% else %>
+
+	<% content_tag :div, :class => "project-item", :style => "background-color: #{project.bg_color}; color: #{project.font_color}" do %>
+
+	<div class="project-content">
+		<div class="wrapper">
+			<% data.clients.each do |k,v| %>
+				<% if k == project.client %>
+					<div class="project-client">
+						<span class="project-client-logo icon"><%= svg "logos/#{v.logo.short_white}" %></span>
+						<span class="project-client-name"><%= v.name %></span>
+					</div>
+					<div class="h2"><%= project.title %></div>
+					<div class="h6 opacity-80"><%= project.expertise %></div>
+				<% end %>
+			<% end %>		
+			<span class="mt6 btn-primary-white btn-small btn-disabled comming-soon">Coming Soon</span>
+		</div>
+	</div>
+	<% image = '/assets/images/projects/' + project.thumbnail  %>
+	<%= tag :span, {:style => "background-image:url(#{image});", :class => "project-illustration" } %></span>
+
+	<% end %>
+
+<% end %>

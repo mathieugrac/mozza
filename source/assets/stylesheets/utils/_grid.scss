@@ -5,6 +5,9 @@
   box-sizing:            border-box;
   margin-right:          auto;
   margin-left:           auto;
+}
+
+.container {
   max-width:             $grid-max;
 }
 
@@ -47,6 +50,19 @@
   flex:                  0 0 auto;
   padding-right:         $grid-gutter/2;
   padding-left:          $grid-gutter/2;
+}
+
+.gutter-lg {
+  padding-right:         $grid-gutter/2;
+  padding-left:          $grid-gutter/2;
+  @include breakpoint(md) {
+    padding-right:         $grid-gutter;
+    padding-left:          $grid-gutter;
+  }
+  @include breakpoint(lg) {
+    padding-right:         $grid-gutter*2;
+    padding-left:          $grid-gutter*2;
+  }
 }
 
 @each $item, $break in $grid {
@@ -139,4 +155,4 @@
       margin-left:                  0;
     }
   }
-} 
+}

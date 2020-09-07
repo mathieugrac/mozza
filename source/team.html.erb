@@ -1,0 +1,42 @@
+---
+title: The Team
+layout: main
+color_menu : white
+---
+
+<section class="section-first bg-green">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs col-md-7">
+				<h1>The Members</h1>
+				<p class="p-xl">Our collective gathers designers and product strategists coming from the best companies in the tech industry. They know how to bring an idea to a product that will be used by millions.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section bg-gray">
+	<div class="container">
+		<div class="row">
+			<% data.team.each do |member| %>
+				<div class="col-xs-12 col-md-4">
+					<%= partial "partials/member", :locals => { :member => member } %>
+				</div>
+			<% end %>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="card-contact-us bg-green mt3">
+					<div class="row center-xs around-md middle-lg">
+						<div class="col-xs-10 col-lg-8 start-lg">
+							<h2 class="h1-sm mh3">Want to join the crew?</h2>
+						</div>
+						<div class="col-xs-12 col-lg-3">
+							<a class="btn-primary-white typeform-share mh3" href="https://hello017925.typeform.com/to/VuEh39" target="_blank">Fill this form</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

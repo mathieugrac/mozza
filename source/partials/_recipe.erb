@@ -1,0 +1,9 @@
+<div class="recipe">
+	<% link_to recipe.url, target: "_blank" do %>
+		<div class="recipe-photo"><%= image_tag "recipes/" + recipe.img + ".png" %></div>
+	<% end %>
+	<div class="recipe-text">
+		<h3 class="mb2"><%= recipe.name %></h3>
+		<p class="p-sm"><%= recipe.text %></p>
+	</div>
+</div>

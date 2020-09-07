@@ -1,54 +1,56 @@
-<footer class="footer">
-
-	<section class="footer-newsletter">
-		<div class="container">
-			<div class="row middle-xs">
-				<div class="col-md-6 col-xs-12">
-					<div class="infos-wrapper">
-						<%= link_to 'mozza', '/', { :class=>'logo' } %>
-						<p class="meta-50">Say hello@mozza.io</p>
-					</div>
-					<div class="mozza-wrapper"><%= partial "partials/mozza" %></div>
+<footer class="footer section bg-dark">
+	<div class="container">
+		<div class="row middle-xs">
+			<div class="col-md-6 col-xs-12">
+				<div class="wrapper">
+					<%= link_to 'mozza', '/', { :class=>'brand' } %>
+					<p class="p-lg opacity-60">Say hello@mozza.io</p>
 				</div>
-				<div class="col-md-6 col-xs-12">
-					<%= partial "partials/mailchimp" %>
-				</div>
+				<%= partial "partials/mozza" %>
+			</div>
+			<div class="col-md-6 col-xs-12">
+				<%= partial "partials/mailchimp" %>
 			</div>
 		</div>
-	</section>
+	</div>
 
-	<section class="footer-navigation">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-4 col-md-8">
-					<ul class="nav-footer">
-						<li><%= link_to 'Home', '/', { :class=>'nav-link' } %></li>
-						<li><%= link_to 'Create', '/create-with-mozza.html', { :class=>'nav-link' } %></li>
-						<li><%= link_to 'Scale', '/scale-with-mozza.html', { :class=>'nav-link' } %></li>
-						<li><%= link_to 'About', '/chefs.html', { :class=>'nav-link' } %></li>
-						<li><%= link_to 'Recipes', '/recipes.html', { :class=>'nav-link' } %></li>
-						<li><p class="copyrights p-small meta-50">© 2017—2020 Mozza Inc</p></li>
-
-					</ul>
-				</div>
-				<div class="col-xs-8 col-md-4 end-xs">
-					<ul class="nav-social">
-						<li class="nav-icon">
-							<%= link_to image_tag('icons/icon-fb.svg'), 'https://www.facebook.com/mozza.agency/', { :class=>'icon-link' } %>
-						</li>
-						<li class="nav-icon">
-							<%= link_to image_tag('icons/icon-twitter.svg'), 'https://twitter.com/mozzaio', { :class=>'icon-link' } %>
-						</li>
-						<li class="nav-icon">
-							<%= link_to image_tag('icons/icon-medium.svg'), 'https://medium.com/mozza-io', { :class=>'icon-link' } %>
-						</li>
-						<li class="nav-icon">
-							<%= link_to image_tag('icons/icon-linkedin.svg'), 'https://www.linkedin.com/company/mozza-inc/about/', { :class=>'icon-link' } %>
-						</li>
-					</ul>
-				</div>
+	<div class="container footer-bottom">
+		<div class="row bottom-sm top-md">
+			<div class="col-xs-12 col-sm-6 col-md-4 end-xs">
+				<ul class="footer-social">
+					<li class="nav-icon">
+						<a href="<%= 'https://' + data.global.url_facebook %>" class="nav-link" target="blank">
+							<span class="icon"><%= svg "icons/icon-facebook.svg" %></span>
+						</a>
+					</li>
+					<li class="nav-icon">
+						<a href="<%= 'https://' + data.global.url_twitter %>" class="nav-link" target="blank">
+							<span class="icon"><%= svg "icons/icon-twitter.svg" %></span>
+						</a>
+					</li>
+					<li class="nav-icon">
+						<a href="<%= 'https://' + data.global.url_medium %>" class="nav-link" target="blank">
+							<span class="icon"><%= svg "icons/icon-medium.svg" %></span>
+						</a>
+					</li>
+					<li class="nav-icon">
+						<a href="<%= 'https://' + data.global.url_linkedin %>" class="nav-link" target="blank">
+							<span class="icon"><%= svg "icons/icon-linkedin.svg" %></span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-8 first-sm">
+				<ul class="footer-nav">
+					<li><%= link_to 'Home', '/', { :class=>'nav-link' } %></li>
+					<li><%= link_to 'Create', '/create.html', { :class=>'nav-link' } %></li>
+					<li><%= link_to 'Scale', '/scale.html', { :class=>'nav-link' } %></li>
+					<li><%= link_to 'Projects', '/projects.html', { :class=>'nav-link' } %></li>
+					<li><%= link_to 'About', '/team.html', { :class=>'nav-link' } %></li>
+					<li><%= link_to 'Recipes', '/recipes.html', { :class=>'nav-link' } %></li>
+					<li><p class="opacity-40">© 2017—2020 Mozza Inc</p></li>
+				</ul>
 			</div>
 		</div>
-	</section>
-
+	</div>
 </footer>

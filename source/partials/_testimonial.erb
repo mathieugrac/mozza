@@ -1,0 +1,14 @@
+<% picture = eval("data.clients.#{client}.testimonial.pic") %>
+<% company = eval("data.clients.#{client}.logo.short_color") %>
+
+<div class="col-xs-12 col-md-6">
+	<% content_tag :div, :class => "card-testimonial testimonial-#{pos}" do %>
+		<span class="icon icon-lg mb3"><%= svg "logos/#{company}" %></span>
+		<p class="testimonial-quote"><%= eval("data.clients.#{client}.testimonial.quote") %></p>
+		<!-- <div class="avatar avatar-rounded avatar-sm align-middle mr2"><%= image_tag "clients/#{picture}" %></div> -->
+		<div class="testimonial-name">
+			<p class="h5 mb0"><%= eval("data.clients.#{client}.testimonial.first_name") %> <%= eval("data.clients.#{client}.testimonial.last_name") %>,</p>
+			<p class="h6"><%= eval("data.clients.#{client}.testimonial.position") %></p>
+		</div>
+	<% end %>
+</div>

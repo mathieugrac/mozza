@@ -1,22 +1,29 @@
 /* Space
 ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-@each $key, $value in $space {
-  .p#{$key}   { padding:        map-get($space, $key);  }
-  .pt#{$key}  { padding-top:    map-get($space, $key);  }
-  .pr#{$key}  { padding-right:  map-get($space, $key);  }
-  .pb#{$key}  { padding-bottom: map-get($space, $key);  }
-  .pl#{$key}  { padding-left:   map-get($space, $key);  }
-  .pw#{$key}  { padding-left:   map-get($space, $key); padding-right:  map-get($space, $key);  }
-  .ph#{$key}  { padding-top:    map-get($space, $key); padding-bottom: map-get($space, $key);  }
+.m0         { margin:           0!important;                      }
+.mt0        { margin-top:       0!important;                      }
+.mb0        { margin-bottom:    0!important;                      }
+.p0         { padding:          0!important;                      }
+.pt0        { padding-top:      0!important;                      }
+.pb0        { padding-bottom:   0!important;                      }
 
-  .m#{$key}   { margin:        map-get($space, $key);  }
-  .mt#{$key}  { margin-top:    map-get($space, $key);  }
-  .mr#{$key}  { margin-right:  map-get($space, $key);  }
-  .mb#{$key}  { margin-bottom: map-get($space, $key);  }
-  .ml#{$key}  { margin-left:   map-get($space, $key);  }
-  .mw#{$key}  { margin-left:   map-get($space, $key); margin-right:  map-get($space, $key);  }
-  .mh#{$key}  { margin-top:    map-get($space, $key); margin-bottom: map-get($space, $key);  }
+@each $key, $value in $space {
+  .p#{$key}   { padding:        map-get($space, $key)!important;  }
+  .pt#{$key}  { padding-top:    map-get($space, $key)!important;  }
+  .pr#{$key}  { padding-right:  map-get($space, $key)!important;  }
+  .pb#{$key}  { padding-bottom: map-get($space, $key)!important;  }
+  .pl#{$key}  { padding-left:   map-get($space, $key)!important;  }
+  .pw#{$key}  { padding-left:   map-get($space, $key)!important; padding-right:  map-get($space, $key)!important;  }
+  .ph#{$key}  { padding-top:    map-get($space, $key)!important; padding-bottom: map-get($space, $key)!important;  }
+
+  .m#{$key}   { margin:        map-get($space, $key)!important;  }
+  .mt#{$key}  { margin-top:    map-get($space, $key)!important;  }
+  .mr#{$key}  { margin-right:  map-get($space, $key)!important;  }
+  .mb#{$key}  { margin-bottom: map-get($space, $key)!important;  }
+  .ml#{$key}  { margin-left:   map-get($space, $key)!important;  }
+  .mw#{$key}  { margin-left:   map-get($space, $key)!important; margin-right:  map-get($space, $key)!important;  }
+  .mh#{$key}  { margin-top:    map-get($space, $key)!important; margin-bottom: map-get($space, $key)!important;  }
 }
 
 // Get a value from the space map
