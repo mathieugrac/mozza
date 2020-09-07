@@ -54,9 +54,9 @@ layout: project
 			<div class="col-xs-12 col-md-10 col-lg-8">
 				<div class="avatar avatar-xl avatar-rounded inline-block">
 					<% picture = eval("data.clients.#{project.client}.testimonial.pic") %>
-					<%= image_tag "clients/#{picture}", { :loading => "lazy" } %>
+					<%= image_tag "clients/#{picture}", { } %>
 				</div>
-				<h2 class="h1-sm"><%= eval("data.clients.#{project.client}.testimonial.quote") %></h2>
+				<h2 class="h1-sm">"<%= eval("data.clients.#{project.client}.testimonial.quote") %>"</h2>
 				<div class="inline-block-sm">
 					<p class="h3 opacity-60 mb2">
 						<%= eval("data.clients.#{project.client}.testimonial.first_name") %> 
