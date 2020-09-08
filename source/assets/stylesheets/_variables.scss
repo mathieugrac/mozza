@@ -124,13 +124,13 @@ $grid: (
     ),
   lg: (
     breakpoint:     rem(990),
-    container:      94%
+    container:      92%
     )
 );
 
 $grid-columns:      12;
 $grid-gutter:       rem(24);
-$grid-max:          rem(1160);
+$grid-max:          rem(1240);
 
 
 $box-shadow: 0 5px 20px rgba(black,0.15);

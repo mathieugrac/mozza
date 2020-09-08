@@ -16,7 +16,7 @@ $(document).ready(function() {
 	})
 
   $('.navbar-toggle').on('click', function(e){
-    $('body').toggleClass('navbar-is-open');
+    $('html').toggleClass('navbar-is-open');
   });
 
   // set interval
