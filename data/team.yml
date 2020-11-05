@@ -47,16 +47,16 @@
   experience:     ex Founder of Ferpection.
   other:
        
-- first_name:     Cyril
-  last_name:      Codron
-  picture:        cyril.png
-  job_title:      Product Strategist
-  experience:     ex Head of Product at Mention
-  other:          
-
 - first_name:     Thomas
   last_name:      Dimajo
   picture:        thomas.jpg
   job_title:      Brand Designer
   experience:     ex Designer at Muxu.Muxu
   other: 
+    
+- first_name:     Cyril
+  last_name:      Codron
+  picture:        cyril.png
+  job_title:      Product Strategist
+  experience:     ex Head of Product at Mention
+  other:          
