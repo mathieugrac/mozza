@@ -10,28 +10,14 @@
   picture:        david.jpg
   job_title:      Growth Director
   experience:     ex Growth Manager at Heetch.
-  other:          Also founder of MySportyCompany, a B2B app for on-site fitness classes.
+  other:          Previously founder of MySportyCompany, a B2B app for onsite fitness classes.
 
 - first_name:     Mathieu
   last_name:      Grac
   picture:        mathieu.jpg
-  job_title:      Product & UX Designer
+  job_title:      Design Director
   experience:     ex Lead Designer at Molotov.tv and UX/UI Designer at Blablacar.
   other:          
-
-- first_name:     Lucas
-  last_name:      Didier
-  picture:        lucas.jpg
-  job_title:      Product Manager
-  experience:     ex Product Manager at Payfit & Blablacar, Product Teacher at HEC Paris.
-  other:          Also founder of Ballistic, a football statistic company.
-
-- first_name:     Émile
-  last_name:      Ledure
-  picture:        emile.jpg
-  job_title:      Product Manager
-  experience:     ex Product Manager at Blablacar & Zenchef.
-  other:          Also Product Teacher at Audencia and ISCOM.
 
 - first_name:     Jean-Baptiste
   last_name:      Eudeline
@@ -39,6 +25,13 @@
   job_title:      UX/UI Designer
   experience:     ex UX/UI Designer at Qonto, Contentsquare and Divido.
   other: 
+
+- first_name:     Élodie
+  last_name:      Lachoua
+  picture:        elodie.jpg
+  job_title:      Product Strategist
+  experience:     ex Product Manager at Kapten
+  other:   
 
 - first_name:     Ulysse
   last_name:      Sabbag
@@ -53,3 +46,17 @@
   job_title:      User Researcher
   experience:     ex Founder of Ferpection.
   other:
+       
+- first_name:     Cyril
+  last_name:      Codron
+  picture:        cyril.png
+  job_title:      Product Strategist
+  experience:     ex Head of Product at Mention
+  other:          
+
+- first_name:     Thomas
+  last_name:      Dimajo
+  picture:        thomas.jpg
+  job_title:      Brand Designer
+  experience:     ex Designer at Muxu.Muxu
+  other: 
