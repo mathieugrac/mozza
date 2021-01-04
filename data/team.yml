@@ -33,12 +33,13 @@
   experience:     ex Product Manager at Kapten
   other:   
 
-- first_name:     Ulysse
-  last_name:      Sabbag
-  picture:        ulysse.jpg
-  job_title:      User Researcher
-  experience:     ex Founder of Kuma Studio. Speaker at Station F, Schoolab.
-  other:                   
+- first_name:     Daniel
+  last_name:      Huertas
+  picture:        daniel.jpg
+  job_title:      Product Strategist
+  experience:     ex Lead Product Manager at Heetch, ex Senior PM at Amazon
+  other:  
+                
 
 - first_name:     Grégoire
   last_name:      Devoucoux
@@ -53,10 +54,31 @@
   job_title:      Brand Designer
   experience:     ex Designer at Muxu.Muxu
   other: 
+
+- first_name:     Jonathan
+  last_name:      Bourguignon
+  picture:        jonathan.jpg
+  job_title:      Product Strategist
+  experience:     ex CPO at Brickchain, ex Senior PM at Criteo
+  other:     
     
 - first_name:     Cyril
   last_name:      Codron
   picture:        cyril.png
   job_title:      Product Strategist
   experience:     ex Head of Product at Mention
+  other: 
+
+- first_name:     Marine
+  last_name:      Dias
+  picture:        marine.jpg
+  job_title:      Product Researcher
+  experience:     Senior User Researcher at Algolia
+  other:          
+
+- first_name:     Côme
+  last_name:      Bohu
+  picture:        come.jpg
+  job_title:      Product Designer
+  experience:     Product Designer at Agicap
   other:          
