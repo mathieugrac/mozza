@@ -9,7 +9,8 @@ color_menu : white
 		<div class="row">
 			<div class="col-xs col-md-7">
 				<h1>Our members</h1>
-				<p class="p-xl">The Mozza collective gathers designers and product strategists coming from the best companies in the tech industry. They know how to bring an idea to a product that will be used by millions.</p>
+				<p class="p-xl">At Mozza, we love partnering with amazing minds.</p>
+				<p class="p-xl">Our community gathers the most talented Product folks wanting to have an impact on great tech projects. In their past experiences, they have conceived products and interfaces used by millions - you might know a few!</p>
 			</div>
 		</div>
 	</div>
@@ -19,7 +20,7 @@ color_menu : white
 	<div class="container">
 		<div class="row">
 			<% data.team.each do |member| %>
-				<div class="col-xs-12 col-md-4">
+				<div class="col-xs-12 col-md-4 col-lg-3">
 					<%= partial "partials/member", :locals => { :member => member } %>
 				</div>
 			<% end %>
@@ -29,7 +30,7 @@ color_menu : white
 				<div class="card-contact-us bg-green mt3">
 					<div class="row center-xs around-md middle-lg">
 						<div class="col-xs-10 col-lg-8 start-lg">
-							<h2 class="h1-sm mh3">Want to join the crew?</h2>
+							<h2 class="h1-sm mh3">Want to join us?</h2>
 						</div>
 						<div class="col-xs-12 col-lg-3">
 							<a class="btn-primary-white typeform-share mh3" href="https://hello017925.typeform.com/to/VuEh39" target="_blank">Fill this form</a>

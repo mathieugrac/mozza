@@ -9,8 +9,8 @@ color_menu : white
 	<div class="container">
 		<div class="row middle-sm">
 			<div class="col-xs-12 col-sm-12 col-md-7 offset-md-0 col-lg-6 ">
-				<h1 class="h1-home">Your Product Team <br class="h1-br"> on a plate.</h1>
-				<p class="p-xl">Mozza is a crew of experienced product strategists and designers. We help entrepreneurs and growing startups craft amazing user experiences.</p>
+				<h1 class="h1-home">Your <span class="italic-gd opacity-80">Product Team</span> <br class="h1-br"> on a plate.</h1>
+				<p class="p-xl">Mozza is a Product studio. We gather the brightest Product folks to empower startups and late stage ventures with great solutions fit to scale.</p>
 				<a class="btn-primary-white typeform-share" href="https://hello017925.typeform.com/to/YnE7b6" data-mode="drawer_right" target="_blank">Let's talk!</a>
 				<%= partial "partials/typeform" %>
 			</div>
@@ -28,16 +28,16 @@ color_menu : white
 		<div class="row">
 			<%= partial "partials/logo", :locals => { :client => 'airbnb' } %>
 			<%= partial "partials/logo", :locals => { :client => 'google' } %>
-			<%= partial "partials/logo", :locals => { :client => 'paypal' } %>
+			<%= partial "partials/logo", :locals => { :client => 'bird' } %>
+			<%= partial "partials/logo", :locals => { :client => 'sorare' } %>
 			<%= partial "partials/logo", :locals => { :client => 'blablacar' } %>
-			<%= partial "partials/logo", :locals => { :client => 'voodoo' } %>
-			<%= partial "partials/logo", :locals => { :client => 'qonto' } %>
-			<%= partial "partials/logo", :locals => { :client => 'meetic' } %>
+			<%= partial "partials/logo", :locals => { :client => 'flink' } %>
 			<%= partial "partials/logo", :locals => { :client => 'aircall' } %>
-			<%= partial "partials/logo", :locals => { :client => 'payfit' } %>
-			<%= partial "partials/logo", :locals => { :client => 'frichti' } %>
-			<%= partial "partials/logo", :locals => { :client => 'heetch' } %>
-			<%= partial "partials/logo", :locals => { :client => 'bandsintown' } %>
+			<%= partial "partials/logo", :locals => { :client => 'ornikar' } %>
+			<%= partial "partials/logo", :locals => { :client => 'ankorstone' } %>
+			<%= partial "partials/logo", :locals => { :client => 'alma' } %>
+			<%= partial "partials/logo", :locals => { :client => 'pennylane' } %>
+			<%= partial "partials/logo", :locals => { :client => 'singulart' } %>
 		</div>
 	</div>
 </section>
@@ -48,21 +48,21 @@ color_menu : white
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
-				<h3 class="title-section">How can we help you?</h3>
+				<h3 class="title-section">How can we <span class="italic-gm">help?</span></h3>
 			</div>
 			<div class="col-xs-12 col-md-6 col-lg-5 offset-lg-1">
 				<% link_to '/create.html', {:class=> 'card-offer'} do %>
-					<%= image_tag "illustrations/mozza-scale.svg", {:class=> 'illu-offers mb3'}%>
-					<h2 class="">Create.</h2>
-					<p class="p-md">From idea to launch, we challenge your product strategy and help you design a simple yet engaging MVP for your first users.</p>
+					<%= image_tag "illustrations/mozza-create.svg", {:class=> 'illu-offers mb3'}%>
+					<h2 class="">Launch.</h2>
+					<p class="p-md">Looking to hit Product market-fit faster? From ideation to launch, we will help you refine your product strategy and create an engaging MVP that gets your first users hooked.</p>
 					<p class="link">Learn More</p>
 				<% end %>
 			</div>
 			<div class="col-xs-12 col-md-6 col-lg-5">
 				<% link_to '/scale.html', {:class=> 'card-offer'} do %>
-					<%= image_tag "illustrations/mozza-create.svg", {:class=> 'illu-offers mb3'} %>
+					<%= image_tag "illustrations/mozza-scale.svg", {:class=> 'illu-offers mb3'} %>
 					<h2 class="">Scale.</h2>
-					<p class="p-md">We support growing startups on ad-hoc design projects and bring fresh eyes to complex product challenges.</p>
+					<p class="p-md">Behind your roadmap or struggling to impact a key Product metric? We offer hands-on support to startups as they scale to solve their most complex product challenges.</p>
 					<p class="link">Learn More</p>
 				<% end %>
 			</div>
@@ -71,11 +71,11 @@ color_menu : white
 </section>
 
 <!-- USECASES -->
-<section class="section bg-gray">
+<!-- <section class="section bg-gray">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
-				<h3 class="title-section">Some of our projects</h3>
+				<h3 class="title-section">Some of <span class="italic-gm">our projects</span></h3>
 			</div>
 			<div class="col-xs-12">
 				<%= partial "partials/project", :locals => { :project => data.projects[0] } %>
@@ -84,36 +84,36 @@ color_menu : white
 			</div>
 		</div>
 	</div>
-</section>
+</section> -->
 
 <!-- COMMITMENTS -->
-<section class="section bg-white">
+<section class="section bg-gray">
 	<div class="container text-center">
 		<div class="row">
 			<div class="col-xs">
-				<h3 class="title-section">Our commitments</h3>
+				<h3 class="title-section">Our way to <span class="italic-gm">succeed together</span></h3>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-xs-12 col-md-4">
 				<div class="card-commitment">
-					<span class="icon icon-xl ph5"><%= svg "icons/icon-star.svg" %></span>
-					<h2 class="h3">Top-notch profiles.</h2>
-					<p class="">Our members all are experienced product managers and UX/UI designers coming from successful tech companies.</p>
+					<span class="icon icon-xl ph5"><%= svg "icons/team-star.svg" %></span>
+					<h2 class="h3">Best-in-class talents.</h2>
+					<p class="">All our members are experienced Product Managers and Designers coming from the most successful tech companies.</p>
 				</div>
 			</div>
 			<div class="col-xs-12 col-md-4">
 				<div class="card-commitment">
-					<span class="icon icon-xl ph5"><%= svg "icons/icon-distributed.svg" %></span>
+					<span class="icon icon-xl ph5"><%= svg "icons/team-distributed.svg" %></span>
 					<h2 class="h3">A dedicated team.</h2>
-					<p class="">We assemble a complementary team that knows your industry to work hands in hands with your company.</p>
+					<p class="">No need for endless briefings. We put together a team that understands your business to help you achieve your goals faster.</p>
 				</div>
 			</div>
 			<div class="col-xs-12 col-md-4">
 				<div class="card-commitment">
-					<span class="icon icon-xl ph5"><%= svg "icons/icon-checked.svg" %></span>
+					<span class="icon icon-xl ph5"><%= svg "icons/team-time.svg" %></span>
 					<h2 class="h3">Time well spent.</h2>
-					<p class="" class="commitment-item-desc">We hate bullshit and slow processes. Our remote culture makes it possible to start in a snap and focus on what matters.</p>
+					<p class="" class="commitment-item-desc">We hate bullshit and slow processes. Our remote culture enables us to get our heads down, focus and deliver results in no time.</p>
 				</div>
 			</div>
 		</div>
@@ -128,19 +128,20 @@ color_menu : white
 				<%= image_tag "illustrations/mozzayolos.png", {:style=> ''}%>
 			</div>
 			<div class="col-xs-12 col-md-6 offset-lg-1 col-lg-5 first-md">
-				<h2 class="title-section text-left h3 opacity-60 mb4">Our secret sauce</h2>
-				<h3 class="h2">Gathering the best individual talents within the same collective.</h3>
+				<h2 class="title-section text-left h3 mb4">Our <span class="italic-gm">secret sauce</span></h2>
+				<h3 class="h2">Bringing the brightest Product folks together, under one roof.</h3>
 			</div>
 		</div>
 		<div class="row mb4">
 			<div class="col-xs-12 col-md-6 offset-lg-1 col-lg-5">
-				<p class="p-lg">We don't believe in the agency model. The most talented people don't work at agencies, they start their own freelance business. That's why we started a collective instead. Mozza brings the best freelance talents to work together as a team on ambitious projects when one individual isn't enough.</p>
+				<p class="p-lg">We believe the agency model is broken. Today’s best talents don’t work in-house anymore, they have switched to freelancing instead. This is why we have built a new kind of a Product studio, one that is community-led. Mozza combines individual greatness to create teams that thrive on challenge and ship amazing work.</p>
 				<p class="p-lg">At Mozza, there are no yes-men. We never hesitate to challenge our clients’ opinions and only work on projects we believe in.</p>
 			</div>
 			<div class="col-xs-12 col-md-6 col-lg-5">
-				<p class="p-lg">At Mozza, there is no guesswork. Our work is based on metrics and user research. “Growth by design” is our motto and sums up our philosophy: startups need user experiences that drive growth.</p>
-				<p class="p-lg">At Mozza, there is no office. Our remote organization makes it possible for our clients to hire within a week some of the best product designers in the world, at a fair cost.</p>
-				<p class="p-lg">Mozza is not a traditional agency, we do more with less.</p>
+				<p class="p-lg">Few things about us:</p>
+				<p class="p-lg">We are no “yes-men”. We challenge our clients’ perspectives, and only ever take on projects we believe in.</p>
+				<p class="p-lg">We don’t take guesses. Our work is based on solid metrics and user research. Achieving product market-fit and creating high growth comes with science.</p>
+				<p class="p-lg">We’re everywhere. Our remote-fist organization gives us the required flexibility to kick-start projects in no time and the job done with the best talent onboard.</p>
 			</div>
 		</div>
 	</div>
@@ -151,7 +152,7 @@ color_menu : white
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
-				<h3 class="title-section">What they say about us</h3>
+				<h3 class="title-section">We’re on <span class="italic-gm">everyone’s lips</span></h3>
 			</div>
 			<div class="col-xs-12 ">
 				<div class="row top-xs">
